@@ -27,7 +27,7 @@ function App() {
           <img
             src={picture}
             alt="m2 studio background"
-            className='h-full object-cover'
+            className='h-full w-full object-cover'
           />
           <img
             src={lightLogo}
