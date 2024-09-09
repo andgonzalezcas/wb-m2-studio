@@ -3,4 +3,10 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  font-family: "Work Sans", sans-serif;
+
+}
+
+body {
+  background-color: #FFD4BA;
 }
