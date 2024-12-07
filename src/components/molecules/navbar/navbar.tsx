@@ -3,7 +3,7 @@ import m2Icon from "@/assets/m2studio/icon.svg";
 
 const Navbar = () => {
     return (
-        <div className="h-screen w-fit fixed top-0 left-0 flex flex-col justify-between items-center border-r bg-opacity-0 mix-blend-difference text-white font-normal p-5">
+        <div className="h-screen w-fit fixed top-0 left-0 flex flex-col justify-between items-center border-r bg-opacity-0 mix-blend-difference text-white font-normal p-5 z-50">
             <img
                 src={m2Icon}
                 alt="Logo de M2 Studio"
