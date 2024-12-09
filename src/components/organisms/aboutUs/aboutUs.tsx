@@ -2,10 +2,12 @@ import ImageGetter from "@/assets/ImageGetter";
 import DotWithText from "@/components/atoms/dotWithText";
 
 import background_image from "@/assets/background/WEB02.png";
+import ProfileCard from "@/components/atoms/profileCard";
 
 const AboutUs = () => {
     return (
         <div className="w-full min-h-screen bg-[#232C33] text-white">
+            {/* un poco sobre nosotras section */}
             <div className="flex w-full px-24">
                 <div className="w-1/3 p-10 relative border-r">
                     <DotWithText>
@@ -51,6 +53,8 @@ const AboutUs = () => {
                     />
                 </div>
             </div>
+
+            {/* full background boxes image */}
             <div className="w-full">
                 <img
                     src={background_image}
@@ -58,6 +62,7 @@ const AboutUs = () => {
                 />
             </div>
 
+            {/* Nuestro equipo section */}
             <div className="h-screen w-full flex items-center bg-white text-black px-24 border-b">
                 <div className="w-full flex p-10">
                     <h3 className="w-1/3 font-extralight text-6xl text-left">
@@ -65,8 +70,23 @@ const AboutUs = () => {
                         equipo <br />
                         directivo
                     </h3>
-                    <div className="w-2/3">
-
+                    <div className="w-2/3 flex gap-2 justify-between">
+                        <ProfileCard
+                            image="src/assets/image/profile_base_image.png"
+                            name="Amanda Herbert"
+                            job="Interiorista"
+                            phone="+34 696 94 17 75"
+                            email="amanda@m2studio.es"
+                            align="left"
+                        />
+                        <ProfileCard
+                            image="src/assets/image/profile_base_image.png"
+                            name="Amanda Herbert"
+                            job="Interiorista"
+                            phone="+34 696 94 17 75"
+                            email="amanda@m2studio.es"
+                            align="right"
+                        />
                     </div>
                 </div>
             </div>
