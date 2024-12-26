@@ -1,6 +1,7 @@
 export type ImageFolder = {
    background: ImageBackground,
    icons: ImageIcons,
+   image: ImageImage,
    m2studio: ImageM2studio,
 };
 
@@ -13,6 +14,9 @@ export type ImageIcons =
    | "instagram"
    | "twitter"
    | "youtube";
+
+export type ImageImage = 
+   | "profile_base_image";
 
 export type ImageM2studio = 
    | "dark_logo"

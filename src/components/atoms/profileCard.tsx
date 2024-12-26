@@ -16,14 +16,14 @@ const ProfileCard = ({
     align
 }: props) => {
     return (
-        <div className={`w-fit text-2xl font-light ${align === "right" ? "text-right" : "text-left"}`}>
+        <div className={`w-fit text-base xl:text-2xl font-light text-left ${align === "right" && "xl:text-right"}`}>
             <img
                 src={image}
                 alt={`profile image of - ${name}`}
                 className="w-full h-auto object-cover text-gray-600"
             />
             <div className="child:leading-none">
-                <p className="mt-2 text-lg">{name}</p>
+                <p className="mt-2">{name}</p>
                 <p>{job}</p>
                 <p>{phone}</p>
                 <p>{email}</p>
