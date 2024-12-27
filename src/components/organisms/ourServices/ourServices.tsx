@@ -1,6 +1,6 @@
 const OurServices = () => {
     return (
-        <div className="w-full min-h-screen bg-white">
+        <div className="w-full min-h-screen xl:px-[93px] bg-white">
             OurServices
         </div>
     )

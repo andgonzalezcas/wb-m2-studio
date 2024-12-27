@@ -16,7 +16,8 @@ export type ImageIcons =
    | "youtube";
 
 export type ImageImage = 
-   | "profile_base_image";
+   | "profile_base_image"
+   | "why_choose_us_section";
 
 export type ImageM2studio = 
    | "dark_logo"
