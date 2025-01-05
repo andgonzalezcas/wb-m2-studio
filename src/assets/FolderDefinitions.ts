@@ -16,6 +16,7 @@ export type ImageIcons =
    | "youtube";
 
 export type ImageImage = 
+   | "general_card_image"
    | "profile_base_image"
    | "why_choose_us_section";
 

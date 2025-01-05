@@ -86,10 +86,10 @@ const AboutUs = () => {
                         />
                         <ProfileCard
                             image="src/assets/image/profile_base_image.png"
-                            name="Amanda Herbert"
-                            job="Interiorista"
-                            phone="+34 696 94 17 75"
-                            email="amanda@m2studio.es"
+                            name="Melissa Torres"
+                            job="Arquitecta Técnica"
+                            phone="+34 611 51 77 37"
+                            email="melissa@m2studio.es"
                             align="right"
                         />
                     </div>

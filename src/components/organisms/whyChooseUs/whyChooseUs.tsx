@@ -36,8 +36,8 @@ const WhyChooseUs = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col-reverse xl:flex-row">
-                <section className="text-left xl:text-right w-full xl:w-1/2 p-10 xl:p-16 xl:text-xl font-light flex flex-col gap-3">
+            <div className="flex flex-col-reverse xl:flex-row border-">
+                <section className="text-left xl:text-right w-full xl:w-1/2 p-10 xl:p-16 xl:text-xl font-light flex flex-col gap-3 xl:border-r">
                     <p>Diseñamos y Reformamos</p>
                     <p>Contamos con los mejores profesionales en el sector del diseño y de la reforma.</p>
                     <p>Profesionales certificados Todo nuestro equipo está certificado y cuenta con una gran experiencia, cada uno en su especialidad.</p>
@@ -54,11 +54,13 @@ const WhyChooseUs = () => {
             </div>
 
             <div className="flex flex-col xl:flex-row">
-                <img
-                    src={design}
-                    alt="design section image"
-                    className="h-auto object-cover w-full xl:w-1/2 xl:border-r max-h-[50vh] xl:max-h-max"
-                />
+                <div className="w-full xl:w-1/2 h-full border-r">
+                    <img
+                        src={design}
+                        alt="design section image"
+                        className="h-auto object-cover w-full max-h-[50vh] xl:max-h-max"
+                    />
+                </div>
 
                 <div className="w-full xl:w-1/2 p-10 xl:p-16 flex flex-col justify-between text-left gap-5">
                     <h4 className="font-extralight text-2xl xl:text-6xl">Proyecto y Diseño Incluido</h4>
