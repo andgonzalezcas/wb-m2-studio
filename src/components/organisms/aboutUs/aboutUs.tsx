@@ -28,7 +28,7 @@ const AboutUs = () => {
                     />
                 </div>
 
-                <div className="w-full xl:w-1/3 p-10 pb-28 order-3 xl:order-2 border-t xl:border-t-0">
+                <div className="w-full xl:w-1/3 p-10 pb-40 order-3 xl:order-2 border-t xl:border-t-0">
                     <p className="text-right font-light">
                         Somos una empresa joven de nueva creación pero con una amplia experiencia en el diseño y la reforma de todo tipo de espacios. Trabajamos directamente con nuestro propio equipo de profesionales de confianza, lo que garantiza siempre la máxima calidad de entrega en cuanto a acabados y plazos. Nuestros presupuestos son muy competitivos, acorde al mercado actual.
                     </p>
