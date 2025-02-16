@@ -1,3 +1,5 @@
+import BulgeImage from "./bulgeImage";
+
 interface props {
     image: string;
     align: "right" | "left";
@@ -17,11 +19,12 @@ const ProfileCard = ({
 }: props) => {
     return (
         <div className={`w-fit text-base xl:text-2xl font-light text-left ${align === "right" && "xl:text-right"}`}>
-            <img
-                src={image}
-                alt={`profile image of - ${name}`}
-                className="w-full h-auto object-cover text-gray-600"
-            />
+            <div>
+
+            </div>
+            <div className="w-full h-[361px]">
+                <BulgeImage imgSrc={image} />
+            </div>
             <div className="child:leading-none">
                 <p className="mt-2">{name}</p>
                 <p>{job}</p>
