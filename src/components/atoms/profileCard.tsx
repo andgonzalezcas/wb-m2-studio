@@ -18,11 +18,11 @@ const ProfileCard = ({
     align
 }: props) => {
     return (
-        <div className={`w-fit text-base xl:text-2xl font-light text-left ${align === "right" && "xl:text-right"}`}>
+        <div className={`w-full xl:w-1/2 text-base xl:text-2xl font-light text-left ${align === "right" && "xl:text-right"}`}>
             <div>
 
             </div>
-            <div className="w-full h-[361px]">
+            <div className="max-w-full w-[800px] h-[361px]">
                 <BulgeImage imgSrc={image} />
             </div>
             <div className="child:leading-none">
