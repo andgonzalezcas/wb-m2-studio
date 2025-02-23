@@ -66,7 +66,7 @@ const OurWay = () => {
                             </p>
                         </DotWithText>
                     </div>
-                    <div className="w-full max-h-[529px] h-screen" onClick={handleImageClick}>
+                    <div className="w-full max-h-[529px] h-screen cursor-pointer" onClick={handleImageClick}>
                         <BulgeImage imgSrc={imageImported} />
                     </div>
                     <div className="p-10">
@@ -83,7 +83,7 @@ const OurWay = () => {
                 {/* Commitment step */}
                 <div
                     ref={commitmentRef}
-                    className={`w-full text-justify p-10 xl:p-16 text-[#3D3D3D] text-sm/6 xl:text-xl/6 flex flex-col gap-8 h-full justify-center ${showCommitment ? "" : "hidden"}`}
+                    className={`w-full text-justify p-10 xl:p-16 text-[#3D3D3D] text-sm/6 xl:text-xl/6 flex flex-col gap-8 h-full justify-center cursor-pointer ${showCommitment ? "" : "hidden"}`}
                     onClick={() => setShowCommitment(false)}
                 >
                     <p>
@@ -108,7 +108,7 @@ const OurWay = () => {
             </div>
 
             {/* static text */}
-            <div className="w-full xl:w-1/3 text-left p-10 xl:p-16 h-screen flex flex-col justify-center">
+            <div className="w-full xl:w-1/3 text-left p-10 xl:p-16 xl:h-screen flex flex-col justify-center">
                 <p className="font-normal text-base">studio</p>
                 <p className="max-w-[286px] text-2xl xl:text-3xl font-extralight">
                     M2 ha nacido como resultado de la pasión que sentimos por todo aquello que sea novedoso, <u>sostenible</u> y bello.

@@ -1,9 +1,8 @@
 import ImageGetter from "@/assets/ImageGetter";
 import DotWithText from "@/components/atoms/dotWithText";
-
-import imageImported from "@/assets/image/general_card_image.png";
-import AccordionList from "@/components/molecules/accordionList/accordionList";
 import { ourPasionList } from "./definition";
+import imageImported from "@/assets/image/our_pasion/pasion.png";
+import AccordionList from "@/components/molecules/accordionList/accordionList";
 import BulgeImage from "@/components/atoms/bulgeImage";
 import { Sections } from "@/enums/global";
 

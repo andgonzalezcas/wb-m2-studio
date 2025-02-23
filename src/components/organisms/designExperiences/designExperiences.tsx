@@ -25,6 +25,11 @@ const DesignExperiences = () => {
                     alt={`equipo de trabajo`}
                     className="w-full xl:w-2/3 h-auto object-cover text-gray-600"
                 />
+                {/* 
+                <div className="w-full xl:w-2/3 h-screen max-h-[207px] xl:max-h-[572px] object-cover text-gray-600">
+                    <BulgeImage imgSrc={image} />
+                </div>
+                 */}
                 <div className="w-full xl:w-1/3 flex flex-col justify-between px-10 border-l pt-4 xl:pt-0">
                     <div className="flex flex-col gap-10">
                         <div className="hidden xl:block">

@@ -4,6 +4,7 @@ import DotWithText from "@/components/atoms/dotWithText";
 import refactor from "@/assets/image/why_choose_us_section/refactor.png";
 import design from "@/assets/image/why_choose_us_section/design.png";
 import { Sections } from "@/enums/global";
+import BulgeImage from "@/components/atoms/bulgeImage";
 
 const WhyChooseUs = () => {
     return (
@@ -47,20 +48,16 @@ const WhyChooseUs = () => {
                     <p>Garantía Post Obra Ofrecemos a todos nuestros clientes para su tranquilidad y la nuestra, una garantía de 2 años tras la finalización de obra para cubrir así cualquier defecto de fábrica que pueda surgir.</p>
                 </section>
 
-                <img
-                    src={refactor}
-                    alt="refactor section image"
-                    className="h-auto object-cover w-full xl:w-1/2 xl:border-l max-h-[50vh] xl:max-h-max"
-                />
+                <div className="object-cover w-full xl:w-1/2 xl:border-l  h-screen max-h-[554px]">
+                    <BulgeImage imgSrc={refactor} />
+                </div>
             </div>
 
             <div className="flex flex-col xl:flex-row">
                 <div className="w-full xl:w-1/2 h-full border-r">
-                    <img
-                        src={design}
-                        alt="design section image"
-                        className="h-auto object-cover w-full max-h-[50vh] xl:max-h-max"
-                    />
+                    <div className="object-cover w-full h-screen max-h-[554px]">
+                        <BulgeImage imgSrc={design} />
+                    </div>
                 </div>
 
                 <div className="w-full xl:w-1/2 p-10 xl:p-16 flex flex-col justify-between text-left gap-5">

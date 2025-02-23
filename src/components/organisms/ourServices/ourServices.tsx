@@ -43,32 +43,32 @@ const OurServices = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14 px-10 xl:px-24 justify-center w-full py-10 xl:py-32 text-left justify-items-center">
                 <CardWithImage
-                    image="src/assets/image/general_card_image.png"
+                    image="src/assets/image/our_service/reform.png"
                     label="Reforma"
                     description="Antes de comenzar una reforma, es crucial tener en cuenta algunas cosas para facilitarnos nuestra labor y ayudarnos a conectar con las verdaderas necesidades de nuestros clientes."
                 />
                 <CardWithImage
-                    image="src/assets/image/general_card_image.png"
+                    image="src/assets/image/our_service/important_points.png"
                     label="Puntos más importantes"
                     description="El Presupuesto: Antes de empezar cualquier reforma, debes plantear el presupuesto. Es importante tener claro que quieres o puedes invertir en tu reforma. Debe ser una cantidad realista, acorde con tu realidad."
                 />
                 <CardWithImage
-                    image="src/assets/image/general_card_image.png"
+                    image="src/assets/image/our_service/design.png"
                     label="Diseño"
                     description="Otro punto muy importante a tener en cuenta es el diseño. Cuanto más claro tienes tus necesidades, más podremos ayudarte a conseguir el espacio deseado."
                 />
                 <CardWithImage
-                    image="src/assets/image/general_card_image.png"
+                    image="src/assets/image/our_service/deadlines.png"
                     label="Plazos"
                     description="Es importante saber cuando te viene bien que realicemos tu obra para así intentar encajarlo y que no se convierta en un problema. En m2.Studio, te indicaremos el tiempo necesario para preparar y ejecutar tu obra. Para nosotros es importante cumplir con los plazos establecidos por lo que el cliente debe ser consciente que los cambios improvistos por su parte retrasan una obra y una vez establecidos todos los detalles, intentamos ceñirnos a lo acordado."
                 />
                 <CardWithImage
-                    image="src/assets/image/general_card_image.png"
+                    image="src/assets/image/our_service/profesionals.png"
                     label="Profesionales"
                     description="Contar con un equipo de profesionales cualificados y certificados con experiencia para realizar la reforma, es de suma importancia. Nuestro equipo de m2.Studio te ofrece la garantía de entrega de unos acabados óptimos. Siempre velando para minimizar complicaciones y errores desde el principio."
                 />
                 <CardWithImage
-                    image="src/assets/image/general_card_image.png"
+                    image="src/assets/image/our_service/security.png"
                     label="Seguridad"
                     description="Para nosotros la seguridad de nuestro equipo es importantísimo, por lo que nos aseguramos que todo nuestro equipo cuenta con lo necesario para abordar cada reforma sin percances y con la mayor seguridad posible. Durante la reforma es importante tener en cuenta la seguridad. Nos aseguramos de que nuestros profesionales tienen la formación necesaria para realizar nuestras obras."
                 />
