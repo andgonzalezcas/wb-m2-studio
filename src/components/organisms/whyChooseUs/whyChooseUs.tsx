@@ -3,10 +3,11 @@ import DotWithText from "@/components/atoms/dotWithText";
 
 import refactor from "@/assets/image/why_choose_us_section/refactor.png";
 import design from "@/assets/image/why_choose_us_section/design.png";
+import { Sections } from "@/enums/global";
 
 const WhyChooseUs = () => {
     return (
-        <div className="w-full min-h-screen bg-white xl:px-[93px] border-t border-b">
+        <div className="w-full min-h-screen bg-white xl:px-[93px] border-t border-b" id={Sections.WHY_CHOOSE_US}>
             <div className="flex flex-row-reverse xl:flex-row">
                 <div className="w-1/3 xl:w-1/2 xl:border-r p-10 xl:p-16 flex justify-end items-end xl:items-start">
                     <DotWithText>

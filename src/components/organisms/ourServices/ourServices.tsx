@@ -1,9 +1,10 @@
 import CardWithImage from "@/components/atoms/cardWithImage";
 import DotWithText from "@/components/atoms/dotWithText";
+import { Sections } from "@/enums/global";
 
 const OurServices = () => {
     return (
-        <div className="w-full min-h-screen bg-white xl:px-[93px] relative border-b">
+        <div className="w-full min-h-screen bg-white xl:px-[93px] relative border-b" id={Sections.OUR_SERVICES}>
             <div className="absolute top-10 right-[133px] hidden xl:block">
                 <DotWithText>
                     <p className="text-left text-5xl font-extralight">

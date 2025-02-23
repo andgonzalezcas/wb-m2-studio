@@ -1,9 +1,10 @@
 import ImageGetter from "@/assets/ImageGetter";
 import LinkButton from "@/components/atoms/linkButton";
+import { Sections } from "@/enums/global";
 
 const Footer = () => {
     return (
-        <div className="w-full xl:px-[93px]">
+        <div className="w-full xl:px-[93px]" id={Sections.FOOTER}>
             <div className="flex flex-col-reverse xl:flex-col">
                 <div className="w-full px-5 xl:px-16">
                     <div className="w-full flex justify-between xl:justify-end xl:gap-20">

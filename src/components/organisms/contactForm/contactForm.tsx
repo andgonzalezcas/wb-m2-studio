@@ -1,5 +1,6 @@
 import ImageGetter from "@/assets/ImageGetter";
 import LinkButton from "@/components/atoms/linkButton";
+import { Sections } from "@/enums/global";
 import { HTMLInputTypeAttribute } from "react";
 
 const FormInput = (props: {
@@ -19,7 +20,7 @@ const FormInput = (props: {
 
 const ContactForm = () => {
     return (
-        <div className="w-full bg-white xl:px-[93px] relative xl:border-t flex flex-col xl:flex-wrap mb-40">
+        <div className="w-full bg-white xl:px-[93px] relative xl:border-t flex flex-col xl:flex-wrap mb-40" id={Sections.CONTACT}>
             <div className="w-full xl:w-1/2 p-10 flex flex-col gap-16 xl:hidden py-32">
                 <LinkButton
                     label="Formulario si quieres hacer una reforma"

@@ -1,13 +1,16 @@
 import ImageGetter from "@/assets/ImageGetter";
 
-const PlusButton = () => {
+const PlusButton = ({ onClick }: { onClick?: () => void }) => {
     return (
-        <button className="font-light hover:rotate-135 w-5 h-5 rounded-full flex justify-center items-center border-0.5 transition-transform duration-300 origin-center text-center">
+        <button
+            onClick={onClick}
+            className="font-light hover:rotate-135 w-5 h-5 rounded-full flex justify-center items-center border-0.5 transition-transform duration-300 origin-center text-center"
+        >
             <ImageGetter
                 folder="icons"
                 image="border"
-                width={7}
-                height={7}
+                width={8}
+                height={8}
                 color="#fff"
             />
         </button>

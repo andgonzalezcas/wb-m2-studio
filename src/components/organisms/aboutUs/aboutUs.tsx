@@ -3,10 +3,11 @@ import DotWithText from "@/components/atoms/dotWithText";
 
 import background_image from "@/assets/background/WEB02.png";
 import ProfileCard from "@/components/atoms/profileCard";
+import { Sections } from "@/enums/global";
 
 const AboutUs = () => {
     return (
-        <div className="w-full min-h-screen bg-[#232C33] text-white">
+        <div className="w-full min-h-screen bg-[#232C33] text-white" id={Sections.ABOUT_US}>
             {/* un poco sobre nosotras section */}
             <div className="flex flex-col xl:flex-row w-full xl:px-[93px]">
                 {/* Primer div */}

@@ -1,10 +1,11 @@
 import DotWithText from "@/components/atoms/dotWithText";
 
 import image from "@/assets/image/design_experiences/team.png";
+import { Sections } from "@/enums/global";
 
 const DesignExperiences = () => {
     return (
-        <div className="w-full bg-white xl:px-[93px] relative border-t">
+        <div className="w-full bg-white xl:px-[93px] relative border-t" id={Sections.DESIGN_EXPERIENCES}>
             <div className="flex flex-col-reverse xl:flex-row">
                 <div className="w-full xl:w-2/3 xl:pt-28 xl:border-r pb-10">
                     <h3 className="text-right text-4xl xl:text-8xl font-extralight px-10">Creando Alianzas, Diseñando Experiencias</h3>

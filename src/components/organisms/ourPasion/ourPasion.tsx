@@ -5,10 +5,11 @@ import imageImported from "@/assets/image/general_card_image.png";
 import AccordionList from "@/components/molecules/accordionList/accordionList";
 import { ourPasionList } from "./definition";
 import BulgeImage from "@/components/atoms/bulgeImage";
+import { Sections } from "@/enums/global";
 
 const OurPasion = () => {
     return (
-        <div className="w-full min-h-screen bg-white xl:px-[93px] border-t border-b py-10 xl:py-16">
+        <div className="w-full min-h-screen bg-white xl:px-[93px] border-t border-b py-10 xl:py-16" id={Sections.OUR_PASSION}>
             <div className="w-full xl:w-1/2 px-10 xl:px-16">
                 <ImageGetter
                     folder="m2studio"

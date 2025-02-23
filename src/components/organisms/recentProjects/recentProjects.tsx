@@ -1,8 +1,9 @@
 import CardWithImage from "@/components/atoms/cardWithImage";
+import { Sections } from "@/enums/global";
 
 const RecentProjects = () => {
     return (
-        <div className="w-full min-h-screen bg-white xl:px-[93px] relative">
+        <div className="w-full min-h-screen bg-white xl:px-[93px] relative" id={Sections.RECENT_PROJECTS}>
             <div className="w-full pt-20 flex flex-col gap-11 items-center">
                 <h3 className="w-full font-extralight text-4xl xl:text-6xl px-10 text-right xl:text-center ">Proyectos Recientes</h3>
             </div>
