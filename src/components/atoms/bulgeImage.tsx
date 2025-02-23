@@ -60,6 +60,9 @@ export default function BulgeImage({ imgSrc }: { imgSrc: string }) {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 setIsVisible(entry.isIntersecting);
+                if (entry.isIntersecting) {
+                    observer.disconnect();
+                }
             },
             { threshold: 0.5 }
         );
