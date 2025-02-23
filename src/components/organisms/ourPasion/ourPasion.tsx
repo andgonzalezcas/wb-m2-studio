@@ -30,7 +30,7 @@ const OurPasion = () => {
             </div>
 
             <div className="w-full px-10 xl:px-16 pt-10 flex flex-col xl:flex-row">
-                <div className="w-full xl:w-1/2 h-auto object-cover text-gray-600 max-w-[704px]">
+                <div className="w-full xl:w-1/2 h-auto xl:min-h-[850px] object-cover text-gray-600 max-w-[704px]">
                     <BulgeImage imgSrc={imageImported} />
                 </div>
                 <div className="w-full xl:w-1/2 xl:pl-10 mt-10 xl:mt-0">
