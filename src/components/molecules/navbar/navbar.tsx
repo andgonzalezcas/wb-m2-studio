@@ -28,6 +28,7 @@ const Navbar = () => {
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            gsap.killTweensOf(scrollDownRef.current);
         };
     }, [isScrollDownVisible]);
 
