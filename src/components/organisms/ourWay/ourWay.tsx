@@ -50,10 +50,10 @@ const OurWay = () => {
     };
 
     return (
-        <div className="w-full min-h-screen h-full bg-white xl:px-[93px] flex" id={Sections.OUR_WAY}>
+        <div className="w-full min-h-screen bg-white xl:px-[93px] flex flex-col xl:flex-row" id={Sections.OUR_WAY}>
             <div
                 ref={divRef}
-                className="relative border-r border-[#C8CACC] h-full"
+                className="hidden xl:block relative border-r border-[#C8CACC] h-screen"
                 style={{ left: showCommitment ? 'calc(66.67%)' : 'calc(66.67% - 170px)' }}
             />
             <div className="w-full xl:w-2/3">
@@ -83,11 +83,11 @@ const OurWay = () => {
                 {/* Commitment step */}
                 <div
                     ref={commitmentRef}
-                    className={`w-full text-justify p-10 xl:p-16 text-[#3D3D3D] text-xl/6 flex flex-col gap-8 h-full justify-center ${showCommitment ? "" : "hidden"}`}
+                    className={`w-full text-justify p-10 xl:p-16 text-[#3D3D3D] text-sm/6 xl:text-xl/6 flex flex-col gap-8 h-full justify-center ${showCommitment ? "" : "hidden"}`}
                     onClick={() => setShowCommitment(false)}
                 >
                     <p>
-                        M2.Studio desarrolla sus actividades dentro de estándares de excelencia, en lo que al cuidado del medio ambiente se refiere. Por consiguiente, cada persona que se encuentre dentro de la propiedad del cliente, o fuera de esta, pero en su representación, sin excepción, deberán cumplir con sus responsabilidades dentro del marco del compromiso ecológico de acuerdo con la normativa legal vigente, previniendo la contaminación ambiental en todos los proyectos en donde ejecute sus actividades.
+                        <b>M2.Studio</b> desarrolla sus actividades dentro de <b>estándares de excelencia</b>, en lo que al <b>cuidado del medio ambiente</b> se refiere. Por consiguiente, cada persona que se encuentre dentro de la propiedad del cliente, o fuera de esta, pero en su representación, sin excepción, deberán cumplir con sus responsabilidades dentro del marco del <b>compromiso ecológico</b> de acuerdo con la normativa legal vigente, previniendo la contaminación ambiental en todos los proyectos en donde ejecute sus actividades.
                     </p>
                     <p>
                         Para lo cual asume los siguientes compromisos:
@@ -102,15 +102,15 @@ const OurWay = () => {
                         <li>Planear, revisar y evaluar nuestro desempeño ambiental frente a objetivos medibles, para impulsar la mejora continua.</li>
                     </ul>
                     <p>
-                        M2.Studio establecerá y mantendrá un programa y/o plan de manejo ambiental que contemple objetivos y procedimientos para realizar las operaciones en todos sus proyectos e instalaciones promoviendo la conciencia ambiental.
+                        <b>M2.Studio</b> establecerá y mantendrá un programa y/o plan de manejo ambiental que contemple objetivos y procedimientos para realizar las operaciones en todos sus proyectos e instalaciones promoviendo la conciencia ambiental.
                     </p>
                 </div>
             </div>
 
             {/* static text */}
-            <div className="w-full xl:w-1/3 text-left p-10 xl:p-16 h-full flex flex-col justify-center">
+            <div className="w-full xl:w-1/3 text-left p-10 xl:p-16 h-screen flex flex-col justify-center">
                 <p className="font-normal text-base">studio</p>
-                <p className="max-w-[286px] text-3xl font-extralight">
+                <p className="max-w-[286px] text-2xl xl:text-3xl font-extralight">
                     M2 ha nacido como resultado de la pasión que sentimos por todo aquello que sea novedoso, <u>sostenible</u> y bello.
                 </p>
             </div>
