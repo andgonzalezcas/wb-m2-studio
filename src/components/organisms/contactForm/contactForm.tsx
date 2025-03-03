@@ -20,7 +20,7 @@ const FormInput = (props: {
 
 const ContactForm = () => {
     return (
-        <div className="w-full bg-white xl:px-[93px] relative xl:border-t flex flex-col xl:flex-wrap mb-40" id={Sections.CONTACT}>
+        <div className="w-full bg-white xl:px-[93px] relative xl:border-t flex flex-col xl:flex-wrap mb-40 pt-20" id={Sections.CONTACT}>
             <div className="w-full xl:w-1/2 p-10 flex flex-col gap-16 xl:hidden py-32">
                 <LinkButton
                     label="Formulario si quieres hacer una reforma"
@@ -33,15 +33,16 @@ const ContactForm = () => {
                     border
                 />
             </div>
-            <div className="w-full px-10 xl:p-10">
+            <div className="w-full px-10 xl:p-10 xl:px-16">
                 <ImageGetter
                     folder="m2studio"
                     image="dark_logo"
                     width={145}
+                    classname="pl-2"
                 />
-                <h3 className="text-left text-4xl xl:text-8xl font-extralight">Contacto</h3>
+                <h3 className="text-left text-4xl xl:text-8xl font-thin">Contacto</h3>
             </div>
-            <div className="flex flex-row">
+            <div className="flex flex-row xl:px-6">
                 <form className="w-full xl:w-1/2 flex flex-col gap-4 p-10">
                     <FormInput
                         type="text"
@@ -60,7 +61,7 @@ const ContactForm = () => {
                     />
                     <textarea
                         placeholder="Mensaje"
-                        className="border-[#DCDDDF] border text-2xl font-light px-2 py-1 w-full xl:w-[80%]"
+                        className="border-[#DCDDDF] border text-2xl font-light px-2 py-1 w-full xl:w-[80%] h-60"
                     />
                     <div className="w-full xl:w-[80%] text-left flex gap-2 px-2">
                         <input type="checkbox" required />

@@ -11,7 +11,7 @@ const PlusButton = ({ onClick }: { onClick?: () => void }) => {
                 image="border"
                 width={8}
                 height={8}
-                color="#fff"
+                color="#C8CACC"
             />
         </button>
     )

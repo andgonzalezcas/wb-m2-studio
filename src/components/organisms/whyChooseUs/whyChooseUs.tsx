@@ -19,13 +19,13 @@ const WhyChooseUs = () => {
                 </div>
                 <div className="w-2/3 xl:w-1/2 p-10 xl:p-16">
                     <ImageGetter
-                        classname="xl:mt-10"
+                        classname="xl:mt-10 ml-2"
                         folder="m2studio"
                         image="dark_logo"
                         width={145}
                         color="#000"
                     />
-                    <h3 className="text-left text-4xl xl:text-8xl font-extralight xl:mb-16">Por qué <br />elegirnos?</h3>
+                    <h3 className="text-left text-4xl xl:text-8xl font-thin xl:mb-16">Por qué <br />elegirnos?</h3>
                     <div className="hidden xl:block">
                         <DotWithText>
                             <p className="text-left text-xs">
@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
             </div>
 
             <div className="flex flex-col-reverse xl:flex-row border-">
-                <section className="text-left xl:text-right w-full xl:w-1/2 p-10 xl:p-16 xl:text-xl font-light flex flex-col gap-3 xl:border-r">
+                <section className="text-left xl:text-right w-full xl:w-1/2 p-10 xl:p-16 xl:text-lg font-light flex flex-col gap-3 xl:border-r">
                     <p>Diseñamos y Reformamos</p>
                     <p>Contamos con los mejores profesionales en el sector del diseño y de la reforma.</p>
                     <p>Profesionales certificados Todo nuestro equipo está certificado y cuenta con una gran experiencia, cada uno en su especialidad.</p>
@@ -62,7 +62,7 @@ const WhyChooseUs = () => {
 
                 <div className="w-full xl:w-1/2 p-10 xl:p-16 flex flex-col justify-between text-left gap-5">
                     <h4 className="font-extralight text-2xl xl:text-6xl">Proyecto y Diseño Incluido</h4>
-                    <section className="text-left xl:text-left xl:text-xl font-light flex flex-col gap-3">
+                    <section className="text-left xl:text-left xl:text-lg font-light flex flex-col gap-3">
                         <p>Realizamos tu proyecto sin costes adicionales teniendo en cuenta tus gustos y necesidades, siempre optimizando la funcionalidad de espacios y últimas tendencias para que puedas visualizar tu sueño.</p>
                         <p><b>Prestamos especial atención a:</b></p>
                         <p>Optimizar el funcionamiento de cada espacio</p>

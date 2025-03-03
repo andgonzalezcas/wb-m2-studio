@@ -28,20 +28,20 @@ const Footer = () => {
                     classname="pl-5 xl:pl-10 xl:border-b"
                 />
             </div>
-            <div className="w-full flex text-xs xl:text-xl">
-                <p className="w-1/2 xl:w-1/5 xl:border-r p-6 xl:p-10 text-left flex items-center">
-                    Calle Rubens esq. Calle Fortuny
-                    Poligono Industrial Rabasa.
+            <div className="w-full flex text-xs xl:text-base font-light">
+                <p className="w-1/2 xl:w-2/6 xl:border-r p-6 xl:p-6 xl:pl-16 text-left flex items-center">
+                    Calle Rubens esq. Calle Fortuny <br />
+                    Poligono Industrial Rabasa. <br />
                     03009 Alicante
                 </p>
-                <div className="w-1/2 xl:w-3/5 flex flex-col xl:flex-row p-6 xl:p-0">
-                    <p className="w-full xl:w-1/3 xl:border-r xl:p-10 flex items-center justify-end xl:justify-center">info@m2studio.es</p>
-                    <p className="w-full xl:w-1/3 xl:border-r xl:p-10 flex items-center justify-end xl:justify-center">(+34) 696 94 17 75</p>
-                    <p className="w-full xl:w-1/3 xl:border-r xl:p-10 flex items-center justify-end xl:justify-center">Copyright 2025</p>
+                <div className="w-1/2 xl:w-3/6 flex flex-col xl:flex-row p-6 xl:p-0">
+                    <p className="w-full xl:w-1/3 xl:border-r xl:p-6 flex items-center justify-end xl:justify-center">info@m2studio.es</p>
+                    <p className="w-full xl:w-1/3 xl:border-r xl:p-6 flex items-center justify-end xl:justify-center">(+34) 696 94 17 75</p>
+                    <p className="w-full xl:w-1/3 xl:border-r xl:p-6 flex items-center justify-end xl:justify-center">Copyright 2025</p>
                 </div>
-                <p className="hidden xl:flex w-1/5 p-10 items-center justify-center text-6xl font-semibold">25</p>
+                <p className="hidden xl:flex w-1/6 p-6 items-center justify-center text-5xl font-medium">25</p>
             </div>
-            <div className="flex flex-col xl:flex-row border-t justify-between text-xs xl:text-xl xl:child:p-10 p-4 xl:p-0">
+            <div className="flex flex-col xl:flex-row border-t justify-between text-xs xl:text-base xl:child:p-16 p-4 xl:p-0 font-light">
                 <p className="">Bsod Studio 2025</p>
                 <p className="">Politica de Privacidad</p>
                 <p className="">Terminos de uso</p>

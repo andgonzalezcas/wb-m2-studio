@@ -11,7 +11,7 @@ const AboutUs = () => {
             {/* un poco sobre nosotras section */}
             <div className="flex flex-col xl:flex-row w-full xl:px-[93px]">
                 {/* Primer div */}
-                <div className="w-full xl:w-1/3 p-10 relative xl:border-r order-1 mb-10 xl:mb-0">
+                <div className="w-full xl:w-1/3 p-10 relative border-[#C8CACC]/20 xl:border-r order-1 mb-10 xl:mb-0">
                     <DotWithText>
                         <p className="text-left text-xs">
                             Diseño <br />
@@ -29,15 +29,15 @@ const AboutUs = () => {
                     />
                 </div>
 
-                <div className="w-full xl:w-1/3 p-10 pb-40 order-3 xl:order-2 border-t xl:border-t-0">
+                <div className="w-full xl:w-1/3 p-10 pb-40 order-3 xl:order-2 border-[#C8CACC]/20 border-t xl:border-t-0">
                     <p className="text-right font-light">
                         Somos una empresa joven de nueva creación pero con una amplia experiencia en el diseño y la reforma de todo tipo de espacios. Trabajamos directamente con nuestro propio equipo de profesionales de confianza, lo que garantiza siempre la máxima calidad de entrega en cuanto a acabados y plazos. Nuestros presupuestos son muy competitivos, acorde al mercado actual.
                     </p>
                 </div>
 
-                <div className="w-full xl:w-1/3 p-10 relative xl:border-l order-2 xl:order-3">
+                <div className="w-full xl:w-1/3 p-10 relative border-[#C8CACC]/20 xl:border-l order-2 xl:order-3">
                     <div className="flex w-full justify-between flex-col-reverse xl:flex-row items-end xl:items-start gap-10 xl:gap-0">
-                        <h3 className="text-left text-4xl xl:text-6xl font-extralight">
+                        <h3 className="text-left text-4xl xl:text-5xl font-extralight">
                             un poco<br />
                             sobre<br />
                             nosotras
@@ -78,7 +78,7 @@ const AboutUs = () => {
                     </h3>
                     <div className="w-full xl:w-2/3 flex flex-col xl:flex-row gap-2 justify-between">
                         <ProfileCard
-                            image="src/assets/image/profile_base_image.png"
+                            image="src/assets/image/about_us/amanda.png"
                             name="Amanda Herbert"
                             job="Interiorista"
                             phone="+34 696 94 17 75"
@@ -86,7 +86,7 @@ const AboutUs = () => {
                             align="left"
                         />
                         <ProfileCard
-                            image="src/assets/image/profile_base_image.png"
+                            image="src/assets/image/about_us/melissa.png"
                             name="Melissa Torres"
                             job="Arquitecta Técnica"
                             phone="+34 611 51 77 37"

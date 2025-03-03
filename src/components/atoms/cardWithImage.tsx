@@ -14,7 +14,7 @@ const CardWithImage = ({ image, label, description, className }: props) => {
                 <BulgeImage imgSrc={image} />
             </div>
             <h4 className="font-extralight text-2xl xl:text-4xl w-full text-left">{label}</h4>
-            <p className="font-light xl:text-xl leading-5 w-full text-left">{description}</p>
+            <p className="font-light xl:text-lg leading-5 w-full text-left">{description}</p>
         </div>
     );
 }

@@ -22,7 +22,7 @@ function Mesh({ mouse, imgSrc }: { mouse: number[], imgSrc: string }) {
         uMouse: { value: [0.5, 0.5] },
         uRadius: { value: 0.95 },
         uStrength: { value: 1.1 },
-        uBulge: { value: 1 },
+        uBulge: { value: .4 },
     });
 
     useFrame(() => {
@@ -100,19 +100,17 @@ export default function BulgeImage({ imgSrc }: { imgSrc: string }) {
     useEffect(() => {
         if (!canvasRef.current) return;
 
-        const targetScale = isVisible ? 0 : 1;
         const targetOpacity = isVisible ? 0 : 1;
-        animateCanvas(targetScale, targetOpacity);
+        animateCanvas(targetOpacity);
     }, [isVisible]);
 
-    const animateCanvas = (scale: number, opacity: number) => {
+    const animateCanvas = (opacity: number) => {
         gsap.killTweensOf(canvasRef.current);
 
         gsap.fromTo(
             canvasRef.current,
-            { scale: scale, opacity: opacity },
+            { opacity: opacity },
             {
-                scale: scale === 0 ? 1 : 0,
                 opacity: opacity === 0 ? 1 : 0,
                 duration: 1,
                 ease: "power3.out"
