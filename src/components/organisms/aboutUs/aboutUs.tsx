@@ -5,6 +5,9 @@ import background_image from "@/assets/background/WEB02.png";
 import ProfileCard from "@/components/atoms/profileCard";
 import { Sections } from "@/enums/global";
 
+import amanda_image from "src/assets/image/about_us/amanda.png";
+import melissa_image from "src/assets/image/about_us/melissa.png";
+
 const AboutUs = () => {
     return (
         <div className="w-full min-h-screen bg-[#232C33] text-white" id={Sections.ABOUT_US}>
@@ -78,7 +81,7 @@ const AboutUs = () => {
                     </h3>
                     <div className="w-full xl:w-2/3 flex flex-col xl:flex-row gap-2 justify-between">
                         <ProfileCard
-                            image="src/assets/image/about_us/amanda.png"
+                            image={amanda_image}
                             name="Amanda Herbert"
                             job="Interiorista"
                             phone="+34 696 94 17 75"
@@ -86,7 +89,7 @@ const AboutUs = () => {
                             align="left"
                         />
                         <ProfileCard
-                            image="src/assets/image/about_us/melissa.png"
+                            image={melissa_image}
                             name="Melissa Torres"
                             job="Arquitecta Técnica"
                             phone="+34 611 51 77 37"

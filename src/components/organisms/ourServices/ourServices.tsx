@@ -2,6 +2,13 @@ import CardWithImage from "@/components/atoms/cardWithImage";
 import DotWithText from "@/components/atoms/dotWithText";
 import { Sections } from "@/enums/global";
 
+import reform_image from "src/assets/image/our_service/reform.png";
+import important_points_image from "src/assets/image/our_service/important_points.png";
+import design_image from "src/assets/image/our_service/design.png";
+import deadlines_image from "src/assets/image/our_service/deadlines.png";
+import profesionals_image from "src/assets/image/our_service/profesionals.png";
+import security_image from "src/assets/image/our_service/security.png";
+
 const OurServices = () => {
     return (
         <div className="w-full min-h-screen bg-white xl:px-[93px] relative border-b" id={Sections.OUR_SERVICES}>
@@ -43,32 +50,32 @@ const OurServices = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14 px-10 xl:px-24 justify-center w-full py-10 xl:py-32 text-left justify-items-center">
                 <CardWithImage
-                    image="src/assets/image/our_service/reform.png"
+                    image={reform_image}
                     label="Reforma"
                     description="Antes de comenzar una reforma, es crucial tener en cuenta algunas cosas para facilitarnos nuestra labor y ayudarnos a conectar con las verdaderas necesidades de nuestros clientes."
                 />
                 <CardWithImage
-                    image="src/assets/image/our_service/important_points.png"
+                    image={important_points_image}
                     label="Puntos más importantes"
                     description="El Presupuesto: Antes de empezar cualquier reforma, debes plantear el presupuesto. Es importante tener claro que quieres o puedes invertir en tu reforma. Debe ser una cantidad realista, acorde con tu realidad."
                 />
                 <CardWithImage
-                    image="src/assets/image/our_service/design.png"
+                    image={design_image}
                     label="Diseño"
                     description="Otro punto muy importante a tener en cuenta es el diseño. Cuanto más claro tienes tus necesidades, más podremos ayudarte a conseguir el espacio deseado."
                 />
                 <CardWithImage
-                    image="src/assets/image/our_service/deadlines.png"
+                    image={deadlines_image}
                     label="Plazos"
                     description="Es importante saber cuando te viene bien que realicemos tu obra para así intentar encajarlo y que no se convierta en un problema. En m2.Studio, te indicaremos el tiempo necesario para preparar y ejecutar tu obra. Para nosotros es importante cumplir con los plazos establecidos por lo que el cliente debe ser consciente que los cambios improvistos por su parte retrasan una obra y una vez establecidos todos los detalles, intentamos ceñirnos a lo acordado."
                 />
                 <CardWithImage
-                    image="src/assets/image/our_service/profesionals.png"
+                    image={profesionals_image}
                     label="Profesionales"
                     description="Contar con un equipo de profesionales cualificados y certificados con experiencia para realizar la reforma, es de suma importancia. Nuestro equipo de m2.Studio te ofrece la garantía de entrega de unos acabados óptimos. Siempre velando para minimizar complicaciones y errores desde el principio."
                 />
                 <CardWithImage
-                    image="src/assets/image/our_service/security.png"
+                    image={security_image}
                     label="Seguridad"
                     description="Para nosotros la seguridad de nuestro equipo es importantísimo, por lo que nos aseguramos que todo nuestro equipo cuenta con lo necesario para abordar cada reforma sin percances y con la mayor seguridad posible. Durante la reforma es importante tener en cuenta la seguridad. Nos aseguramos de que nuestros profesionales tienen la formación necesaria para realizar nuestras obras."
                 />

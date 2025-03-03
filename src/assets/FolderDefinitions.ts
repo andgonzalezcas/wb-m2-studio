@@ -6,6 +6,7 @@ export type ImageFolder = {
 };
 
 export type ImageBackground = 
+   | "bg_test"
    | "WEB02";
 
 export type ImageIcons = 
@@ -14,9 +15,11 @@ export type ImageIcons =
    | "facebook"
    | "instagram"
    | "twitter"
+   | "whatsapp"
    | "youtube";
 
 export type ImageImage = 
+   | "about_us"
    | "design_experiences"
    | "general_card_image"
    | "our_pasion"
