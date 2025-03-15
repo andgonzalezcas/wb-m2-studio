@@ -4,14 +4,11 @@ import { Sections } from "@/enums/global";
 import PlusButton from "../../atoms/plusButton";
 import m2Icon from "@/assets/m2studio/icon.svg";
 import ImageGetter from "@/assets/ImageGetter";
+import { handleNavigation } from "@/utils/common";
 
 const Navbar = () => {
     const [isScrollDownVisible, setIsScrollDownVisible] = useState(true);
     const scrollDownRef = useRef(null);
-
-    const handleNavigation = (sectionId: string) => {
-        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-    };
 
     useEffect(() => {
         const handleScroll = () => {
