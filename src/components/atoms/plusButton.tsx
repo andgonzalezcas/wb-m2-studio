@@ -7,7 +7,7 @@ const PlusButton = ({ onClick, isDark }: {
     return (
         <button
             onClick={onClick}
-            className={`font-light hover:rotate-135 w-5 h-5 rounded-full flex justify-center items-center border-0.5 transition-transform duration-300 origin-center text-center ${isDark ? "border-[#232C33]" : "border-white"}`}
+            className={`font-light hover:rotate-135 w-4 md:w-5 h-4 md:h-5 rounded-full flex justify-center items-center border-0.5 transition-transform duration-300 origin-center text-center ${isDark ? "border-[#232C33]" : "border-white"}`}
         >
             <ImageGetter
                 folder="icons"

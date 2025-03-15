@@ -31,60 +31,106 @@ const Navbar = ({ isDark }: props) => {
     }, []);
 
     return (
-        <div
-            ref={navbarRef}
-            className={`h-screen w-fit hidden fixed top-0 left-0 xl:flex flex-col justify-between items-center border-r bg-opacity-0 p-5 z-50 transition-colors duration-300 ${isDark ? "border-[#232C33]" : "border-white"}`}
-        >
-            {/* Logo */}
-            <img
-                src={m2Icon}
-                alt="Logo de M2 Studio"
-                width="52"
-                height="52"
-                className={`transition-all duration-300 ${isDark ? "invert" : "invert-0"}`}
-            />
+        <>
+            <div
+                ref={navbarRef}
+                className={`h-screen w-fit hidden fixed top-0 left-0 xl:flex flex-col justify-between items-center border-r bg-opacity-0 p-5 z-50 transition-colors duration-300 ${isDark ? "border-[#232C33]" : "border-white"}`}
+            >
+                {/* Logo */}
+                <img
+                    src={m2Icon}
+                    alt="Logo de M2 Studio"
+                    width="52"
+                    height="52"
+                    className={`transition-all duration-300 ${isDark ? "invert" : "invert-0"}`}
+                />
 
-            {/* Botones de Navegación */}
-            <section className="flex flex-col gap-6">
-                <PlusButton
-                    onClick={() => handleNavigation(Sections.ABOUT_US)}
-                    isDark={isDark}
-                />
-                <PlusButton
-                    onClick={() => handleNavigation(Sections.OUR_WAY)}
-                    isDark={isDark}
-                />
-                <PlusButton
-                    onClick={() => handleNavigation(Sections.WHY_CHOOSE_US)}
-                    isDark={isDark}
-                />
-                <PlusButton
-                    onClick={() => handleNavigation(Sections.OUR_SERVICES)}
-                    isDark={isDark}
-                />
-                <PlusButton
-                    onClick={() => handleNavigation(Sections.DESIGN_EXPERIENCES)}
-                    isDark={isDark}
-                />
-            </section>
-
-            {/* Scroll Indicator */}
-            <div className="relative">
-                <div
-                    ref={scrollDownRef}
-                    className="flex flex-col gap-4 justify-center items-center absolute bottom-10 -left-3"
-                >
-                    <p className="[writing-mode:vertical-lr] font-medium text-base">Scroll down</p>
-                    <ImageGetter
-                        folder="icons"
-                        image="downArrow"
-                        width={27}
-                        height={27}
-                        color={"#fff"}
+                {/* Botones de Navegación */}
+                <section className="flex flex-col gap-6">
+                    <PlusButton
+                        onClick={() => handleNavigation(Sections.ABOUT_US)}
+                        isDark={isDark}
                     />
+                    <PlusButton
+                        onClick={() => handleNavigation(Sections.OUR_WAY)}
+                        isDark={isDark}
+                    />
+                    <PlusButton
+                        onClick={() => handleNavigation(Sections.WHY_CHOOSE_US)}
+                        isDark={isDark}
+                    />
+                    <PlusButton
+                        onClick={() => handleNavigation(Sections.OUR_SERVICES)}
+                        isDark={isDark}
+                    />
+                    <PlusButton
+                        onClick={() => handleNavigation(Sections.DESIGN_EXPERIENCES)}
+                        isDark={isDark}
+                    />
+                </section>
+
+                {/* Scroll Indicator */}
+                <div className="relative">
+                    <div
+                        ref={scrollDownRef}
+                        className="flex flex-col gap-4 justify-center items-center absolute bottom-10 -left-3"
+                    >
+                        <p className="[writing-mode:vertical-lr] font-medium text-base">Scroll down</p>
+                        <ImageGetter
+                            folder="icons"
+                            image="downArrow"
+                            width={27}
+                            height={27}
+                            color={"#fff"}
+                        />
+                    </div>
                 </div>
             </div>
-        </div>
+
+            {/* Mobile Navbar */}
+            <div
+                ref={navbarRef}
+                className={`h-fit w-full flex xl:hidden fixed top-0 left-0 flex-row justify-between items-center bg-opacity-0 p-3 z-50 transition-colors duration-300 ${isDark ? "border-[#232C33]" : "border-white"}`}
+            >
+                {/* Logo */}
+                <img
+                    src={m2Icon}
+                    alt="Logo de M2 Studio"
+                    width="28"
+                    height="28"
+                    className={`transition-all duration-300 ${isDark ? "invert" : "invert-0"}`}
+                />
+
+                {/* Botones de Navegación */}
+                <section className="flex flex-row gap-6">
+                    <PlusButton
+                        onClick={() => handleNavigation(Sections.ABOUT_US)}
+                        isDark={isDark}
+                    />
+                    <PlusButton
+                        onClick={() => handleNavigation(Sections.OUR_WAY)}
+                        isDark={isDark}
+                    />
+                    <PlusButton
+                        onClick={() => handleNavigation(Sections.WHY_CHOOSE_US)}
+                        isDark={isDark}
+                    />
+                    <PlusButton
+                        onClick={() => handleNavigation(Sections.OUR_SERVICES)}
+                        isDark={isDark}
+                    />
+                    <PlusButton
+                        onClick={() => handleNavigation(Sections.DESIGN_EXPERIENCES)}
+                        isDark={isDark}
+                    />
+                </section>
+
+                <section className="flex flex-col gap-2 cursor-pointer py-5 px-3">
+                    <div className={`w-7 h-0 border bg-white ${isDark ? "border-[#232C33]" : "border-white"}`} />
+                    <div className={`w-4 h-0 border bg-white ${isDark ? "border-[#232C33]" : "border-white"}`} />
+                </section>
+            </div>
+        </>
     );
 };
 
