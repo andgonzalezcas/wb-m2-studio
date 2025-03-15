@@ -6,7 +6,8 @@ export type ImageFolder = {
 };
 
 export type ImageBackground = 
-   | "bg_test"
+   | "bg_left"
+   | "bg_right"
    | "WEB02";
 
 export type ImageIcons = 

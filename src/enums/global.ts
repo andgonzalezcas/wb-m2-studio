@@ -7,6 +7,7 @@ export enum Sections {
     OUR_SERVICES = 'ourServices',
     DESIGN_EXPERIENCES = 'designExperiences',
     ABOUT_US = 'aboutUs',
+    OUR_TEAM = 'ourTeam',
     CONTACT = 'contact',
     FOOTER = 'footer'
 }
