@@ -70,6 +70,7 @@ const AboutUs = () => {
                     className="min-h-screen object-cover"
                 />
             </div>
+            
 
             {/* Nuestro equipo section */}
             <div className="min-h-screen w-full flex items-center bg-white text-black xl:px-24 border-b">
@@ -84,7 +85,7 @@ const AboutUs = () => {
                             image={amanda_image}
                             name="Amanda Herbert"
                             job="Interiorista"
-                            phone="+34 696 94 17 75"
+                            phone="+34 614 20 59 03"
                             email="amanda@m2studio.es"
                             align="left"
                         />
@@ -92,7 +93,7 @@ const AboutUs = () => {
                             image={melissa_image}
                             name="Melissa Torres"
                             job="Arquitecta Técnica"
-                            phone="+34 611 51 77 37"
+                            phone="+34 614 36 37 46"
                             email="melissa@m2studio.es"
                             align="right"
                         />

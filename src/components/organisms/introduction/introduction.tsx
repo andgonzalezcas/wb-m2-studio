@@ -1,7 +1,8 @@
 import ImageGetter from "@/assets/ImageGetter";
 import { Sections } from "@/enums/global";
-import background_image from "@/assets/background/bg_test.png";
+import background_image from "@/assets/background/bg_left.png";
 import { handleNavigation } from "@/utils/common";
+import SplitScreen from "@/components/atoms/splitScreen";
 
 const Introduction = () => {
     const sections = [
@@ -15,11 +16,15 @@ const Introduction = () => {
     return (
         <div className="relative w-full min-h-screen bg-black text-white" id={Sections.INTRODUCTION}>
             {/* full background boxes image */}
-            <div className="w-full max-h-screen overflow-hidden absolute top-0 left-0">
+            <div className="block xl:hidden w-full max-h-screen overflow-hidden absolute top-0 left-0">
                 <img
                     src={background_image}
                     className="min-h-screen object-cover"
                 />
+            </div>
+
+            <div className="w-full h-screen absolute inset-0 hidden xl:block">
+                <SplitScreen />
             </div>
 
             <div className="hidden xl:grid w-full h-screen xl:px-[93px] grid-cols-6 grid-rows-2 gap-0 z-50">
