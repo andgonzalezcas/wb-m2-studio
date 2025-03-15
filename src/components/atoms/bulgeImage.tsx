@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { useFrame, Canvas } from "@react-three/fiber";
 import { useAspect, useTexture } from '@react-three/drei';
-import { Suspense, useEffect, useRef, useState } from "react";
+import { Suspense, useEffect, useRef, useState, useCallback } from "react";
 import { fragment, vertex } from "@/shaders/bulgeMaterial";
 
 function Mesh({ mouse, imgSrc }: { mouse: number[], imgSrc: string }) {
@@ -10,11 +10,7 @@ function Mesh({ mouse, imgSrc }: { mouse: number[], imgSrc: string }) {
     const { width, height } = texture.image;
     const lerpedMouse = useRef([0.5, 0.5]);
 
-    const scale = useAspect(
-        width,
-        height,
-        1
-    );
+    const scale = useAspect(width, height, 1);
 
     const uniforms = useRef({
         uTime: { value: 0 },
@@ -22,7 +18,7 @@ function Mesh({ mouse, imgSrc }: { mouse: number[], imgSrc: string }) {
         uMouse: { value: [0.5, 0.5] },
         uRadius: { value: 0.95 },
         uStrength: { value: 1.1 },
-        uBulge: { value: .4 },
+        uBulge: { value: 0.4 },
     });
 
     useFrame(() => {
@@ -46,7 +42,7 @@ function Mesh({ mouse, imgSrc }: { mouse: number[], imgSrc: string }) {
                 uniforms={uniforms.current}
             />
         </mesh>
-    )
+    );
 }
 
 export default function BulgeImage({ imgSrc }: { imgSrc: string }) {
@@ -60,70 +56,43 @@ export default function BulgeImage({ imgSrc }: { imgSrc: string }) {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 setIsVisible(entry.isIntersecting);
-                if (entry.isIntersecting) {
-                    observer.disconnect();
-                }
             },
             { threshold: 0.5 }
         );
 
         observer.observe(canvasRef.current);
-
         return () => observer.disconnect();
     }, []);
 
-    useEffect(() => {
+    const onMouseMove = useCallback((e: MouseEvent) => {
         if (!canvasRef.current) return;
 
-        const onMouseMove = (e: MouseEvent) => {
-            if (!canvasRef.current) return;
+        const rect = canvasRef.current.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width;
+        const y = 1 - (e.clientY - rect.top) / rect.height;
 
-            const rect = canvasRef.current.getBoundingClientRect();
+        setMouse(x >= 0 && x <= 1 && y >= 0 && y <= 1 ? [x, y] : [0.5, 0.5]);
+    }, []);
 
-            const x = (e.clientX - rect.left) / rect.width;
-            const y = 1 - (e.clientY - rect.top) / rect.height;
-
-            if (x >= 0 && x <= 1 && y >= 0 && y <= 1) {
-                setMouse([x, y]);
-            } else {
-                setMouse([0.5, 0.5]);
-            }
-        };
-
+    useEffect(() => {
         window.addEventListener("mousemove", onMouseMove);
-
-        return () => {
-            window.removeEventListener("mousemove", onMouseMove);
-        };
+        return () => window.removeEventListener("mousemove", onMouseMove);
     }, []);
 
     useEffect(() => {
         if (!canvasRef.current) return;
 
-        const targetOpacity = isVisible ? 0 : 1;
-        animateCanvas(targetOpacity);
+        gsap.killTweensOf(canvasRef.current);
+        gsap.to(canvasRef.current, {
+            filter: isVisible ? "brightness(1)" : "brightness(0.8)",
+            duration: 1,
+            ease: "power3.out",
+        });
     }, [isVisible]);
 
-    const animateCanvas = (opacity: number) => {
-        gsap.killTweensOf(canvasRef.current);
-
-        gsap.fromTo(
-            canvasRef.current,
-            { opacity: opacity },
-            {
-                opacity: opacity === 0 ? 1 : 0,
-                duration: 1,
-                ease: "power3.out"
-            }
-        );
-    };
 
     return (
-        <Canvas ref={canvasRef} style={{
-            width: "100%",
-            height: "100%",
-            overflow: "hidden"
-        }}>
+        <Canvas ref={canvasRef} style={{ width: "100%", height: "100%", overflow: "hidden" }}>
             <ambientLight />
             <Suspense fallback={null}>
                 <Mesh mouse={mouse} imgSrc={imgSrc} />
