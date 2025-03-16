@@ -1,6 +1,7 @@
 export enum Sections {
     INTRODUCTION = 'introduction',
     OUR_WAY = 'ourWay',
+    BACKGROUND = 'background',
     OUR_PASSION = 'ourPassion',
     RECENT_PROJECTS = 'recentProjects',
     WHY_CHOOSE_US = 'whyChooseUs',

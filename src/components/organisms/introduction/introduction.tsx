@@ -7,10 +7,10 @@ import SplitScreen from "@/components/atoms/splitScreen";
 const Introduction = () => {
     const sections = [
         { label: "", link: Sections.INTRODUCTION },
-        { label: "Nosotras", link: Sections.OUR_PASSION },
+        { label: "Nosotras", link: Sections.OUR_TEAM },
         { label: "Nuestra Forma", link: Sections.OUR_WAY },
         { label: "Por que elegirnos?", link: Sections.WHY_CHOOSE_US },
-        { label: "Testimonios", link: Sections.FOOTER },
+        { label: "Testimonios", link: Sections.RECENT_PROJECTS },
         { label: "Contáctenos", link: Sections.CONTACT },
     ]
     return (

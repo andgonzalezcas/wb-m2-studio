@@ -12,7 +12,7 @@ const Navigator = ({ children }: props) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const section = document.getElementById(Sections.OUR_TEAM);
+            const section = document.getElementById(Sections.BACKGROUND);
             if (section) {
                 const rect = section.getBoundingClientRect();
                 const shouldBeDark = rect.bottom <= window.innerHeight;
