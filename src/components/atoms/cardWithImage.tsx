@@ -9,7 +9,7 @@ interface props {
 
 const CardWithImage = ({ image, label, description, className }: props) => {
     return (
-        <div className="flex flex-col items-center max-w-[100vw] md:max-w-[350px] xl:max-w-[450px] 2xl:max-w-[466px] gap-4">
+        <div className="flex flex-col items-center max-w-[100vw] md:max-w-[350px] 2xl:max-w-[466px] gap-4">
             <div className={`w-full object-cover text-gray-600 h-[350px] lg:h-[405px] xl:h-[540px] ${className}`}>
                 <MovingImage imgSrc={image} />
             </div>
