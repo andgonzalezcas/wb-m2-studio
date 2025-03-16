@@ -34,7 +34,7 @@ const Navbar = ({ isDark }: props) => {
         <>
             <div
                 ref={navbarRef}
-                className={`h-screen w-fit hidden fixed top-0 left-0 xl:flex flex-col justify-between items-center border-r bg-opacity-0 p-5 z-50 transition-colors duration-300 ${isDark ? "border-[#232C33]" : "border-white"}`}
+                className={`h-screen w-fit hidden fixed top-0 left-0 xl:flex flex-col justify-between items-center border-r-0.5 bg-opacity-0 p-5 z-50 transition-colors duration-300 ${isDark ? "border-[#232C33]/40" : "border-white/40"}`}
             >
                 {/* Logo */}
                 <img
@@ -75,7 +75,7 @@ const Navbar = ({ isDark }: props) => {
                         ref={scrollDownRef}
                         className="flex flex-col gap-4 justify-center items-center absolute bottom-10 -left-3"
                     >
-                        <p className="[writing-mode:vertical-lr] font-medium text-base">Scroll down</p>
+                        <p className="[writing-mode:vertical-lr] font-medium text-base text-white">Scroll down</p>
                         <ImageGetter
                             folder="icons"
                             image="downArrow"
@@ -125,7 +125,7 @@ const Navbar = ({ isDark }: props) => {
                     />
                 </section>
 
-                <section className="flex flex-col gap-2 cursor-pointer py-5 px-3">
+                <section className="flex flex-col gap-2 cursor-pointer py-5 xl:px-3">
                     <div className={`w-7 h-0 border bg-white ${isDark ? "border-[#232C33]" : "border-white"}`} />
                     <div className={`w-4 h-0 border bg-white ${isDark ? "border-[#232C33]" : "border-white"}`} />
                 </section>

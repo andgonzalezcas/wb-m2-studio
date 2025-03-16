@@ -1,21 +1,19 @@
-import ImageGetter from "@/assets/ImageGetter";
-
-const PlusButton = ({ onClick, isDark }: {
+const PlusButton = ({ onClick, isDark, isActive }: {
     onClick?: () => void,
-    isDark?: boolean
+    isDark?: boolean,
+    isActive?: boolean
 }) => {
     return (
         <button
             onClick={onClick}
-            className={`font-light hover:rotate-135 w-4 md:w-5 h-4 md:h-5 rounded-full flex justify-center items-center border-0.5 transition-transform duration-300 origin-center text-center ${isDark ? "border-[#232C33]" : "border-white"}`}
+            className={`relative cursor-pointer p-1 xl:p-2 transition-all duration-1000 rotate-180 
+                ${isActive ? "scale-125" : "scale-100"}`}
         >
-            <ImageGetter
-                folder="icons"
-                image="border"
-                width={8}
-                height={8}
-                color={isDark ? "#232C33" : "white"}
-            />
+            {isActive && <div className={`opacity-100 scale-100 h-6 w-6 rounded-full border absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none transition-all duration-500 ${isDark ? "border-[#232C33]" : "border-white"}`} />}
+            <div className="relative h-2 w-2">
+                <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1px] h-4/5 ${isDark ? "bg-[#232C33]" : "bg-white"}`} />
+                <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 h-[1px] ${isDark ? "bg-[#232C33]" : "bg-white"}`} />
+            </div>
         </button>
     )
 }

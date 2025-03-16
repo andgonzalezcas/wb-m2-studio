@@ -16,9 +16,9 @@ function Mesh({ mouse, imgSrc }: { mouse: number[], imgSrc: string }) {
         uTime: { value: 0 },
         uTexture: { value: texture },
         uMouse: { value: [0.5, 0.5] },
-        uRadius: { value: 0.95 },
-        uStrength: { value: 1.1 },
-        uBulge: { value: 0.4 },
+        uRadius: { value: 4.0 },
+        uStrength: { value: 1.01 },
+        uBulge: { value: 2 },
     });
 
     useFrame(() => {

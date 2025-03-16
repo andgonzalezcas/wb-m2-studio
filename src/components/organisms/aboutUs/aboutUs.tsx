@@ -64,7 +64,7 @@ const AboutUs = () => {
             </div>
 
             {/* full background boxes image */}
-            <div className="w-full">
+            <div id={Sections.OUR_TEAM} className="w-full">
                 <img
                     src={background_image}
                     className="min-h-screen object-cover"
@@ -73,7 +73,7 @@ const AboutUs = () => {
 
 
             {/* Nuestro equipo section */}
-            <div id={Sections.OUR_TEAM} className="min-h-screen w-full flex items-center bg-white text-black xl:px-24 border-b">
+            <div className="min-h-screen w-full flex items-center bg-white text-black xl:px-24 border-b">
                 <div className="w-full flex flex-col xl:flex-row p-10 gap-4">
                     <h3 className="w-full xl:w-1/2 font-extralight text-4xl xl:text-6xl text-left">
                         Nuestro <br />

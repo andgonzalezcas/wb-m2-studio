@@ -15,7 +15,7 @@ const Navigator = ({ children }: props) => {
             const section = document.getElementById(Sections.OUR_TEAM);
             if (section) {
                 const rect = section.getBoundingClientRect();
-                const shouldBeDark = rect.top <= window.innerHeight / 2;
+                const shouldBeDark = rect.bottom <= window.innerHeight;
 
                 if (shouldBeDark !== isDark) {
                     setIsDark(shouldBeDark);

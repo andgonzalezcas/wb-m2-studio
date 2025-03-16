@@ -34,7 +34,7 @@ const Introduction = () => {
                     return (
                         <div
                             key={index}
-                            className={`border-[#C8CACC]/50 border-b ${!isLast && "border-r"} p-4 z-50`}
+                            className={`border-[#C8CACC]/50 border-b ${!isLast && "border-r"} px-4 py-8 z-50`}
                         >
                             <button className="text-base" onClick={() => handleNavigation(item.link)}>{item.label}</button>
                         </div>
@@ -68,7 +68,7 @@ const Introduction = () => {
                     height={90}
                 />
             </div>
-            <div className="absolute top-2/3 text-center xl:right-28 -translate-y-1/2 xl:text-right text-base xl:text-2xl font-light w-full xl:w-[486px] tracking-[.35rem]">
+            <div className="absolute top-2/3 xl:top-1/2 text-center xl:right-28 -translate-y-1/2 xl:text-right text-base xl:text-2xl font-light w-full xl:w-[486px] tracking-[.35rem]">
                 CREAMOS HOGARES, <br />
                 DISEÑAMOS EXPERIENCIAS
             </div>
