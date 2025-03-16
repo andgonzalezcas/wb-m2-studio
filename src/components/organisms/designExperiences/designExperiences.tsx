@@ -27,7 +27,7 @@ const DesignExperiences = () => {
                 />
                 {/* 
                 <div className="w-full xl:w-2/3 h-screen max-h-[207px] xl:max-h-[572px] object-cover text-gray-600">
-                    <BulgeImage imgSrc={image} />
+                    <MovingImage imgSrc={image} />
                 </div>
                  */}
                 <div className="w-full xl:w-1/3 flex flex-col justify-between px-10 border-l pt-4 xl:pt-0">

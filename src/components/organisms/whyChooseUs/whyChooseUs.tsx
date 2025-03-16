@@ -4,7 +4,7 @@ import DotWithText from "@/components/atoms/dotWithText";
 import refactor from "@/assets/image/why_choose_us_section/refactor.png";
 import design from "@/assets/image/why_choose_us_section/design.png";
 import { Sections } from "@/enums/global";
-import BulgeImage from "@/components/atoms/bulgeImage";
+import MovingImage from "@/components/atoms/movingImage";
 
 const WhyChooseUs = () => {
     return (
@@ -49,14 +49,14 @@ const WhyChooseUs = () => {
                 </section>
 
                 <div className="object-cover w-full xl:w-1/2 xl:border-l  h-screen max-h-[554px]">
-                    <BulgeImage imgSrc={refactor} />
+                    <MovingImage imgSrc={refactor} />
                 </div>
             </div>
 
             <div className="flex flex-col xl:flex-row">
                 <div className="w-full xl:w-1/2 h-full border-r">
                     <div className="object-cover w-full h-screen max-h-[554px]">
-                        <BulgeImage imgSrc={design} />
+                        <MovingImage imgSrc={design} />
                     </div>
                 </div>
 

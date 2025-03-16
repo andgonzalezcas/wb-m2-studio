@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import BulgeImage from "@/components/atoms/bulgeImage";
+import MovingImage from "@/components/atoms/movingImage";
 import { Sections } from "@/enums/global";
 import imageImported from "@/assets/image/our_way/ourWay.png";
 import DotWithText from "@/components/atoms/dotWithText";
@@ -73,7 +73,7 @@ const OurWay = () => {
                         </DotWithText>
                     </div>
                     <div className="w-full max-h-[529px] h-screen">
-                        <BulgeImage imgSrc={imageImported} />
+                        <MovingImage imgSrc={imageImported} />
                     </div>
                     <div className="p-10">
                         <DotWithText>
