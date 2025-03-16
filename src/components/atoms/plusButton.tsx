@@ -6,8 +6,8 @@ const PlusButton = ({ onClick, isDark, isActive }: {
     return (
         <button
             onClick={onClick}
-            className={`relative cursor-pointer p-1 xl:p-2 transition-all duration-1000 rotate-180 
-                ${isActive ? "scale-125" : "scale-100"}`}
+            className={`relative cursor-pointer p-1 xl:p-2 transition-all duration-1000 hover:-rotate-135
+                ${isActive ? "scale-100 rotate-180" : "scale-125 rotate-0"}`}
         >
             {isActive && <div className={`opacity-100 scale-100 h-6 w-6 rounded-full border absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none transition-all duration-500 ${isDark ? "border-[#232C33]" : "border-white"}`} />}
             <div className="relative h-2 w-2">

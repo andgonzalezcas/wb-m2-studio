@@ -15,6 +15,15 @@ const Navbar = ({ isDark }: props) => {
     const navbarRef = useRef<HTMLDivElement>(null);
     const scrollDownRef = useRef<HTMLDivElement>(null);
 
+    const [scrollSections, setScrollSections] = useState<{ section: Sections, isActive: boolean }[]>([
+        { section: Sections.INTRODUCTION, isActive: true },
+        { section: Sections.ABOUT_US, isActive: false },
+        { section: Sections.OUR_WAY, isActive: false },
+        { section: Sections.WHY_CHOOSE_US, isActive: false },
+        { section: Sections.OUR_SERVICES, isActive: false },
+        { section: Sections.DESIGN_EXPERIENCES, isActive: false }
+    ]);
+
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY === 0 && !isScrollDownVisible) {
@@ -24,6 +33,29 @@ const Navbar = ({ isDark }: props) => {
                 gsap.to(scrollDownRef.current, { opacity: 0, y: 20, duration: 0.5 });
                 setIsScrollDownVisible(false);
             }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const OFFSET = 1;
+            const updatedSections = scrollSections.map((section, index) => {
+                const element = document.getElementById(section.section);
+                if (!element) return { ...section, isActive: false };
+
+                const top = element.getBoundingClientRect().top + window.scrollY;
+                const nextSection = scrollSections[index + 1];
+                const nextElement = nextSection ? document.getElementById(nextSection.section) : null;
+                const nextTop = nextElement ? nextElement.getBoundingClientRect().top + window.scrollY : document.body.scrollHeight;
+
+                const isActive = window.scrollY >= top - OFFSET && window.scrollY < nextTop - OFFSET;
+                return { ...section, isActive };
+            });
+
+            setScrollSections(updatedSections);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -46,31 +78,19 @@ const Navbar = ({ isDark }: props) => {
                 />
 
                 {/* Botones de Navegación */}
-                <section className="flex flex-col gap-6">
-                    <PlusButton
-                        onClick={() => handleNavigation(Sections.ABOUT_US)}
-                        isDark={isDark}
-                    />
-                    <PlusButton
-                        onClick={() => handleNavigation(Sections.OUR_WAY)}
-                        isDark={isDark}
-                    />
-                    <PlusButton
-                        onClick={() => handleNavigation(Sections.WHY_CHOOSE_US)}
-                        isDark={isDark}
-                    />
-                    <PlusButton
-                        onClick={() => handleNavigation(Sections.OUR_SERVICES)}
-                        isDark={isDark}
-                    />
-                    <PlusButton
-                        onClick={() => handleNavigation(Sections.DESIGN_EXPERIENCES)}
-                        isDark={isDark}
-                    />
+                <section className="flex flex-col gap-3">
+                    {scrollSections.map((section, index) => (
+                        <PlusButton
+                            key={index}
+                            onClick={() => handleNavigation(section.section)}
+                            isDark={isDark}
+                            isActive={section.isActive}
+                        />
+                    ))}
                 </section>
 
                 {/* Scroll Indicator */}
-                <div className="relative">
+                <div className="relative h-14">
                     <div
                         ref={scrollDownRef}
                         className="flex flex-col gap-4 justify-center items-center absolute bottom-10 -left-3"
@@ -90,7 +110,7 @@ const Navbar = ({ isDark }: props) => {
             {/* Mobile Navbar */}
             <div
                 ref={navbarRef}
-                className={`h-fit w-full flex xl:hidden fixed top-0 left-0 flex-row justify-between items-center bg-opacity-0 p-3 z-50 transition-colors duration-300 ${isDark ? "border-[#232C33]" : "border-white"}`}
+                className={`h-fit w-full flex xl:hidden fixed top-0 left-0 flex-row justify-between items-center bg-opacity-10 p-3 pb-1 z-50 transition-colors duration-300 ${isDark ? "border-[#232C33] bg-[#232C33]" : "border-white bg-white"}`}
             >
                 {/* Logo */}
                 <img
@@ -102,27 +122,15 @@ const Navbar = ({ isDark }: props) => {
                 />
 
                 {/* Botones de Navegación */}
-                <section className="flex flex-row gap-6">
-                    <PlusButton
-                        onClick={() => handleNavigation(Sections.ABOUT_US)}
-                        isDark={isDark}
-                    />
-                    <PlusButton
-                        onClick={() => handleNavigation(Sections.OUR_WAY)}
-                        isDark={isDark}
-                    />
-                    <PlusButton
-                        onClick={() => handleNavigation(Sections.WHY_CHOOSE_US)}
-                        isDark={isDark}
-                    />
-                    <PlusButton
-                        onClick={() => handleNavigation(Sections.OUR_SERVICES)}
-                        isDark={isDark}
-                    />
-                    <PlusButton
-                        onClick={() => handleNavigation(Sections.DESIGN_EXPERIENCES)}
-                        isDark={isDark}
-                    />
+                <section className="flex flex-row gap-4">
+                    {scrollSections.map((section, index) => (
+                        <PlusButton
+                            key={index}
+                            onClick={() => handleNavigation(section.section)}
+                            isDark={isDark}
+                            isActive={section.isActive}
+                        />
+                    ))}
                 </section>
 
                 <section className="flex flex-col gap-2 cursor-pointer py-5 xl:px-3">
