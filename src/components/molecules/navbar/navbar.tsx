@@ -5,6 +5,7 @@ import PlusButton from "../../atoms/plusButton";
 import m2Icon from "@/assets/m2studio/icon.svg";
 import ImageGetter from "@/assets/ImageGetter";
 import { handleNavigation } from "@/utils/common";
+import ModalMenu from "../menubar/modalMenu";
 
 interface props {
     isDark: boolean
@@ -12,6 +13,7 @@ interface props {
 
 const Navbar = ({ isDark }: props) => {
     const [isScrollDownVisible, setIsScrollDownVisible] = useState(true);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const navbarRef = useRef<HTMLDivElement>(null);
     const scrollDownRef = useRef<HTMLDivElement>(null);
 
@@ -133,10 +135,12 @@ const Navbar = ({ isDark }: props) => {
                     ))}
                 </section>
 
-                <section className="flex flex-col gap-2 cursor-pointer py-5 xl:px-3">
+                <section onClick={() => setIsMenuOpen(true)} className="flex flex-col gap-2 cursor-pointer py-5 xl:px-3">
                     <div className={`w-7 h-0 border bg-white ${isDark ? "border-[#232C33]" : "border-white"}`} />
                     <div className={`w-4 h-0 border bg-white ${isDark ? "border-[#232C33]" : "border-white"}`} />
                 </section>
+
+                {isMenuOpen && <ModalMenu onClose={() => setIsMenuOpen(false)} />}
             </div>
         </>
     );
