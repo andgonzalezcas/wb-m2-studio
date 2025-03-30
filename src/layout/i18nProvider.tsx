@@ -15,7 +15,7 @@ const loadLocale = (locale: "en" | "es") => {
 
 const I18nWrapper = ({ children }: { children: React.ReactNode }) => {
     // const locale = getUserLocale();
-    const locale = "en";
+    const locale = "es";
     loadLocale(locale);
 
     return <I18nProvider i18n={i18n}>{children}</I18nProvider>;

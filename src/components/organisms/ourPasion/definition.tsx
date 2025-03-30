@@ -22,9 +22,14 @@ export const useOurPasionList = () => {
             id: 2,
             title: t._("our_passion.project_contains"),
             children: <SectionList
-                list={Array.from({ length: 7 }, (_, i) => ({
-                    text: t._(`our_passion.project_point_${i + 1}`),
-                }))}
+                list={Array.from({ length: 7 }, (_, i) => {
+                    const item = t._(`our_passion.project_point_${i + 1}`).split(":")
+
+                    return {
+                        title: item[0],
+                        text: item[1],
+                    }
+                })}
             />
         },
         {
