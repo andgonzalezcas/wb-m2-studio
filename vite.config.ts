@@ -6,5 +6,5 @@ import svgr from "vite-plugin-svgr";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tsconfigPaths(), svgr()],
-  base: '/test-solito/',
+  base: '/wb-m2-studio/',
 })
