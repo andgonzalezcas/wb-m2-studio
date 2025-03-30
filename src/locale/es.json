@@ -105,5 +105,15 @@
     "design_experiences.title": "Creando Alianzas, Diseñando Experiencias",
     "design_experiences.team_image_alt": "equipo de trabajo",
     "design_experiences.collaboration_text": "Colaboramos con varias inmobiliarias en Alicante y les proporcionamos nuestros servicios",
-    "design_experiences.contact_text": "Contacta con nosotros y te informaremos"
+    "design_experiences.contact_text": "Contacta con nosotros y te informaremos",
+
+    "contact.title": "Contacto",
+    "contact.name_placeholder": "Nombre",
+    "contact.email_placeholder": "Email",
+    "contact.phone_placeholder": "Teléfono",
+    "contact.message_placeholder": "Mensaje",
+    "contact.terms_label": "He leído y acepto los términos y condiciones de uso",
+    "contact.send_button": "Enviar",
+    "contact.renovation_form_label": "Formulario si quieres hacer una reforma",
+    "contact.professional_form_label": "Formulario para profesionales colaboradores"
 }

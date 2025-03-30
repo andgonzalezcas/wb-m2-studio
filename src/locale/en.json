@@ -69,5 +69,15 @@
     "design_experiences.title": "Creating Alliances, Designing Experiences",
     "design_experiences.team_image_alt": "work team",
     "design_experiences.collaboration_text": "We collaborate with several real estate agencies in Alicante and provide them with our services",
-    "design_experiences.contact_text": "Contact us and we will inform you"
+    "design_experiences.contact_text": "Contact us and we will inform you",
+
+    "contact.title": "Contact",
+    "contact.name_placeholder": "Name",
+    "contact.email_placeholder": "Email",
+    "contact.phone_placeholder": "Phone",
+    "contact.message_placeholder": "Message",
+    "contact.terms_label": "I have read and accept the terms and conditions of use",
+    "contact.send_button": "Send",
+    "contact.renovation_form_label": "Form if you want to do a renovation",
+    "contact.professional_form_label": "Form for collaborating professionals"
 }
