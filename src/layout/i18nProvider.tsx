@@ -8,7 +8,6 @@ const messages = { en, es };
 const getUserLocale = () => (navigator.language.startsWith("es") ? "es" : "en");
 
 const loadLocale = (locale: "en" | "es") => {
-    locale = "es";
     document.documentElement.lang = locale;
     i18n.load(locale, messages[locale]);
     i18n.activate(locale);
