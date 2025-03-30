@@ -16,7 +16,7 @@
 
     "about_us.description": "Somos una empresa joven de nueva creación pero con una amplia experiencia en el diseño y la reforma de todo tipo de espacios. Trabajamos directamente con nuestro propio equipo de profesionales de confianza, lo que garantiza siempre la máxima calidad de entrega en cuanto a acabados y plazos. Nuestros presupuestos son muy competitivos, acorde al mercado actual.",
     "about_us.a_little_about_us": "Un poco\nsobre\nnosotras",
-    
+
     "our_team.heading": "Nuestro\nEquipo\nDirectivo",
     "our_team.amanda_job": "Interiorista",
     "our_team.melissa_job": "Arquitecta Técnica",
@@ -31,5 +31,35 @@
     "our_way.commitment_point_6": "Proveer los recursos necesarios para la instrucción, capacitación y supervisión, con el fin de gestionar apropiadamente los aspectos ambientales de nuestras operaciones.",
     "our_way.commitment_point_7": "Planear, revisar y evaluar nuestro desempeño ambiental frente a objetivos medibles, para impulsar la mejora continua.",
     "our_way.commitment_conclusion": "\bM2.Studio\b establecerá y mantendrá un programa y/o plan de manejo ambiental que contemple objetivos y procedimientos para realizar las operaciones en todos sus proyectos e instalaciones promoviendo la conciencia ambiental.",
-    "our_way.static_text_description": "M2 ha nacido como resultado de la pasión que sentimos por todo aquello que sea novedoso, \bsostenible\b y bello."
+    "our_way.static_text_description": "M2 ha nacido como resultado de la pasión que sentimos por todo aquello que sea novedoso, \bsostenible\b y bello.",
+
+    "our_passion.heading": "Nuestra\nForma",
+    "our_passion.steps": "Steps / pasos",
+    "our_passion.steps_description": "El proceso de obra desde el principio hasta el final",
+    "our_passion.steps_point_1": "Nos Conocemos Tras contactar con nosotros, te llamamos para establecer una fecha de quedada.",
+    "our_passion.steps_point_2": "Realizamos la medición, tomamos fotos y vemos tus necesidades.",
+    "our_passion.steps_point_3": "Preparamos tu proyecto sin ningún compromiso ni coste.",
+    "our_passion.steps_point_4": "Te presentamos tu proyecto.",
+
+    "our_passion.project_contains": "El proyecto contiene",
+    "our_passion.project_point_1": "Planos: Estado Actual y Propuesta de Nueva Distribución",
+    "our_passion.project_point_2": "Infografías: Nuevo Diseño Virtual",
+    "our_passion.project_point_3": "Propuesta Materiales: Diseño",
+    "our_passion.project_point_4": "Presupuesto Inteligente: El primer presupuesto lo más aproximado a la realidad posible",
+    "our_passion.project_point_5": "Reservas Nuestros Servicios: Para poder reservar tu reforma en una franja de tiempo, y que podamos trabajar 100% en tu proyecto, es necesario realizar una reserva con nosotros.",
+    "our_passion.project_point_6": "Ajustes y Comparaciones: Ya pasamos a elegir materiales definitivos y así poder realizar el presupuesto definitivo.",
+    "our_passion.project_point_7": "Preparamos Tu Reforma y la Realizamos: Pasamos de digital y papel a la realidad. ¡Entramos en acción!",
+
+    "our_passion.design_finishes": "Diseño y Elección de Acabados",
+    "our_passion.design_finishes_description": "Asesoramiento 100%",
+    "our_passion.design_finishes_point_1": "Te proponemos nueva distribución y diseño de 'Tu Espacio'.",
+    "our_passion.design_finishes_point_2": "Proponemos posibles acabados y preparamos las muestras para que puedas comprobar el material del diseño físicamente.",
+    "our_passion.design_finishes_point_3": "Contamos con las mejores marcas y las más adecuadas para cada proyecto. Nuestro largo trayecto nos ha permitido recoger una gran variedad de proveedores de confianza.",
+    "our_passion.design_finishes_point_4": "Tras el proceso de selección, te enviamos un dossier con todo para que nos confirmes que todo está correcto. De esta manera, evitamos errores y todo queda claro.",
+
+    "our_passion.technology": "La obra + Tecnología",
+    "our_passion.technology_point_1": "Establecemos fechas de comienzo, finalización y entrega de obra.",
+    "our_passion.technology_point_2": "Preparamos un Gant (diagrama que permite planificar la ejecución de la obra) para informarte cada semana qué acciones vamos a realizar.",
+    "our_passion.technology_point_3": "Al final de cada semana, adjuntamos fotos y/o videos del progreso por el canal que nos indicas que es mejor para ti (correo electrónico o WhatsApp).",
+    "our_passion.technology_info": "Te mantendremos informad@ de cualquier novedad o cambio con un click del móvil."
 }

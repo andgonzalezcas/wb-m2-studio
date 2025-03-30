@@ -1,6 +1,6 @@
 {
     "general.service_list.design": "Design",
-    "general.service_list.interiorism": "Interiors",
+    "general.service_list.interiorism": "Interior Design",
     "general.service_list.reform": "Renovations",
 
     "sections.introduction": "Introduction",
@@ -11,25 +11,55 @@
     "sections.contact": "Contact Us",
     "sections.about_us": "About Us",
 
-    "introduction.create_homes": "CREATE HOMES,",
-    "introduction.design_experiences": "DESIGN EXPERIENCES",
+    "introduction.create_homes": "WE CREATE HOMES,",
+    "introduction.design_experiences": "WE DESIGN EXPERIENCES",
 
-    "about_us.description": "We are a young, newly established company with extensive experience in designing and renovating all types of spaces. We work directly with our own trusted team of professionals, ensuring the highest quality in both finishes and deadlines. Our prices are highly competitive, aligned with the current market.",
+    "about_us.description": "We are a newly established company with extensive experience in the design and renovation of all types of spaces. We work directly with our own team of trusted professionals, which always guarantees the highest quality in terms of finishes and deadlines. Our budgets are very competitive, in line with the current market.",
     "about_us.a_little_about_us": "A little\nabout\nus",
 
     "our_team.heading": "Our\nExecutive\nTeam",
     "our_team.amanda_job": "Interior Designer",
     "our_team.melissa_job": "Technical Architect",
 
-    "our_way.commitment_description": "\bM2.Studio\b carries out its activities within \bstandards of excellence\b, particularly regarding \benvironmental care\b. Therefore, every person within the client’s property, or outside it but representing the company, without exception, must fulfill their responsibilities within the framework of \becological commitment\b in accordance with current legal regulations, preventing environmental pollution in all projects where activities are carried out.",
+    "our_way.commitment_description": "\bM2.Studio\b carries out its activities within \bstandards of excellence\b regarding \benvironmental care\b. Therefore, every person who is within the client's property, or outside of it but representing them, without exception, must fulfill their responsibilities within the framework of the \becological commitment\b in accordance with current legal regulations, preventing environmental pollution in all projects where activities are carried out.",
     "our_way.commitment_list_intro": "To achieve this, we assume the following commitments:",
     "our_way.commitment_point_1": "Actively continue with a pollution prevention policy to minimize the impact of our operations.",
     "our_way.commitment_point_2": "Comply with client policies and procedures, as well as all applicable laws and regulations.",
-    "our_way.commitment_point_3": "Make strategic efforts to maximize our energy efficiency and natural resource use by managing our energy consumption, water use, and waste generation.",
-    "our_way.commitment_point_4": "Responsibly manage our operational sites to protect ecosystems and biodiversity, as well as to maximize our contribution to nature conservation.",
-    "our_way.commitment_point_5": "Maintain open and effective communication channels with our employees, clients, community, and all those who work with us.",
+    "our_way.commitment_point_3": "Make strategic efforts to maximize our energy efficiency and use of natural resources by managing our energy use, water consumption, and waste generation.",
+    "our_way.commitment_point_4": "Responsibly manage our operational sites to protect ecosystems and biodiversity and maximize our contribution to nature conservation.",
+    "our_way.commitment_point_5": "Maintain open and effective communication channels with our employees, clients, community, and everyone who works with us.",
     "our_way.commitment_point_6": "Provide the necessary resources for instruction, training, and supervision to properly manage the environmental aspects of our operations.",
     "our_way.commitment_point_7": "Plan, review, and evaluate our environmental performance against measurable objectives to drive continuous improvement.",
     "our_way.commitment_conclusion": "\bM2.Studio\b will establish and maintain an environmental management program and/or plan that includes objectives and procedures to carry out operations in all its projects and facilities, promoting environmental awareness.",
-    "our_way.static_text_description": "M2 was born out of our passion for everything that is new, \bsustainable\b, and beautiful."
+    "our_way.static_text_description": "M2 was born from our passion for everything that is innovative, \bsustainable\b, and beautiful.",
+
+    "our_passion.heading": "Our\nWay",
+    "our_passion.steps": "Steps / Pasos",
+    "our_passion.steps_description": "The construction process from start to finish",
+    "our_passion.steps_point_1": "Getting to Know Each Other: After contacting us, we call you to set up a meeting date.",
+    "our_passion.steps_point_2": "We take measurements, photos, and assess your needs.",
+    "our_passion.steps_point_3": "We prepare your project with no obligation or cost.",
+    "our_passion.steps_point_4": "We present your project to you.",
+
+    "our_passion.project_contains": "The project includes",
+    "our_passion.project_point_1": "Plans: Current State and Proposed New Layout",
+    "our_passion.project_point_2": "Infographics: New Virtual Design",
+    "our_passion.project_point_3": "Material Proposal: Design",
+    "our_passion.project_point_4": "Smart Budget: The first estimate as close to reality as possible",
+    "our_passion.project_point_5": "Booking Our Services: To reserve your renovation within a time frame and allow us to work 100% on your project, a reservation with us is required.",
+    "our_passion.project_point_6": "Adjustments and Comparisons: We move on to selecting the final materials to create the final budget.",
+    "our_passion.project_point_7": "We Prepare and Execute Your Renovation: We move from digital and paper to reality. Let’s take action!",
+
+    "our_passion.design_finishes": "Design and Finish Selection",
+    "our_passion.design_finishes_description": "100% Advisory",
+    "our_passion.design_finishes_point_1": "We propose a new layout and design for 'Your Space'.",
+    "our_passion.design_finishes_point_2": "We suggest possible finishes and prepare samples so you can physically check the design material.",
+    "our_passion.design_finishes_point_3": "We work with the best brands and the most suitable ones for each project. Our long journey has allowed us to gather a wide variety of trusted suppliers.",
+    "our_passion.design_finishes_point_4": "After the selection process, we send you a dossier with everything so you can confirm that everything is correct. This way, we avoid mistakes, and everything is clear.",
+
+    "our_passion.technology": "Construction + Technology",
+    "our_passion.technology_point_1": "We set start, completion, and project delivery dates.",
+    "our_passion.technology_point_2": "We prepare a Gantt chart (a diagram that allows planning the execution of the project) to inform you weekly about the actions we will take.",
+    "our_passion.technology_point_3": "At the end of each week, we attach photos and/or videos of the progress through the channel you indicate as best for you (email or WhatsApp).",
+    "our_passion.technology_info": "We will keep you informed of any updates or changes with just a click on your mobile."
 }

@@ -1,13 +1,17 @@
 import ImageGetter from "@/assets/ImageGetter";
 import DotWithText from "@/components/atoms/dotWithText";
-import { ourPasionList } from "./definition";
+import { useOurPasionList } from "./definition";
 import imageImported from "@/assets/image/our_pasion/pasion.png";
 import AccordionList from "@/components/molecules/accordionList/accordionList";
 import MovingImage from "@/components/atoms/movingImage";
 import { Sections } from "@/enums/global";
 import ServiceList from "@/components/atoms/serviceList";
+import { useLingui } from "@lingui/react/macro";
 
 const OurPasion = () => {
+    const { i18n: t } = useLingui();
+    const ourPasionList = useOurPasionList();
+
     return (
         <div className="w-full min-h-screen bg-white xl:px-[93px] border-t border-b py-10 xl:py-16" id={Sections.OUR_PASSION}>
             <div className="w-full xl:w-1/2 px-10 xl:px-16">
@@ -17,7 +21,14 @@ const OurPasion = () => {
                     width={145}
                 />
                 <div className="flex items-end justify-between">
-                    <h3 className="text-left text-4xl xl:text-8xl font-extralight">Nuestra <br />Forma</h3>
+                    <h3 className="text-left text-4xl xl:text-8xl font-extralight">
+                        {t._('our_passion.heading').split("\n").map((line, index) => (
+                            <span key={index}>
+                                {line}
+                                <br />
+                            </span>
+                        ))}
+                    </h3>
                     <div className="hidden xl:block">
                         <DotWithText>
                             <ServiceList />
