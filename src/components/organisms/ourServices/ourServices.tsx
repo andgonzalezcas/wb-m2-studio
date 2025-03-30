@@ -1,3 +1,4 @@
+import { useLingui } from "@lingui/react/macro";
 import CardWithImage from "@/components/atoms/cardWithImage";
 import DotWithText from "@/components/atoms/dotWithText";
 import { Sections } from "@/enums/global";
@@ -10,6 +11,8 @@ import profesionals_image from "src/assets/image/our_service/profesionals.png";
 import security_image from "src/assets/image/our_service/security.png";
 
 const OurServices = () => {
+    const { i18n: t } = useLingui();
+
     return (
         <div className="w-full min-h-screen bg-white xl:px-[93px] relative border-b" id={Sections.OUR_SERVICES}>
             <div className="absolute top-10 right-[133px] hidden xl:block">
@@ -28,56 +31,48 @@ const OurServices = () => {
                         </p>
                     </DotWithText>
                 </div>
-                <h3 className="font-extralight text-4xl xl:text-6xl text-right xl:text-center w-full px-10">Nuestros servicios</h3>
-                <p className="xl:text-xl">Reformas de todo tipo de espacios</p>
+                <h3 className="font-extralight text-4xl xl:text-6xl text-right xl:text-center w-full px-10">{t._("our_services.heading")}</h3>
+                <p className="xl:text-xl">{t._("our_services.description")}</p>
                 <p className="font-extralight xl:text-3xl max-w-full xl:max-w-[1280px] leading-5 px-6">
-                    <span>Reformas integrales</span>
-                    <span className="px-3 xl:px-7">&middot;</span>
-                    <span>semi integrales</span>
-                    <span className="px-3 xl:px-7">&middot;</span>
-                    <span>baños</span>
-                    <span className="px-3 xl:px-7">&middot;</span>
-                    <span>cocinas</span>
-                    <span className="px-3 xl:px-7">&middot;</span>
-                    <span>cambios de uso</span>
-                    <span className="px-3 xl:px-7">&middot;</span>
-                    <span>viviendas turísticas</span>
-                    <span className="px-3 xl:px-7">&middot;</span>
-                    <span>Home Staging</span>
-                    <span className="px-3 xl:px-7">&middot;</span>
-                    <span>Relooking</span></p>
+                    {t._("our_services.types").split("\u2022").map((item, index, array) => (
+                        <span key={index}>
+                            {item}
+                            {index < array.length - 1 && <span className="px-3 xl:px-7">&middot;</span>}
+                        </span>
+                    ))}
+                </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14 px-10 xl:px-24 justify-center w-full py-10 xl:py-32 text-left justify-items-center">
                 <CardWithImage
                     image={reform_image}
-                    label="Reforma"
-                    description="Antes de comenzar una reforma, es crucial tener en cuenta algunas cosas para facilitarnos nuestra labor y ayudarnos a conectar con las verdaderas necesidades de nuestros clientes."
+                    label={t._("our_services.reform_label")}
+                    description={t._("our_services.reform_description")}
                 />
                 <CardWithImage
                     image={important_points_image}
-                    label="Puntos más importantes"
-                    description="El Presupuesto: Antes de empezar cualquier reforma, debes plantear el presupuesto. Es importante tener claro que quieres o puedes invertir en tu reforma. Debe ser una cantidad realista, acorde con tu realidad."
+                    label={t._("our_services.important_points_label")}
+                    description={t._("our_services.important_points_description")}
                 />
                 <CardWithImage
                     image={design_image}
-                    label="Diseño"
-                    description="Otro punto muy importante a tener en cuenta es el diseño. Cuanto más claro tienes tus necesidades, más podremos ayudarte a conseguir el espacio deseado."
+                    label={t._("our_services.design_label")}
+                    description={t._("our_services.design_description")}
                 />
                 <CardWithImage
                     image={deadlines_image}
-                    label="Plazos"
-                    description="Es importante saber cuando te viene bien que realicemos tu obra para así intentar encajarlo y que no se convierta en un problema. En m2.Studio, te indicaremos el tiempo necesario para preparar y ejecutar tu obra. Para nosotros es importante cumplir con los plazos establecidos por lo que el cliente debe ser consciente que los cambios improvistos por su parte retrasan una obra y una vez establecidos todos los detalles, intentamos ceñirnos a lo acordado."
+                    label={t._("our_services.deadlines_label")}
+                    description={t._("our_services.deadlines_description")}
                 />
                 <CardWithImage
                     image={profesionals_image}
-                    label="Profesionales"
-                    description="Contar con un equipo de profesionales cualificados y certificados con experiencia para realizar la reforma, es de suma importancia. Nuestro equipo de m2.Studio te ofrece la garantía de entrega de unos acabados óptimos. Siempre velando para minimizar complicaciones y errores desde el principio."
+                    label={t._("our_services.professionals_label")}
+                    description={t._("our_services.professionals_description")}
                 />
                 <CardWithImage
                     image={security_image}
-                    label="Seguridad"
-                    description="Para nosotros la seguridad de nuestro equipo es importantísimo, por lo que nos aseguramos que todo nuestro equipo cuenta con lo necesario para abordar cada reforma sin percances y con la mayor seguridad posible. Durante la reforma es importante tener en cuenta la seguridad. Nos aseguramos de que nuestros profesionales tienen la formación necesaria para realizar nuestras obras."
+                    label={t._("our_services.security_label")}
+                    description={t._("our_services.security_description")}
                 />
             </div>
         </div>
