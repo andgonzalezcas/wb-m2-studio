@@ -3,6 +3,12 @@ import LinkButton from "@/components/atoms/linkButton";
 import OvalButton from "@/components/atoms/ovalButton";
 import { Sections } from "@/enums/global";
 import { handleNavigation } from "@/utils/common";
+import { useLingui } from "@lingui/react/macro";
+import en from "@/locale/en.json";
+import es from "@/locale/es.json";
+import { MouseEvent } from "react";
+
+const messages = { en, es };
 
 const Option = ({ label, section, count, onClose }: {
     label: string,
@@ -24,13 +30,23 @@ const Option = ({ label, section, count, onClose }: {
 }
 
 const ModalMenu = ({ onClose }: { onClose: () => void }) => {
+    const { i18n: t } = useLingui();
+
+    const toggleLanguage = (e: MouseEvent) => {
+        e.stopPropagation();
+        const newLang = t.locale === "es" ? "en" : "es";
+        t.load(newLang, messages[newLang]);
+        t.activate(newLang);
+        document.documentElement.lang = newLang;
+    };
+
     const sections = [
         { label: "Home", link: Sections.INTRODUCTION },
-        { label: "Nosotras", link: Sections.OUR_TEAM },
-        { label: "Nuestra Forma", link: Sections.OUR_WAY },
-        { label: "Por que elegirnos?", link: Sections.WHY_CHOOSE_US },
-        { label: "Testimonios", link: Sections.RECENT_PROJECTS },
-        { label: "Contáctenos", link: Sections.CONTACT },
+        { label: t._('sections.our_team'), link: Sections.OUR_TEAM },
+        { label: t._('sections.our_way'), link: Sections.OUR_WAY },
+        { label: t._('sections.why_choose_us'), link: Sections.WHY_CHOOSE_US },
+        { label: t._('sections.recent_projects'), link: Sections.RECENT_PROJECTS },
+        { label: t._('sections.contact'), link: Sections.CONTACT },
     ];
 
     return (
@@ -44,6 +60,10 @@ const ModalMenu = ({ onClose }: { onClose: () => void }) => {
                     height="52"
                     className={`transition-all duration-300`}
                 />
+
+                <button onClick={toggleLanguage} className={`rounded text-2xl font-extralight text-white`}>
+                    {t.locale === "es" ? "ES" : "EN"}
+                </button>
 
                 <div className="w-10 pt-3">
                     <OvalButton onClick={onClose} rotated />
@@ -67,7 +87,7 @@ const ModalMenu = ({ onClose }: { onClose: () => void }) => {
 
             {/* Footer */}
             <div className="w-full border-t text-white">
-                <p className="text-left font-light py-3 text-sm">Siguenos.</p>
+                <p className="text-left font-light py-3 text-sm">{t._('general.service_list.follow_us')}</p>
                 <div className="flex justify-between pt-3">
                     <LinkButton
                         label="Instagram"
