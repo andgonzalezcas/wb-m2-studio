@@ -1,6 +1,6 @@
 {
     "general.service_list.design": "Design",
-    "general.service_list.interiorism": "Interior Design",
+    "general.service_list.interiorism": "Interiorism",
     "general.service_list.reform": "Renovations",
 
     "sections.introduction": "Introduction",
@@ -11,8 +11,8 @@
     "sections.contact": "Contact Us",
     "sections.about_us": "About Us",
 
-    "introduction.create_homes": "WE CREATE HOMES,",
-    "introduction.design_experiences": "WE DESIGN EXPERIENCES",
+    "introduction.create_homes": "CREATE HOMES,",
+    "introduction.design_experiences": "DESIGN EXPERIENCES",
 
     "about_us.description": "We are a young, newly founded company with extensive experience in designing and renovating all kinds of spaces. We work directly with our own team of trusted professionals, ensuring the highest quality in finishes and deadlines. Our budgets are highly competitive, aligned with the current market.",
     "about_us.a_little_about_us": "A little\nabout\nus",
@@ -33,6 +33,36 @@
     "our_way.commitment_conclusion": "\bM2.Studio\b will establish and maintain an environmental management program and/or plan that includes objectives and procedures to conduct operations in all projects and facilities while promoting environmental awareness.",
     "our_way.static_text_description": "M2 was born from our passion for everything that is innovative, \bsustainable\b, and beautiful.",
 
+    "our_passion.heading": "Our\nWay",
+    "our_passion.steps": "Steps / pasos",
+    "our_passion.steps_description": "The construction process from start to finish",
+    "our_passion.steps_point_1": "We Get to Know Each Other: After contacting us, we call you to set up a meeting date.",
+    "our_passion.steps_point_2": "We take measurements, photos, and assess your needs.",
+    "our_passion.steps_point_3": "We prepare your project with no obligation or cost.",
+    "our_passion.steps_point_4": "We present your project to you.",
+
+    "our_passion.project_contains": "The project contains",
+    "our_passion.project_point_1": "Plans: Current State and Proposed New Layout",
+    "our_passion.project_point_2": "Infographics: New Virtual Design",
+    "our_passion.project_point_3": "Material Proposal: Design",
+    "our_passion.project_point_4": "Smart Budget: The first budget, as close to reality as possible",
+    "our_passion.project_point_5": "Reserve Our Services: To book your renovation within a time frame and ensure we can work 100% on your project, a reservation with us is required.",
+    "our_passion.project_point_6": "Adjustments and Comparisons: We move on to selecting final materials to prepare the definitive budget.",
+    "our_passion.project_point_7": "We Prepare and Execute Your Renovation: We bring the digital and paper plans to reality. Time to take action!",
+
+    "our_passion.design_finishes": "Design and Finish Selection",
+    "our_passion.design_finishes_description": "100% Advisory",
+    "our_passion.design_finishes_point_1": "We propose a new layout and design for 'Your Space'.",
+    "our_passion.design_finishes_point_2": "We suggest possible finishes and prepare samples so you can physically check the design materials.",
+    "our_passion.design_finishes_point_3": "We work with the best brands, carefully chosen for each project. Our extensive experience has allowed us to gather a wide variety of trusted suppliers.",
+    "our_passion.design_finishes_point_4": "After the selection process, we send you a dossier with everything to confirm that everything is correct. This way, we avoid mistakes and ensure clarity.",
+
+    "our_passion.technology": "Construction + Technology",
+    "our_passion.technology_point_1": "We set start, completion, and project delivery dates.",
+    "our_passion.technology_point_2": "We prepare a Gantt chart (a diagram that helps plan the project's execution) to inform you each week about upcoming tasks.",
+    "our_passion.technology_point_3": "At the end of each week, we attach photos and/or videos of the progress via your preferred communication channel (email or WhatsApp).",
+    "our_passion.technology_info": "We will keep you informed of any updates or changes with just a click on your mobile.",
+
     "why_choose_us.title": "Why \nchoose us?",
     "why_choose_us.design_and_renovate": "We Design and Renovate",
     "why_choose_us.professionals": "We have the best professionals in the design and renovation sector.",
@@ -40,6 +70,12 @@
     "why_choose_us.deadline_guarantee": "Guaranteed Deadlines: We commit contractually to meeting deadlines as we do not depend on third parties or intermediaries.",
     "why_choose_us.quality_price": "Quality Price: We offer a highly competitive quality-price ratio, always seeking a balance between design, quality, and cost.",
     "why_choose_us.post_work_warranty": "Post-Work Warranty: For our clients' and our own peace of mind, we offer a 2-year warranty after project completion to cover any manufacturing defects.",
+
+    "why_choose_us.project_included": "Project and Design Included",
+    "why_choose_us.project_description": "We create your project at no additional cost, considering your tastes and needs while optimizing space functionality and the latest trends so you can visualize your dream.",
+    "why_choose_us.special_attention": "We pay special attention to:",
+    "why_choose_us.optimize_spaces": "Optimizing the functionality of each space.",
+    "why_choose_us.lighting_and_storage": "Improving lighting and storage, as we consider these essential factors for enhancing your quality of life.",
 
     "our_services.heading": "Our Services",
     "our_services.description": "Renovations of all types of spaces",
