@@ -3,17 +3,20 @@ import { Sections } from "@/enums/global";
 import background_image from "@/assets/background/bg_left.png";
 import { handleNavigation } from "@/utils/common";
 import SplitScreen from "@/components/atoms/splitScreen";
+import { useLingui } from "@lingui/react/macro";
 
 const Introduction = () => {
+    const { i18n: t } = useLingui();
+
     const sections = [
         { label: "", link: Sections.INTRODUCTION },
-        { label: "Nosotras", link: Sections.OUR_TEAM },
-        { label: "Nuestra Forma", link: Sections.OUR_WAY },
-        { label: "Por que elegirnos?", link: Sections.WHY_CHOOSE_US },
-        { label: "Testimonios", link: Sections.RECENT_PROJECTS },
-        { label: "Contáctenos", link: Sections.CONTACT },
+        { label: t._('sections.our_team'), link: Sections.OUR_TEAM },
+        { label: t._('sections.our_way'), link: Sections.OUR_WAY },
+        { label: t._('sections.why_choose_us'), link: Sections.WHY_CHOOSE_US },
+        { label: t._('sections.recent_projects'), link: Sections.RECENT_PROJECTS },
+        { label: t._('sections.contact'), link: Sections.CONTACT },
     ];
-    
+
     return (
         <div className="relative w-full min-h-screen bg-black text-white" id={Sections.INTRODUCTION}>
             {/* full background boxes image */}
@@ -21,6 +24,7 @@ const Introduction = () => {
                 <img
                     src={background_image}
                     className="min-h-screen object-cover"
+                    alt="background_image"
                 />
             </div>
 
@@ -70,8 +74,8 @@ const Introduction = () => {
                 />
             </div>
             <div className="absolute top-2/3 xl:top-1/2 text-center xl:right-28 -translate-y-1/2 xl:text-right text-base xl:text-2xl font-light w-full xl:w-[486px] tracking-[.35rem]">
-                CREAMOS HOGARES, <br />
-                DISEÑAMOS EXPERIENCIAS
+                {t._('introduction.create_homes')} <br />
+                {t._('introduction.design_experiences')}
             </div>
 
             <div className="absolute xl:hidden top-3/4 -translate-y-1/2 left-1/2 -translate-x-1/2">

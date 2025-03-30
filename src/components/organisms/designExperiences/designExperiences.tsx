@@ -2,6 +2,7 @@ import DotWithText from "@/components/atoms/dotWithText";
 
 import image from "@/assets/image/design_experiences/team.png";
 import { Sections } from "@/enums/global";
+import ServiceList from "@/components/atoms/serviceList";
 
 const DesignExperiences = () => {
     return (
@@ -34,11 +35,7 @@ const DesignExperiences = () => {
                     <div className="flex flex-col gap-10">
                         <div className="hidden xl:block">
                             <DotWithText>
-                                <p className="text-left text-xs">
-                                    Diseño <br />
-                                    Interiorismo <br />
-                                    Reformas
-                                </p>
+                                <ServiceList />
                             </DotWithText>
                         </div>
                         <p className="text-left font-light text- xl:text-xl">Colaboramos con varias inmobiliarias en Alicante y les proporcionamos nuestros servicios</p>

@@ -4,6 +4,7 @@ import MovingImage from "@/components/atoms/movingImage";
 import { Sections } from "@/enums/global";
 import imageImported from "@/assets/image/our_way/ourWay.png";
 import DotWithText from "@/components/atoms/dotWithText";
+import ServiceList from "@/components/atoms/serviceList";
 
 const OurWay = () => {
     const [showCommitment, setShowCommitment] = useState(false);
@@ -77,11 +78,7 @@ const OurWay = () => {
                     </div>
                     <div className="p-10">
                         <DotWithText>
-                            <p className="text-left text-xs">
-                                Diseño <br />
-                                Interiorismo <br />
-                                Reformas
-                            </p>
+                            <ServiceList />
                         </DotWithText>
                     </div>
                 </div>

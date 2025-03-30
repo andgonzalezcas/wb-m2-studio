@@ -5,6 +5,7 @@ import imageImported from "@/assets/image/our_pasion/pasion.png";
 import AccordionList from "@/components/molecules/accordionList/accordionList";
 import MovingImage from "@/components/atoms/movingImage";
 import { Sections } from "@/enums/global";
+import ServiceList from "@/components/atoms/serviceList";
 
 const OurPasion = () => {
     return (
@@ -19,11 +20,7 @@ const OurPasion = () => {
                     <h3 className="text-left text-4xl xl:text-8xl font-extralight">Nuestra <br />Forma</h3>
                     <div className="hidden xl:block">
                         <DotWithText>
-                            <p className="text-left text-xs">
-                                Diseño <br />
-                                Interiorismo <br />
-                                Reformas
-                            </p>
+                            <ServiceList />
                         </DotWithText>
                     </div>
                 </div>

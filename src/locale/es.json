@@ -1,0 +1,23 @@
+{
+    "general.service_list.design": "Diseño",
+    "general.service_list.interiorism": "Interiorismo",
+    "general.service_list.reform": "Reformas",
+
+    "sections.introduction": "Introducción",
+    "sections.our_team": "Nosotras",
+    "sections.our_way": "Nuestra Forma",
+    "sections.why_choose_us": "¿Por qué elegirnos?",
+    "sections.recent_projects": "Testimonios",
+    "sections.contact": "Contáctenos",
+    "sections.about_us": "Sobre Nosotras",
+
+    "introduction.create_homes": "CREAMOS HOGARES,",
+    "introduction.design_experiences": "DISEÑAMOS EXPERIENCIAS",
+
+    "about_us.description": "Somos una empresa joven de nueva creación pero con una amplia experiencia en el diseño y la reforma de todo tipo de espacios. Trabajamos directamente con nuestro propio equipo de profesionales de confianza, lo que garantiza siempre la máxima calidad de entrega en cuanto a acabados y plazos. Nuestros presupuestos son muy competitivos, acorde al mercado actual.",
+    "about_us.a_little_about_us": "Un poco\nsobre\nnosotras",
+    "about_us.section_number": "01",
+    "our_team.heading": "Nuestro\nEquipo\nDirectivo",
+    "our_team.amanda_job": "Interiorista",
+    "our_team.melissa_job": "Arquitecta Técnica" 
+}

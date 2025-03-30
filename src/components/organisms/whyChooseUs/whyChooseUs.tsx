@@ -5,6 +5,7 @@ import refactor from "@/assets/image/why_choose_us_section/refactor.png";
 import design from "@/assets/image/why_choose_us_section/design.png";
 import { Sections } from "@/enums/global";
 import MovingImage from "@/components/atoms/movingImage";
+import ServiceList from "@/components/atoms/serviceList";
 
 const WhyChooseUs = () => {
     return (
@@ -28,11 +29,7 @@ const WhyChooseUs = () => {
                     <h3 className="text-left text-4xl xl:text-8xl font-thin xl:mb-16">Por qué <br />elegirnos?</h3>
                     <div className="hidden xl:block">
                         <DotWithText>
-                            <p className="text-left text-xs">
-                                Diseño <br />
-                                Interiorismo <br />
-                                Reformas
-                            </p>
+                            <ServiceList />
                         </DotWithText>
                     </div>
                 </div>
@@ -73,11 +70,7 @@ const WhyChooseUs = () => {
 
             <div className="w-1/2 border-r p-16 xl:pb-60 hidden xl:block">
                 <DotWithText>
-                    <p className="text-left text-xs">
-                        Diseño <br />
-                        Interiorismo <br />
-                        Reformas
-                    </p>
+                    <ServiceList />
                 </DotWithText>
             </div>
         </div>
