@@ -17,10 +17,7 @@ const ProfileCard = ({
 }: props) => {
     return (
         <div className={`w-full xl:w-1/2 text-base xl:text-2xl font-light text-left ${align === "right" && "xl:text-right"}`}>
-            <div>
-
-            </div>
-            <div className="max-w-full w-[800px] h-[361px] mb-7">
+            <div className={`w-full h-[361px] mb-7 flex ${align === "right" && "justify-end"}`}>
                 <img src={image} alt={name + " profile"} />
             </div>
             <div className="child:leading-none">

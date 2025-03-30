@@ -50,7 +50,7 @@ const AboutUs = () => {
                         </h3>
                         <DotWithText>
                             <p className="text-left text-5xl font-extralight">
-                                {t._('about_us.section_number')}
+                                01
                             </p>
                         </DotWithText>
                     </div>
