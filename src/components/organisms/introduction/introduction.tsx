@@ -3,18 +3,18 @@ import { Sections } from "@/enums/global";
 import background_image from "@/assets/background/bg_left.png";
 import { handleNavigation } from "@/utils/common";
 import SplitScreen from "@/components/atoms/splitScreen";
-import { useLingui } from "@lingui/react/macro";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const Introduction = () => {
-    const { i18n: t } = useLingui();
+    const { t } = useLanguage();
 
     const sections = [
         { label: "", link: Sections.INTRODUCTION },
-        { label: t._('sections.our_team'), link: Sections.OUR_TEAM },
-        { label: t._('sections.our_way'), link: Sections.OUR_WAY },
-        { label: t._('sections.why_choose_us'), link: Sections.WHY_CHOOSE_US },
-        { label: t._('sections.recent_projects'), link: Sections.RECENT_PROJECTS },
-        { label: t._('sections.contact'), link: Sections.CONTACT },
+        { label: t('sections.ourTeam'), link: Sections.OUR_TEAM },
+        { label: t('sections.ourWay'), link: Sections.OUR_WAY },
+        { label: t('sections.whyChooseUs'), link: Sections.WHY_CHOOSE_US },
+        { label: t('sections.recentProjects'), link: Sections.RECENT_PROJECTS },
+        { label: t('sections.contact'), link: Sections.CONTACT },
     ];
 
     return (
@@ -74,8 +74,8 @@ const Introduction = () => {
                 />
             </div>
             <div className="absolute top-2/3 xl:top-1/2 text-center xl:right-28 -translate-y-1/2 xl:text-right text-base xl:text-2xl font-light w-full xl:w-[486px] tracking-[.35rem]">
-                {t._('introduction.create_homes')} <br />
-                {t._('introduction.design_experiences')}
+                {t('introduction.createHomes')} <br />
+                {t('introduction.designExperiences')}
             </div>
 
             <div className="absolute xl:hidden top-3/4 -translate-y-1/2 left-1/2 -translate-x-1/2">

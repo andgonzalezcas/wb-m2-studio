@@ -6,10 +6,10 @@ import design from "@/assets/image/why_choose_us_section/design.png";
 import { Sections } from "@/enums/global";
 import MovingImage from "@/components/atoms/movingImage";
 import ServiceList from "@/components/atoms/serviceList";
-import { useLingui } from "@lingui/react/macro";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const WhyChooseUs = () => {
-    const { i18n: t } = useLingui();
+    const { t } = useLanguage();
 
     return (
         <div id={Sections.WHY_CHOOSE_US} className="w-full min-h-screen bg-white xl:px-[93px] border-t border-b">
@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
                         width={145}
                         color="#000"
                     />
-                    <h3 className="text-left text-4xl xl:text-8xl font-thin xl:mb-16">{t._('why_choose_us.title').split('\n').map((line, index) => <span key={index}>{line} <br /></span>)}</h3>
+                    <h3 className="text-left text-4xl xl:text-8xl font-thin xl:mb-16">{t('whyChooseUs.title').split('\n').map((line, index) => <span key={index}>{line} <br /></span>)}</h3>
                     <div className="hidden xl:block">
                         <DotWithText>
                             <ServiceList />
@@ -40,12 +40,12 @@ const WhyChooseUs = () => {
 
             <div className="flex flex-col-reverse xl:flex-row xl:border-r">
                 <section className="text-left xl:text-right w-full xl:w-1/2 p-10 xl:p-16 xl:text-lg font-light flex flex-col gap-3 xl:border-r">
-                    <p>{t._('why_choose_us.design_and_renovate')}</p>
-                    <p>{t._('why_choose_us.professionals')}</p>
-                    <p>{t._('why_choose_us.certified_professionals')}</p>
-                    <p>{t._('why_choose_us.deadline_guarantee')}</p>
-                    <p>{t._('why_choose_us.quality_price')}</p>
-                    <p>{t._('why_choose_us.post_work_warranty')}</p>
+                    <p>{t('whyChooseUs.designAndRenovate')}</p>
+                    <p>{t('whyChooseUs.professionals')}</p>
+                    <p>{t('whyChooseUs.certifiedProfessionals')}</p>
+                    <p>{t('whyChooseUs.deadlineGuarantee')}</p>
+                    <p>{t('whyChooseUs.qualityPrice')}</p>
+                    <p>{t('whyChooseUs.postWorkWarranty')}</p>
                 </section>
 
                 <div className="object-cover w-full xl:w-1/2  h-screen max-h-[554px]">
@@ -61,12 +61,12 @@ const WhyChooseUs = () => {
                 </div>
 
                 <div className="w-full xl:w-1/2 p-10 xl:p-16 flex flex-col justify-between text-left gap-5">
-                    <h4 className="font-extralight text-2xl xl:text-6xl">{t._('why_choose_us.project_included')}</h4>
+                    <h4 className="font-extralight text-2xl xl:text-6xl">{t('whyChooseUs.projectIncluded')}</h4>
                     <section className="text-left xl:text-left xl:text-lg font-light flex flex-col gap-3">
-                        <p>{t._('why_choose_us.project_description')}</p>
-                        <p><b>{t._('why_choose_us.special_attention')}</b></p>
-                        <p>{t._('why_choose_us.optimize_spaces')}</p>
-                        <p>{t._('why_choose_us.lighting_and_storage')}</p>
+                        <p>{t('whyChooseUs.projectDescription')}</p>
+                        <p><b>{t('whyChooseUs.specialAttention')}</b></p>
+                        <p>{t('whyChooseUs.optimizeSpaces')}</p>
+                        <p>{t('whyChooseUs.lightingAndStorage')}</p>
                     </section>
                 </div>
             </div>

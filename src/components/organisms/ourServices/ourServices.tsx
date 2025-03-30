@@ -1,4 +1,3 @@
-import { useLingui } from "@lingui/react/macro";
 import CardWithImage from "@/components/atoms/cardWithImage";
 import DotWithText from "@/components/atoms/dotWithText";
 import { Sections } from "@/enums/global";
@@ -9,9 +8,10 @@ import design_image from "src/assets/image/our_service/design.png";
 import deadlines_image from "src/assets/image/our_service/deadlines.png";
 import profesionals_image from "src/assets/image/our_service/profesionals.png";
 import security_image from "src/assets/image/our_service/security.png";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const OurServices = () => {
-    const { i18n: t } = useLingui();
+    const { t } = useLanguage();
 
     return (
         <div className="w-full min-h-screen bg-white xl:px-[93px] relative border-b" id={Sections.OUR_SERVICES}>
@@ -31,10 +31,10 @@ const OurServices = () => {
                         </p>
                     </DotWithText>
                 </div>
-                <h3 className="font-extralight text-4xl xl:text-6xl text-right xl:text-center w-full px-10">{t._("our_services.heading")}</h3>
-                <p className="xl:text-xl">{t._("our_services.description")}</p>
+                <h3 className="font-extralight text-4xl xl:text-6xl text-right xl:text-center w-full px-10">{t("ourServices.heading")}</h3>
+                <p className="xl:text-xl">{t("ourServices.description")}</p>
                 <p className="font-extralight xl:text-3xl max-w-full xl:max-w-[1280px] leading-5 px-6">
-                    {t._("our_services.types").split("\u2022").map((item, index, array) => (
+                    {t("ourServices.types").split("\u2022").map((item, index, array) => (
                         <span key={index}>
                             {item}
                             {index < array.length - 1 && <span className="px-3 xl:px-7">&middot;</span>}
@@ -46,33 +46,33 @@ const OurServices = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14 px-10 xl:px-24 justify-center w-full py-10 xl:py-32 text-left justify-items-center">
                 <CardWithImage
                     image={reform_image}
-                    label={t._("our_services.reform_label")}
-                    description={t._("our_services.reform_description")}
+                    label={t("ourServices.reform.label")}
+                    description={t("ourServices.reform.description")}
                 />
                 <CardWithImage
                     image={important_points_image}
-                    label={t._("our_services.important_points_label")}
-                    description={t._("our_services.important_points_description")}
+                    label={t("ourServices.importantPoints.label")}
+                    description={t("ourServices.importantPoints.description")}
                 />
                 <CardWithImage
                     image={design_image}
-                    label={t._("our_services.design_label")}
-                    description={t._("our_services.design_description")}
+                    label={t("ourServices.design.label")}
+                    description={t("ourServices.design.description")}
                 />
                 <CardWithImage
                     image={deadlines_image}
-                    label={t._("our_services.deadlines_label")}
-                    description={t._("our_services.deadlines_description")}
+                    label={t("ourServices.deadlines.label")}
+                    description={t("ourServices.deadlines.description")}
                 />
                 <CardWithImage
                     image={profesionals_image}
-                    label={t._("our_services.professionals_label")}
-                    description={t._("our_services.professionals_description")}
+                    label={t("ourServices.professionals.label")}
+                    description={t("ourServices.professionals.description")}
                 />
                 <CardWithImage
                     image={security_image}
-                    label={t._("our_services.security_label")}
-                    description={t._("our_services.security_description")}
+                    label={t("ourServices.security.label")}
+                    description={t("ourServices.security.description")}
                 />
             </div>
         </div>

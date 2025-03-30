@@ -1,7 +1,7 @@
 import ImageGetter from "@/assets/ImageGetter";
 import LinkButton from "@/components/atoms/linkButton";
 import { Sections } from "@/enums/global";
-import { useLingui } from "@lingui/react/macro";
+import { useLanguage } from "@/hooks/useLanguage";
 import { HTMLInputTypeAttribute } from "react";
 
 const FormInput = (props: {
@@ -20,18 +20,18 @@ const FormInput = (props: {
 }
 
 const ContactForm = () => {
-    const { i18n: t } = useLingui();
+    const { t } = useLanguage();
 
     return (
         <div className="w-full bg-white xl:px-[93px] relative xl:border-t flex flex-col xl:flex-wrap mb-40 pt-20" id={Sections.CONTACT}>
             <div className="w-full xl:w-1/2 p-10 flex flex-col gap-16 xl:hidden py-32">
                 <LinkButton
-                    label={t._("contact.renovation_form_label")}
+                    label={t("contact.renovationFormLabel")}
                     link="https://docs.google.com/forms/d/e/1FAIpQLSfLcXSx5AaZmnadgiXqSa7khF8MPY_twQFxvrFRSINb2Gcm4Q/viewform?fbclid=PAY2xjawHpPDdleHRuA2FlbQIxMAABprhOgcBh-RTfaD0_vUsKlInFQgsGVmd2jJ0AdH0PBvLQYHrHbJelQzz3Kg_aem_bnD7s9MjQgIGqrI36_vBgQ"
                     border
                 />
                 <LinkButton
-                    label={t._("contact.professional_form_label")}
+                    label={t("contact.professionalFormLabel")}
                     link="https://docs.google.com/forms/d/e/1FAIpQLSc9YSzgaY-ZI7l4NMwmUQEM7D4yhbQAG_B3uQfRP-3DNXzhlA/viewform?fbclid=PAY2xjawHpPEVleHRuA2FlbQIxMAABpq7kqUcThqG-LM7HZfiXiNr0BS_l6KaJN22kfMqCXl6vulheAqoy5K0lPA_aem_wyxwVmto7jhnKlVkfjicPQ"
                     border
                 />
@@ -49,41 +49,41 @@ const ContactForm = () => {
                 <form className="w-full xl:w-1/2 flex flex-col gap-4 p-10">
                     <FormInput
                         type="text"
-                        placeholder={t._("contact.name_placeholder")}
+                        placeholder={t("contact.namePlaceholder")}
                         required
                     />
                     <FormInput
                         type="email"
-                        placeholder={t._("contact.email_placeholder")}
+                        placeholder={t("contact.emailPlaceholder")}
                         required
                     />
                     <FormInput
                         type="tel"
-                        placeholder={t._("contact.phone_placeholder")}
+                        placeholder={t("contact.phonePlaceholder")}
                         required
                     />
                     <textarea
-                        placeholder={t._("contact.message_placeholder")}
+                        placeholder={t("contact.messagePlaceholder")}
                         className="border-[#DCDDDF] border text-2xl font-light px-2 py-1 w-full xl:w-[80%] h-60"
                     />
                     <div className="w-full xl:w-[80%] text-left flex gap-2 px-2">
                         <input type="checkbox" required />
-                        <label className="font-extralight">{t._("contact.terms_label")}</label>
+                        <label className="font-extralight">{t("contact.termsLabel")}</label>
                     </div>
                     <div className="w-full xl:w-[80%] flex justify-center">
                         <button className="mt-4 py-1 px-4 border-[#232C3340] border rounded-full w-fit">
-                            {t._("contact.send_button")}
+                            {t("contact.sendButton")}
                         </button>
                     </div>
                 </form>
                 <div className="w-1/2 p-10 flex-col gap-16 hidden xl:flex">
                     <LinkButton
-                        label={t._("contact.renovation_form_label")}
+                        label={t("contact.renovationFormLabel")}
                         link="https://docs.google.com/forms/d/e/1FAIpQLSfLcXSx5AaZmnadgiXqSa7khF8MPY_twQFxvrFRSINb2Gcm4Q/viewform?fbclid=PAY2xjawHpPDdleHRuA2FlbQIxMAABprhOgcBh-RTfaD0_vUsKlInFQgsGVmd2jJ0AdH0PBvLQYHrHbJelQzz3Kg_aem_bnD7s9MjQgIGqrI36_vBgQ"
                         border
                     />
                     <LinkButton
-                        label={t._("contact.professional_form_label")}
+                        label={t("contact.professionalFormLabel")}
                         link="https://docs.google.com/forms/d/e/1FAIpQLSc9YSzgaY-ZI7l4NMwmUQEM7D4yhbQAG_B3uQfRP-3DNXzhlA/viewform?fbclid=PAY2xjawHpPEVleHRuA2FlbQIxMAABpq7kqUcThqG-LM7HZfiXiNr0BS_l6KaJN22kfMqCXl6vulheAqoy5K0lPA_aem_wyxwVmto7jhnKlVkfjicPQ"
                         border
                     />

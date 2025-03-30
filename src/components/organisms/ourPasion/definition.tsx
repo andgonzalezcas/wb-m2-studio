@@ -1,29 +1,29 @@
-import { useLingui } from "@lingui/react";
 import SectionList from "@/components/atoms/sectionList";
+import { useLanguage } from "@/hooks/useLanguage";
 
 export const useOurPasionList = () => {
-    const { i18n: t } = useLingui();
+    const { t } = useLanguage();
 
     return [
         {
             id: 1,
-            title: t._("our_passion.steps"),
+            title: t('ourPassion.steps.title'),
             children: <SectionList
-                label={t._("our_passion.steps_description")}
+                label={t('ourPassion.steps.description')}
                 list={[
-                    { text: t._("our_passion.steps_point_1") },
-                    { text: t._("our_passion.steps_point_2") },
-                    { text: t._("our_passion.steps_point_3") },
-                    { text: t._("our_passion.steps_point_4") },
+                    { text: t('ourPassion.steps.points.0') },
+                    { text: t('ourPassion.steps.points.1') },
+                    { text: t('ourPassion.steps.points.2') },
+                    { text: t('ourPassion.steps.points.3') },
                 ]}
             />
         },
         {
             id: 2,
-            title: t._("our_passion.project_contains"),
+            title: t('ourPassion.project.contains'),
             children: <SectionList
                 list={Array.from({ length: 7 }, (_, i) => {
-                    const item = t._(`our_passion.project_point_${i + 1}`).split(":")
+                    const item = t(`ourPassion.project.points.${i}`).split(":")
 
                     return {
                         title: item[0],
@@ -34,25 +34,25 @@ export const useOurPasionList = () => {
         },
         {
             id: 3,
-            title: t._("our_passion.design_finishes"),
+            title: t("ourPassion.designFinishes.title"),
             children: <SectionList
-                label={t._("our_passion.design_finishes_description")}
+                label={t("ourPassion.designFinishes.description")}
                 list={Array.from({ length: 4 }, (_, i) => ({
-                    text: t._(`our_passion.design_finishes_point_${i + 1}`),
+                    text: t(`ourPassion.designFinishes.points.${i}`),
                 }))}
             />
         },
         {
             id: 4,
-            title: t._("our_passion.technology"),
+            title: t("ourPassion.technology.title"),
             children: <>
                 <SectionList
                     list={Array.from({ length: 3 }, (_, i) => ({
-                        text: t._(`our_passion.technology_point_${i + 1}`),
+                        text: t(`ourPassion.technology.points.${i}`),
                     }))}
                 />
                 <p className="text-xl xl:text-3xl w-full text-left pt-6">
-                    {t._("our_passion.technology_info")}
+                    {t("ourPassion.technology.info")}
                 </p>
             </>
         }

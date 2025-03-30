@@ -12,10 +12,6 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@lingui/cli": "^5.3.0",
-    "@lingui/core": "^5.3.0",
-    "@lingui/macro": "^5.3.0",
-    "@lingui/react": "^5.3.0",
     "@react-three/drei": "9.121.4",
     "@react-three/fiber": "8.17.14",
     "gsap": "3.12.7",

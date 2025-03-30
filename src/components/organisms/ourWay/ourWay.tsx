@@ -5,7 +5,7 @@ import { Sections } from "@/enums/global";
 import imageImported from "@/assets/image/our_way/ourWay.png";
 import DotWithText from "@/components/atoms/dotWithText";
 import ServiceList from "@/components/atoms/serviceList";
-import { useLingui } from "@lingui/react/macro";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const OurWay = () => {
     const [showCommitment, setShowCommitment] = useState(false);
@@ -16,8 +16,7 @@ const OurWay = () => {
 
     const DURATION = 2.5;
 
-    const { i18n: t } = useLingui();
-
+    const { t } = useLanguage();
     useEffect(() => {
         if (showCommitment) {
             gsap.fromTo(
@@ -92,7 +91,7 @@ const OurWay = () => {
                     className={`w-full text-justify p-10 xl:p-16 text-[#3D3D3D] text-sm/6 xl:text-lg/6 flex flex-col gap-8 h-full justify-center cursor-pointer ${showCommitment ? "" : "hidden"}`}
                 >
                     <p>
-                        {t._('our_way.commitment_description').split("\b").map((text, index) => (
+                        {t('ourWay.commitment.description').split("\b").map((text, index) => (
                             <span key={index}>
                                 {(index % 2 == 1)
                                     ? (<b>{text}</b>)
@@ -101,19 +100,19 @@ const OurWay = () => {
                         ))}
                     </p>
                     <p>
-                        {t._('our_way.commitment_list_intro')}
+                        {t('ourWay.commitment.listIntro')}
                     </p>
                     <ul className="list-decimal pl-6">
-                        <li>{t._('our_way.commitment_point_1')}</li>
-                        <li>{t._('our_way.commitment_point_2')}</li>
-                        <li>{t._('our_way.commitment_point_3')}</li>
-                        <li>{t._('our_way.commitment_point_4')}</li>
-                        <li>{t._('our_way.commitment_point_5')}</li>
-                        <li>{t._('our_way.commitment_point_6')}</li>
-                        <li>{t._('our_way.commitment_point_7')}</li>
+                        <li>{t('ourWay.commitment.points.0')}</li>
+                        <li>{t('ourWay.commitment.points.1')}</li>
+                        <li>{t('ourWay.commitment.points.2')}</li>
+                        <li>{t('ourWay.commitment.points.3')}</li>
+                        <li>{t('ourWay.commitment.points.4')}</li>
+                        <li>{t('ourWay.commitment.points.5')}</li>
+                        <li>{t('ourWay.commitment.points.6')}</li>
                     </ul>
                     <p className="text-sm/6 xl:text-lg/6">
-                        {t._('our_way.commitment_conclusion').split("\b").map((text, index) => (
+                        {t('ourWay.commitment.conclusion').split("\b").map((text, index) => (
                             <span key={index}>
                                 {(index % 2 == 1)
                                     ? (<b>{text}</b>)
@@ -128,7 +127,7 @@ const OurWay = () => {
             <div className="w-full xl:w-1/3 text-left p-10 xl:p-16 xl:h-screen flex flex-col justify-center">
                 <p className="font-normal text-base">studio</p>
                 <p className="max-w-[286px] text-2xl xl:text-3xl font-thin">
-                    {t._('our_way.static_text_description').split("\b").map((text, index) => (
+                    {t('ourWay.staticTextDescription').split("\b").map((text, index) => (
                         <span key={index}>
                             {(index % 2 == 1)
                                 ? (<u onClick={() => setShowCommitment((prev) => !prev)} className="decoration-1 cursor-pointer">{text}</u>)

@@ -6,10 +6,10 @@ import AccordionList from "@/components/molecules/accordionList/accordionList";
 import MovingImage from "@/components/atoms/movingImage";
 import { Sections } from "@/enums/global";
 import ServiceList from "@/components/atoms/serviceList";
-import { useLingui } from "@lingui/react/macro";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const OurPasion = () => {
-    const { i18n: t } = useLingui();
+    const { t } = useLanguage();
     const ourPasionList = useOurPasionList();
 
     return (
@@ -22,7 +22,7 @@ const OurPasion = () => {
                 />
                 <div className="flex items-end justify-between">
                     <h3 className="text-left text-4xl xl:text-8xl font-extralight">
-                        {t._('our_passion.heading').split("\n").map((line, index) => (
+                        {t('ourPassion.heading').split("\n").map((line, index) => (
                             <span key={index}>
                                 {line}
                                 <br />

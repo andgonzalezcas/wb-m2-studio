@@ -3,12 +3,8 @@ import LinkButton from "@/components/atoms/linkButton";
 import OvalButton from "@/components/atoms/ovalButton";
 import { Sections } from "@/enums/global";
 import { handleNavigation } from "@/utils/common";
-import { useLingui } from "@lingui/react/macro";
-import en from "@/locale/en.json";
-import es from "@/locale/es.json";
+import { useLanguage } from "@/hooks/useLanguage";
 import { MouseEvent } from "react";
-
-const messages = { en, es };
 
 const Option = ({ label, section, count, onClose }: {
     label: string,
@@ -19,7 +15,7 @@ const Option = ({ label, section, count, onClose }: {
     return (
         <div className="flex w-full justify-between text-white">
             <p className="text-left text-3xl">{label}
-                <span className="text-xs font-light"> [0{count}]</span>
+                <span className="text-xs font-light"> [{count}]</span>
             </p>
             <OvalButton onClick={() => {
                 handleNavigation(section)
@@ -30,23 +26,21 @@ const Option = ({ label, section, count, onClose }: {
 }
 
 const ModalMenu = ({ onClose }: { onClose: () => void }) => {
-    const { i18n: t } = useLingui();
+    const { t, language, setLanguage } = useLanguage();
 
     const toggleLanguage = (e: MouseEvent) => {
         e.stopPropagation();
-        const newLang = t.locale === "es" ? "en" : "es";
-        t.load(newLang, messages[newLang]);
-        t.activate(newLang);
-        document.documentElement.lang = newLang;
+        const newLang = language === "es" ? "en" : "es";
+        setLanguage(newLang);
     };
 
     const sections = [
         { label: "Home", link: Sections.INTRODUCTION },
-        { label: t._('sections.our_team'), link: Sections.OUR_TEAM },
-        { label: t._('sections.our_way'), link: Sections.OUR_WAY },
-        { label: t._('sections.why_choose_us'), link: Sections.WHY_CHOOSE_US },
-        { label: t._('sections.recent_projects'), link: Sections.RECENT_PROJECTS },
-        { label: t._('sections.contact'), link: Sections.CONTACT },
+        { label: t("sections.ourTeam"), link: Sections.OUR_TEAM },
+        { label: t("sections.ourWay"), link: Sections.OUR_WAY },
+        { label: t("sections.whyChooseUs"), link: Sections.WHY_CHOOSE_US },
+        { label: t("sections.recentProjects"), link: Sections.RECENT_PROJECTS },
+        { label: t("sections.contact"), link: Sections.CONTACT },
     ];
 
     return (
@@ -62,7 +56,7 @@ const ModalMenu = ({ onClose }: { onClose: () => void }) => {
                 />
 
                 <button onClick={toggleLanguage} className={`rounded text-2xl font-extralight text-white`}>
-                    {t.locale === "es" ? "ES" : "EN"}
+                    {language === "es" ? "ES" : "EN"}
                 </button>
 
                 <div className="w-10 pt-3">
@@ -78,7 +72,7 @@ const ModalMenu = ({ onClose }: { onClose: () => void }) => {
                             key={index}
                             label={item.label}
                             section={item.link}
-                            count={index}
+                            count={index + 1}
                             onClose={onClose}
                         />
                     );
@@ -87,7 +81,7 @@ const ModalMenu = ({ onClose }: { onClose: () => void }) => {
 
             {/* Footer */}
             <div className="w-full border-t text-white">
-                <p className="text-left font-light py-3 text-sm">{t._('general.service_list.follow_us')}</p>
+                <p className="text-left font-light py-3 text-sm">{t("general.serviceList.followUs")}</p>
                 <div className="flex justify-between pt-3">
                     <LinkButton
                         label="Instagram"

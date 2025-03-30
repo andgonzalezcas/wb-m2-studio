@@ -1,13 +1,12 @@
-import { useLingui } from "@lingui/react/macro";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const ServiceList = () => {
-    const { i18n: t } = useLingui();
-
+    const { t } = useLanguage();
     return (
         <p className="text-left text-xs">
-            {t._('general.service_list.design')} <br />
-            {t._('general.service_list.interiorism')} <br />
-            {t._('general.service_list.reform')}
+            {t('general.serviceList.design')} <br />
+            {t('general.serviceList.interiorism')} <br />
+            {t('general.serviceList.reform')}
         </p>
     );
 };

@@ -1,10 +1,10 @@
 import ImageGetter from "@/assets/ImageGetter";
 import LinkButton from "@/components/atoms/linkButton";
 import { Sections } from "@/enums/global";
-import { useLingui } from "@lingui/react/macro";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const Footer = () => {
-    const { i18n: t } = useLingui();
+    const { t } = useLanguage();
 
     return (
         <div className="w-full xl:px-[93px]" id={Sections.FOOTER}>
@@ -46,8 +46,8 @@ const Footer = () => {
             </div>
             <div className="flex flex-col xl:flex-row border-t justify-between text-xs xl:text-base xl:child:p-16 p-4 xl:p-0 font-light">
                 <p className="">Bsod Studio 2025</p>
-                <p className="">{t._("footer.privacy_policy")}</p>
-                <p className="">{t._("footer.terms_of_use")}</p>
+                <p className="">{t("footer.privacyPolicy")}</p>
+                <p className="">{t("footer.termsOfUse")}</p>
             </div>
         </div>
     )

@@ -1,123 +1,177 @@
 {
-    "general.service_list.design": "Diseño",
-    "general.service_list.interiorism": "Interiorismo",
-    "general.service_list.reform": "Reformas",
-    "general.service_list.follow_us": "Síguenos",
-
-    "sections.introduction": "Introducción",
-    "sections.our_team": "Nosotras",
-    "sections.our_way": "Nuestra Forma",
-    "sections.why_choose_us": "¿Por qué elegirnos?",
-    "sections.recent_projects": "Testimonios",
-    "sections.contact": "Contáctenos",
-    "sections.about_us": "Sobre Nosotras",
-
-    "introduction.create_homes": "CREAMOS HOGARES,",
-    "introduction.design_experiences": "DISEÑAMOS EXPERIENCIAS",
-
-    "about_us.description": "Somos una empresa joven de nueva creación pero con una amplia experiencia en el diseño y la reforma de todo tipo de espacios. Trabajamos directamente con nuestro propio equipo de profesionales de confianza, lo que garantiza siempre la máxima calidad de entrega en cuanto a acabados y plazos. Nuestros presupuestos son muy competitivos, acorde al mercado actual.",
-    "about_us.a_little_about_us": "Un poco\nsobre\nnosotras",
-
-    "our_team.heading": "Nuestro\nEquipo\nDirectivo",
-    "our_team.amanda_job": "Interiorista",
-    "our_team.melissa_job": "Arquitecta Técnica",
-
-    "our_way.commitment_description": "\bM2.Studio\b desarrolla sus actividades dentro de \bestándares de excelencia\b, en lo que al \bcuidado del medio ambiente\b se refiere. Por consiguiente, cada persona que se encuentre dentro de la propiedad del cliente, o fuera de esta, pero en su representación, sin excepción, deberán cumplir con sus responsabilidades dentro del marco del \bcompromiso ecológico\b de acuerdo con la normativa legal vigente, previniendo la contaminación ambiental en todos los proyectos en donde ejecute sus actividades.",
-    "our_way.commitment_list_intro": "Para lo cual asume los siguientes compromisos:",
-    "our_way.commitment_point_1": "Continuar activamente con una política de prevención de la contaminación, para minimizar el impacto de nuestras operaciones.",
-    "our_way.commitment_point_2": "Cumplir con las políticas y procedimientos del cliente, así como con todas las leyes y regulaciones aplicables.",
-    "our_way.commitment_point_3": "Realizar esfuerzos estratégicos, para maximizar nuestra eficiencia energética y el uso de recursos naturales, mediante la gestión de nuestro uso de energía, consumo de agua y generación de residuos.",
-    "our_way.commitment_point_4": "Gestionar responsablemente los sitios de nuestras operaciones, para proteger los ecosistemas y la biodiversidad, así como para maximizar nuestra contribución a la conservación de la naturaleza.",
-    "our_way.commitment_point_5": "Mantener canales de comunicación abiertos y efectivos con nuestros empleados, clientes, comunidad y todos aquellos que trabajen con nosotros.",
-    "our_way.commitment_point_6": "Proveer los recursos necesarios para la instrucción, capacitación y supervisión, con el fin de gestionar apropiadamente los aspectos ambientales de nuestras operaciones.",
-    "our_way.commitment_point_7": "Planear, revisar y evaluar nuestro desempeño ambiental frente a objetivos medibles, para impulsar la mejora continua.",
-    "our_way.commitment_conclusion": "\bM2.Studio\b establecerá y mantendrá un programa y/o plan de manejo ambiental que contemple objetivos y procedimientos para realizar las operaciones en todos sus proyectos e instalaciones promoviendo la conciencia ambiental.",
-    "our_way.static_text_description": "M2 ha nacido como resultado de la pasión que sentimos por todo aquello que sea novedoso, \bsostenible\b y bello.",
-
-    "our_passion.heading": "Nuestra\nForma",
-    "our_passion.steps": "Steps / pasos",
-    "our_passion.steps_description": "El proceso de obra desde el principio hasta el final",
-    "our_passion.steps_point_1": "Nos Conocemos Tras contactar con nosotros, te llamamos para establecer una fecha de quedada.",
-    "our_passion.steps_point_2": "Realizamos la medición, tomamos fotos y vemos tus necesidades.",
-    "our_passion.steps_point_3": "Preparamos tu proyecto sin ningún compromiso ni coste.",
-    "our_passion.steps_point_4": "Te presentamos tu proyecto.",
-
-    "our_passion.project_contains": "El proyecto contiene",
-    "our_passion.project_point_1": "Planos: Estado Actual y Propuesta de Nueva Distribución",
-    "our_passion.project_point_2": "Infografías: Nuevo Diseño Virtual",
-    "our_passion.project_point_3": "Propuesta Materiales: Diseño",
-    "our_passion.project_point_4": "Presupuesto Inteligente: El primer presupuesto lo más aproximado a la realidad posible",
-    "our_passion.project_point_5": "Reservas Nuestros Servicios: Para poder reservar tu reforma en una franja de tiempo, y que podamos trabajar 100% en tu proyecto, es necesario realizar una reserva con nosotros.",
-    "our_passion.project_point_6": "Ajustes y Comparaciones: Ya pasamos a elegir materiales definitivos y así poder realizar el presupuesto definitivo.",
-    "our_passion.project_point_7": "Preparamos Tu Reforma y la Realizamos: Pasamos de digital y papel a la realidad. ¡Entramos en acción!",
-
-    "our_passion.design_finishes": "Diseño y Elección de Acabados",
-    "our_passion.design_finishes_description": "Asesoramiento 100%",
-    "our_passion.design_finishes_point_1": "Te proponemos nueva distribución y diseño de 'Tu Espacio'.",
-    "our_passion.design_finishes_point_2": "Proponemos posibles acabados y preparamos las muestras para que puedas comprobar el material del diseño físicamente.",
-    "our_passion.design_finishes_point_3": "Contamos con las mejores marcas y las más adecuadas para cada proyecto. Nuestro largo trayecto nos ha permitido recoger una gran variedad de proveedores de confianza.",
-    "our_passion.design_finishes_point_4": "Tras el proceso de selección, te enviamos un dossier con todo para que nos confirmes que todo está correcto. De esta manera, evitamos errores y todo queda claro.",
-
-    "our_passion.technology": "La obra + Tecnología",
-    "our_passion.technology_point_1": "Establecemos fechas de comienzo, finalización y entrega de obra.",
-    "our_passion.technology_point_2": "Preparamos un Gant (diagrama que permite planificar la ejecución de la obra) para informarte cada semana qué acciones vamos a realizar.",
-    "our_passion.technology_point_3": "Al final de cada semana, adjuntamos fotos y/o videos del progreso por el canal que nos indicas que es mejor para ti (correo electrónico o WhatsApp).",
-    "our_passion.technology_info": "Te mantendremos informad@ de cualquier novedad o cambio con un click del móvil.",
-
-    "why_choose_us.title": "¿Por qué \nelegirnos?",
-    "why_choose_us.design_and_renovate": "Diseñamos y Reformamos",
-    "why_choose_us.professionals": "Contamos con los mejores profesionales en el sector del diseño y de la reforma.",
-    "why_choose_us.certified_professionals": "Profesionales certificados: Todo nuestro equipo está certificado y cuenta con una gran experiencia, cada uno en su especialidad.",
-    "why_choose_us.deadline_guarantee": "Plazos Garantizados: Nos comprometemos a cumplir mediante contrato con los plazos establecidos ya que no dependemos de terceros ni intermediarios.",
-    "why_choose_us.quality_price": "Calidad Precio: Ofrecemos una relación calidad precio muy competitiva. Siempre buscando un equilibrio entre el diseño, la calidad y el precio.",
-    "why_choose_us.post_work_warranty": "Garantía Post Obra: Ofrecemos a todos nuestros clientes, para su tranquilidad y la nuestra, una garantía de 2 años tras la finalización de obra para cubrir así cualquier defecto de fábrica que pueda surgir.",
-    
-    "why_choose_us.project_included": "Proyecto y Diseño Incluido",
-    "why_choose_us.project_description": "Realizamos tu proyecto sin costes adicionales teniendo en cuenta tus gustos y necesidades, siempre optimizando la funcionalidad de espacios y últimas tendencias para que puedas visualizar tu sueño.",
-    "why_choose_us.special_attention": "Prestamos especial atención a:",
-    "why_choose_us.optimize_spaces": "Optimizar el funcionamiento de cada espacio.",
-    "why_choose_us.lighting_and_storage": "Mejorar la iluminación y el almacenamiento ya que consideramos estos puntos fundamentales para mejorar tu calidad de vida.",
-
-    "our_services.heading": "Nuestros servicios",
-    "our_services.description": "Reformas de todo tipo de espacios",
-    "our_services.types": "Reformas integrales\u2022semi integrales\u2022baños\u2022cocinas\u2022cambios de uso\u2022viviendas turísticas\u2022Home Staging\u2022Relooking",
-    "our_services.reform_label": "Reforma",
-    "our_services.important_points_label": "Puntos más importantes",
-    "our_services.design_label": "Diseño",
-    "our_services.deadlines_label": "Plazos",
-    "our_services.professionals_label": "Profesionales",
-    "our_services.security_label": "Seguridad",
-    "our_services.reform_description": "Antes de comenzar una reforma, es crucial tener en cuenta algunas cosas para facilitarnos nuestra labor y ayudarnos a conectar con las verdaderas necesidades de nuestros clientes.",
-    "our_services.important_points_description": "El Presupuesto: Antes de empezar cualquier reforma, debes plantear el presupuesto. Es importante tener claro que quieres o puedes invertir en tu reforma. Debe ser una cantidad realista, acorde con tu realidad.",
-    "our_services.design_description": "Otro punto muy importante a tener en cuenta es el diseño. Cuanto más claro tienes tus necesidades, más podremos ayudarte a conseguir el espacio deseado.",
-    "our_services.deadlines_description": "Es importante saber cuando te viene bien que realicemos tu obra para así intentar encajarlo y que no se convierta en un problema. En m2.Studio, te indicaremos el tiempo necesario para preparar y ejecutar tu obra. Para nosotros es importante cumplir con los plazos establecidos por lo que el cliente debe ser consciente que los cambios improvistos por su parte retrasan una obra y una vez establecidos todos los detalles, intentamos ceñirnos a lo acordado.",
-    "our_services.professionals_description": "Contar con un equipo de profesionales cualificados y certificados con experiencia para realizar la reforma, es de suma importancia. Nuestro equipo de m2.Studio te ofrece la garantía de entrega de unos acabados óptimos. Siempre velando para minimizar complicaciones y errores desde el principio.",
-    "our_services.security_description": "Para nosotros la seguridad de nuestro equipo es importantísimo, por lo que nos aseguramos que todo nuestro equipo cuenta con lo necesario para abordar cada reforma sin percances y con la mayor seguridad posible. Durante la reforma es importante tener en cuenta la seguridad. Nos aseguramos de que nuestros profesionales tienen la formación necesaria para realizar nuestras obras.",
-
-    "recent_projects.title": "Proyectos Recientes",
-    "recent_projects.project_1.label": "Proyecto 01",
-    "recent_projects.project_1.description": "Antes de comenzar una reforma, es crucial tener en cuenta algunas cosas para facilitarnos nuestra labor y ayudarnos a conectar con las verdaderas necesidades de nuestros clientes.",
-    "recent_projects.project_2.label": "Proyecto 02",
-    "recent_projects.project_2.description": "El Presupuesto: Antes de empezar cualquier reforma, debes plantear el presupuesto. Es importante tener claro qué quieres o puedes invertir en tu reforma. Debe ser una cantidad realista, acorde con tu realidad.",
-    "recent_projects.project_3.label": "Proyecto 03",
-    "recent_projects.project_3.description": "Otro punto muy importante a tener en cuenta es el diseño. Cuanto más claro tienes tus necesidades, más podremos ayudarte a conseguir el espacio deseado.",
-    "recent_projects.view_all": "Ver todos",
-
-    "design_experiences.title": "Creando Alianzas, Diseñando Experiencias",
-    "design_experiences.team_image_alt": "equipo de trabajo",
-    "design_experiences.collaboration_text": "Colaboramos con varias inmobiliarias en Alicante y les proporcionamos nuestros servicios",
-    "design_experiences.contact_text": "Contacta con nosotros y te informaremos",
-
-    "contact.title": "Contacto",
-    "contact.name_placeholder": "Nombre",
-    "contact.email_placeholder": "Email",
-    "contact.phone_placeholder": "Teléfono",
-    "contact.message_placeholder": "Mensaje",
-    "contact.terms_label": "He leído y acepto los términos y condiciones de uso",
-    "contact.send_button": "Enviar",
-    "contact.renovation_form_label": "Formulario si quieres hacer una reforma",
-    "contact.professional_form_label": "Formulario para profesionales colaboradores",
-
-    "footer.privacy_policy": "Política de Privacidad",
-    "footer.terms_of_use": "Términos de Uso"
+  "general": {
+    "serviceList": {
+      "design": "Diseño",
+      "interiorism": "Interiorismo",
+      "reform": "Reformas",
+      "followUs": "Síguenos"
+    }
+  },
+  "sections": {
+    "introduction": "Introducción",
+    "ourTeam": "Nosotras",
+    "ourWay": "Nuestra Forma",
+    "whyChooseUs": "¿Por qué elegirnos?",
+    "recentProjects": "Testimonios",
+    "contact": "Contáctenos",
+    "aboutUs": "Sobre Nosotras"
+  },
+  "introduction": {
+    "createHomes": "CREAMOS HOGARES,",
+    "designExperiences": "DISEÑAMOS EXPERIENCIAS"
+  },
+  "aboutUs": {
+    "description": "Somos una empresa joven de nueva creación pero con una amplia experiencia en el diseño y la reforma de todo tipo de espacios. Trabajamos directamente con nuestro propio equipo de profesionales de confianza, lo que garantiza siempre la máxima calidad de entrega en cuanto a acabados y plazos. Nuestros presupuestos son muy competitivos, acorde al mercado actual.",
+    "littleAboutUs": "Un poco\nsobre\nnosotras"
+  },
+  "ourTeam": {
+    "heading": "Nuestro\nEquipo\nDirectivo",
+    "roles": {
+      "amanda": "Interiorista",
+      "melissa": "Arquitecta Técnica"
+    }
+  },
+  "ourWay": {
+    "commitment": {
+      "description": "\bM2.Studio\b desarrolla sus actividades dentro de \bestándares de excelencia\b, en lo que al \bcuidado del medio ambiente\b se refiere. Por consiguiente, cada persona que se encuentre dentro de la propiedad del cliente, o fuera de esta, pero en su representación, sin excepción, deberán cumplir con sus responsabilidades dentro del marco del \bcompromiso ecológico\b de acuerdo con la normativa legal vigente, previniendo la contaminación ambiental en todos los proyectos en donde ejecute sus actividades.",
+      "listIntro": "Para lo cual asume los siguientes compromisos:",
+      "points": [
+        "Continuar activamente con una política de prevención de la contaminación, para minimizar el impacto de nuestras operaciones.",
+        "Cumplir con las políticas y procedimientos del cliente, así como con todas las leyes y regulaciones aplicables.",
+        "Realizar esfuerzos estratégicos, para maximizar nuestra eficiencia energética y el uso de recursos naturales, mediante la gestión de nuestro uso de energía, consumo de agua y generación de residuos.",
+        "Gestionar responsablemente los sitios de nuestras operaciones, para proteger los ecosistemas y la biodiversidad, así como para maximizar nuestra contribución a la conservación de la naturaleza.",
+        "Mantener canales de comunicación abiertos y efectivos con nuestros empleados, clientes, comunidad y todos aquellos que trabajen con nosotros.",
+        "Proveer los recursos necesarios para la instrucción, capacitación y supervisión, con el fin de gestionar apropiadamente los aspectos ambientales de nuestras operaciones.",
+        "Planear, revisar y evaluar nuestro desempeño ambiental frente a objetivos medibles, para impulsar la mejora continua."
+      ],
+      "conclusion": "\bM2.Studio\b establecerá y mantendrá un programa y/o plan de manejo ambiental que contemple objetivos y procedimientos para realizar las operaciones en todos sus proyectos e instalaciones promoviendo la conciencia ambiental."
+    },
+    "staticTextDescription": "M2 ha nacido como resultado de la pasión que sentimos por todo aquello que sea novedoso, \bsostenible\b y bello."
+  },
+  "ourPassion": {
+    "heading": "Nuestra\nForma",
+    "steps": {
+      "title": "Steps / pasos",
+      "description": "El proceso de obra desde el principio hasta el final",
+      "points": [
+        "Nos Conocemos Tras contactar con nosotros, te llamamos para establecer una fecha de quedada.",
+        "Realizamos la medición, tomamos fotos y vemos tus necesidades.",
+        "Preparamos tu proyecto sin ningún compromiso ni coste.",
+        "Te presentamos tu proyecto."
+      ]
+    },
+    "project": {
+      "contains": "El proyecto contiene",
+      "points": [
+        "Planos: Estado Actual y Propuesta de Nueva Distribución",
+        "Infografías: Nuevo Diseño Virtual",
+        "Propuesta Materiales: Diseño",
+        "Presupuesto Inteligente: El primer presupuesto lo más aproximado a la realidad posible",
+        "Reservas Nuestros Servicios: Para poder reservar tu reforma en una franja de tiempo, y que podamos trabajar 100% en tu proyecto, es necesario realizar una reserva con nosotros.",
+        "Ajustes y Comparaciones: Ya pasamos a elegir materiales definitivos y así poder realizar el presupuesto definitivo.",
+        "Preparamos Tu Reforma y la Realizamos: Pasamos de digital y papel a la realidad. ¡Entramos en acción!"
+      ]
+    },
+    "designFinishes": {
+      "title": "Diseño y Elección de Acabados",
+      "description": "Asesoramiento 100%",
+      "points": [
+        "Te proponemos nueva distribución y diseño de 'Tu Espacio'.",
+        "Proponemos posibles acabados y preparamos las muestras para que puedas comprobar el material del diseño físicamente.",
+        "Contamos con las mejores marcas y las más adecuadas para cada proyecto. Nuestro largo trayecto nos ha permitido recoger una gran variedad de proveedores de confianza.",
+        "Tras el proceso de selección, te enviamos un dossier con todo para que nos confirmes que todo está correcto. De esta manera, evitamos errores y todo queda claro."
+      ]
+    },
+    "technology": {
+      "title": "La obra + Tecnología",
+      "points": [
+        "Establecemos fechas de comienzo, finalización y entrega de obra.",
+        "Preparamos un Gant (diagrama que permite planificar la ejecución de la obra) para informarte cada semana qué acciones vamos a realizar.",
+        "Al final de cada semana, adjuntamos fotos y/o videos del progreso por el canal que nos indicas que es mejor para ti (correo electrónico o WhatsApp)."
+      ],
+      "info": "Te mantendremos informad@ de cualquier novedad o cambio con un click del móvil."
+    }
+  },
+  "whyChooseUs": {
+    "title": "¿Por qué \nelegirnos?",
+    "designAndRenovate": "Diseñamos y Reformamos",
+    "professionals": "Contamos con los mejores profesionales en el sector del diseño y de la reforma.",
+    "certifiedProfessionals": "Profesionales certificados: Todo nuestro equipo está certificado y cuenta con una gran experiencia, cada uno en su especialidad.",
+    "deadlineGuarantee": "Plazos Garantizados: Nos comprometemos a cumplir mediante contrato con los plazos establecidos ya que no dependemos de terceros ni intermediarios.",
+    "qualityPrice": "Calidad Precio: Ofrecemos una relación calidad precio muy competitiva. Siempre buscando un equilibrio entre el diseño, la calidad y el precio.",
+    "postWorkWarranty": "Garantía Post Obra: Ofrecemos a todos nuestros clientes, para su tranquilidad y la nuestra, una garantía de 2 años tras la finalización de obra para cubrir así cualquier defecto de fábrica que pueda surgir.",
+    "projectIncluded": "Proyecto y Diseño Incluido",
+    "projectDescription": "Realizamos tu proyecto sin costes adicionales teniendo en cuenta tus gustos y necesidades, siempre optimizando la funcionalidad de espacios y últimas tendencias para que puedas visualizar tu sueño.",
+    "specialAttention": "Prestamos especial atención a:",
+    "optimizeSpaces": "Optimizar el funcionamiento de cada espacio.",
+    "lightingAndStorage": "Mejorar la iluminación y el almacenamiento ya que consideramos estos puntos fundamentales para mejorar tu calidad de vida."
+  },
+  "ourServices": {
+    "heading": "Nuestros servicios",
+    "description": "Reformas de todo tipo de espacios",
+    "types": "Reformas integrales\u2022semi integrales\u2022baños\u2022cocinas\u2022cambios de uso\u2022viviendas turísticas\u2022Home Staging\u2022Relooking",
+    "reform": {
+      "label": "Reforma",
+      "description": "Antes de comenzar una reforma, es crucial tener en cuenta algunas cosas para facilitarnos nuestra labor y ayudarnos a conectar con las verdaderas necesidades de nuestros clientes."
+    },
+    "importantPoints": {
+      "label": "Puntos más importantes",
+      "description": "El Presupuesto: Antes de empezar cualquier reforma, debes plantear el presupuesto. Es importante tener claro que quieres o puedes invertir en tu reforma. Debe ser una cantidad realista, acorde con tu realidad."
+    },
+    "design": {
+      "label": "Diseño",
+      "description": "Otro punto muy importante a tener en cuenta es el diseño. Cuanto más claro tienes tus necesidades, más podremos ayudarte a conseguir el espacio deseado."
+    },
+    "deadlines": {
+      "label": "Plazos",
+      "description": "Es importante saber cuando te viene bien que realicemos tu obra para así intentar encajarlo y que no se convierta en un problema. En m2.Studio, te indicaremos el tiempo necesario para preparar y ejecutar tu obra. Para nosotros es importante cumplir con los plazos establecidos por lo que el cliente debe ser consciente que los cambios improvistos por su parte retrasan una obra y una vez establecidos todos los detalles, intentamos ceñirnos a lo acordado."
+    },
+    "professionals": {
+      "label": "Profesionales",
+      "description": "Contar con un equipo de profesionales cualificados y certificados con experiencia para realizar la reforma, es de suma importancia. Nuestro equipo de m2.Studio te ofrece la garantía de entrega de unos acabados óptimos. Siempre velando para minimizar complicaciones y errores desde el principio."
+    },
+    "security": {
+      "label": "Seguridad",
+      "description": "Para nosotros la seguridad de nuestro equipo es importantísimo, por lo que nos aseguramos que todo nuestro equipo cuenta con lo necesario para abordar cada reforma sin percances y con la mayor seguridad posible. Durante la reforma es importante tener en cuenta la seguridad. Nos aseguramos de que nuestros profesionales tienen la formación necesaria para realizar nuestras obras."
+    }
+  },
+  "recentProjects": {
+    "title": "Proyectos Recientes",
+    "projects": {
+      "1": {
+        "label": "Proyecto 01",
+        "description": "Antes de comenzar una reforma, es crucial tener en cuenta algunas cosas para facilitarnos nuestra labor y ayudarnos a conectar con las verdaderas necesidades de nuestros clientes."
+      },
+      "2": {
+        "label": "Proyecto 02",
+        "description": "El Presupuesto: Antes de empezar cualquier reforma, debes plantear el presupuesto. Es importante tener claro qué quieres o puedes invertir en tu reforma. Debe ser una cantidad realista, acorde con tu realidad."
+      },
+      "3": {
+        "label": "Proyecto 03",
+        "description": "Otro punto muy importante a tener en cuenta es el diseño. Cuanto más claro tienes tus necesidades, más podremos ayudarte a conseguir el espacio deseado."
+      }
+    },
+    "viewAll": "Ver todos"
+  },
+  "designExperiences": {
+    "title": "Creando Alianzas, Diseñando Experiencias",
+    "teamImageAlt": "equipo de trabajo",
+    "collaborationText": "Colaboramos con varias inmobiliarias en Alicante y les proporcionamos nuestros servicios",
+    "contactText": "Contacta con nosotros y te informaremos"
+  },
+  "contact": {
+    "title": "Contacto",
+    "namePlaceholder": "Nombre",
+    "emailPlaceholder": "Email",
+    "phonePlaceholder": "Teléfono",
+    "messagePlaceholder": "Mensaje",
+    "termsLabel": "He leído y acepto los términos y condiciones de uso",
+    "sendButton": "Enviar",
+    "renovationFormLabel": "Formulario si quieres hacer una reforma",
+    "professionalFormLabel": "Formulario para profesionales colaboradores"
+  },
+  "footer": {
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfUse": "Términos de Uso"
+  }
 }

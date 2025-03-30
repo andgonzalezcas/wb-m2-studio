@@ -1,4 +1,3 @@
-import { useLingui } from "@lingui/react/macro";
 import ImageGetter from "@/assets/ImageGetter";
 import DotWithText from "@/components/atoms/dotWithText";
 
@@ -9,9 +8,10 @@ import { Sections } from "@/enums/global";
 import amanda_image from "src/assets/image/about_us/amanda.png";
 import melissa_image from "src/assets/image/about_us/melissa.png";
 import ServiceList from "@/components/atoms/serviceList";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const AboutUs = () => {
-    const { i18n: t } = useLingui();
+    const { t } = useLanguage();
 
     return (
         <div className="w-full min-h-screen bg-[#232C33] text-white" id={Sections.ABOUT_US}>
@@ -34,14 +34,14 @@ const AboutUs = () => {
 
                 <div className="w-full xl:w-1/3 p-10 pb-40 order-3 xl:order-2 border-[#C8CACC]/20 border-t xl:border-r xl:border-t-0">
                     <p className="text-right font-light">
-                        {t._('about_us.description')}
+                        {t('aboutUs.description')}
                     </p>
                 </div>
 
                 <div className="w-full xl:w-1/3 p-10 relative order-2 xl:order-3">
                     <div className="flex w-full justify-between flex-col-reverse xl:flex-row items-end xl:items-start gap-10 xl:gap-0">
                         <h3 className="text-left text-4xl xl:text-5xl font-extralight">
-                            {t._('about_us.a_little_about_us').split("\n").map((line, index) => (
+                            {t('aboutUs.littleAboutUs').split("\n").map((line, index) => (
                                 <span key={index}>
                                     {line}
                                     <br />
@@ -82,7 +82,7 @@ const AboutUs = () => {
             >
                 <div className="w-full flex flex-col xl:flex-row p-10 gap-4">
                     <h3 className="w-full xl:w-1/2 font-extralight text-4xl xl:text-6xl text-left">
-                        {t._('our_team.heading').split("\n").map((line, index) => (
+                        {t('ourTeam.heading').split("\n").map((line, index) => (
                             <span key={index}>
                                 {line}
                                 <br />
@@ -93,7 +93,7 @@ const AboutUs = () => {
                         <ProfileCard
                             image={amanda_image}
                             name="Amanda Herbert"
-                            job={t._('our_team.amanda_job')}
+                            job={t('ourTeam.roles.amanda')}
                             phone="+34 614 20 59 03"
                             email="amanda@m2studio.es"
                             align="left"
@@ -101,7 +101,7 @@ const AboutUs = () => {
                         <ProfileCard
                             image={melissa_image}
                             name="Melissa Torres"
-                            job={t._('our_team.melissa_job')}
+                            job={t('ourTeam.roles.melissa')}
                             phone="+34 614 36 37 46"
                             email="melissa@m2studio.es"
                             align="right"

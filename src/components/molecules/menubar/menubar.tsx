@@ -1,25 +1,19 @@
 import { Sections } from "@/enums/global";
 import { handleNavigation } from "@/utils/common";
-import { useLingui } from "@lingui/react/macro";
 import { MouseEvent } from "react";
-import en from "@/locale/en.json";
-import es from "@/locale/es.json";
+import { useLanguage } from "@/hooks/useLanguage";
 
 interface props {
     isDark: boolean
 }
 
-const messages = { en, es };
-
 const Menubar = ({ isDark }: props) => {
-    const { i18n } = useLingui();
+    const { language, setLanguage } = useLanguage();
 
     const toggleLanguage = (e: MouseEvent) => {
         e.stopPropagation();
-        const newLang = i18n.locale === "es" ? "en" : "es";
-        i18n.load(newLang, messages[newLang]);
-        i18n.activate(newLang);
-        document.documentElement.lang = newLang;
+        const newLang = language === "es" ? "en" : "es";
+        setLanguage(newLang);
     };
 
     return (
@@ -32,7 +26,7 @@ const Menubar = ({ isDark }: props) => {
             </section>
 
             <button onClick={toggleLanguage} className={`rounded text-2xl font-extralight ${isDark ? "text-[#232C33]" : "text-white"}`}>
-                {i18n.locale === "es" ? "ES" : "EN"}
+                {language === "es" ? "ES" : "EN"}
             </button>
         </div>
     )
