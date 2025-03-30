@@ -6,8 +6,11 @@ import design from "@/assets/image/why_choose_us_section/design.png";
 import { Sections } from "@/enums/global";
 import MovingImage from "@/components/atoms/movingImage";
 import ServiceList from "@/components/atoms/serviceList";
+import { useLingui } from "@lingui/react/macro";
 
 const WhyChooseUs = () => {
+    const { i18n: t } = useLingui();
+
     return (
         <div id={Sections.WHY_CHOOSE_US} className="w-full min-h-screen bg-white xl:px-[93px] border-t border-b">
             <div className="flex flex-row-reverse xl:flex-row">
@@ -26,7 +29,7 @@ const WhyChooseUs = () => {
                         width={145}
                         color="#000"
                     />
-                    <h3 className="text-left text-4xl xl:text-8xl font-thin xl:mb-16">Por qué <br />elegirnos?</h3>
+                    <h3 className="text-left text-4xl xl:text-8xl font-thin xl:mb-16">{t._('why_choose_us.title').split('\n').map((line, index) => <span key={index}>{line} <br /></span>)}</h3>
                     <div className="hidden xl:block">
                         <DotWithText>
                             <ServiceList />
@@ -37,12 +40,12 @@ const WhyChooseUs = () => {
 
             <div className="flex flex-col-reverse xl:flex-row border-">
                 <section className="text-left xl:text-right w-full xl:w-1/2 p-10 xl:p-16 xl:text-lg font-light flex flex-col gap-3 xl:border-r">
-                    <p>Diseñamos y Reformamos</p>
-                    <p>Contamos con los mejores profesionales en el sector del diseño y de la reforma.</p>
-                    <p>Profesionales certificados Todo nuestro equipo está certificado y cuenta con una gran experiencia, cada uno en su especialidad.</p>
-                    <p>Plazos Garantizados Nos comprometemos a cumplir mediante contrato con los plazos establecidos ya que no dependemos terceros ni intermediarios.</p>
-                    <p>Calidad Precio Ofrecemos una relación calidad precio muy competitivo. Siempre buscando un equilibrio entre el diseño, la calidad y el precio.</p>
-                    <p>Garantía Post Obra Ofrecemos a todos nuestros clientes para su tranquilidad y la nuestra, una garantía de 2 años tras la finalización de obra para cubrir así cualquier defecto de fábrica que pueda surgir.</p>
+                    <p>{t._('why_choose_us.design_and_renovate')}</p>
+                    <p>{t._('why_choose_us.professionals')}</p>
+                    <p>{t._('why_choose_us.certified_professionals')}</p>
+                    <p>{t._('why_choose_us.deadline_guarantee')}</p>
+                    <p>{t._('why_choose_us.quality_price')}</p>
+                    <p>{t._('why_choose_us.post_work_warranty')}</p>
                 </section>
 
                 <div className="object-cover w-full xl:w-1/2 xl:border-l  h-screen max-h-[554px]">
@@ -58,12 +61,12 @@ const WhyChooseUs = () => {
                 </div>
 
                 <div className="w-full xl:w-1/2 p-10 xl:p-16 flex flex-col justify-between text-left gap-5">
-                    <h4 className="font-extralight text-2xl xl:text-6xl">Proyecto y Diseño Incluido</h4>
+                    <h4 className="font-extralight text-2xl xl:text-6xl">{t._('why_choose_us.project_included')}</h4>
                     <section className="text-left xl:text-left xl:text-lg font-light flex flex-col gap-3">
-                        <p>Realizamos tu proyecto sin costes adicionales teniendo en cuenta tus gustos y necesidades, siempre optimizando la funcionalidad de espacios y últimas tendencias para que puedas visualizar tu sueño.</p>
-                        <p><b>Prestamos especial atención a:</b></p>
-                        <p>Optimizar el funcionamiento de cada espacio</p>
-                        <p>Mejorar la iluminación y el almacenamiento ya que consideramos estos puntos fundamentales para mejorar tu calidad de vida.</p>
+                        <p>{t._('why_choose_us.project_description')}</p>
+                        <p><b>{t._('why_choose_us.special_attention')}</b></p>
+                        <p>{t._('why_choose_us.optimize_spaces')}</p>
+                        <p>{t._('why_choose_us.lighting_and_storage')}</p>
                     </section>
                 </div>
             </div>
