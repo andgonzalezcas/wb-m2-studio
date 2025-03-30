@@ -1,8 +1,11 @@
 import ImageGetter from "@/assets/ImageGetter";
 import LinkButton from "@/components/atoms/linkButton";
 import { Sections } from "@/enums/global";
+import { useLingui } from "@lingui/react/macro";
 
 const Footer = () => {
+    const { i18n: t } = useLingui();
+
     return (
         <div className="w-full xl:px-[93px]" id={Sections.FOOTER}>
             <div className="flex flex-col-reverse xl:flex-col">
@@ -18,7 +21,7 @@ const Footer = () => {
                         />
                         <LinkButton
                             label="Twitter"
-                            link=""
+                            link="https://www.threads.net/@m2studio.es?xmt=AQGzj_tLNNbXH8f_wM_hnUh44SPj_4v60ZKzNA-sNcFJlyw"
                         />
                     </div>
                 </div>
@@ -43,8 +46,8 @@ const Footer = () => {
             </div>
             <div className="flex flex-col xl:flex-row border-t justify-between text-xs xl:text-base xl:child:p-16 p-4 xl:p-0 font-light">
                 <p className="">Bsod Studio 2025</p>
-                <p className="">Politica de Privacidad</p>
-                <p className="">Terminos de uso</p>
+                <p className="">{t._("footer.privacy_policy")}</p>
+                <p className="">{t._("footer.terms_of_use")}</p>
             </div>
         </div>
     )

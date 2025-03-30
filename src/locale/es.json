@@ -115,5 +115,8 @@
     "contact.terms_label": "He leído y acepto los términos y condiciones de uso",
     "contact.send_button": "Enviar",
     "contact.renovation_form_label": "Formulario si quieres hacer una reforma",
-    "contact.professional_form_label": "Formulario para profesionales colaboradores"
+    "contact.professional_form_label": "Formulario para profesionales colaboradores",
+
+    "footer.privacy_policy": "Política de Privacidad",
+    "footer.terms_of_use": "Términos de Uso"
 }

@@ -79,5 +79,8 @@
     "contact.terms_label": "I have read and accept the terms and conditions of use",
     "contact.send_button": "Send",
     "contact.renovation_form_label": "Form if you want to do a renovation",
-    "contact.professional_form_label": "Form for collaborating professionals"
+    "contact.professional_form_label": "Form for collaborating professionals",
+
+    "footer.privacy_policy": "Privacy Policy",
+    "footer.terms_of_use": "Terms of Use"
 }
