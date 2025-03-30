@@ -16,7 +16,20 @@
 
     "about_us.description": "Somos una empresa joven de nueva creación pero con una amplia experiencia en el diseño y la reforma de todo tipo de espacios. Trabajamos directamente con nuestro propio equipo de profesionales de confianza, lo que garantiza siempre la máxima calidad de entrega en cuanto a acabados y plazos. Nuestros presupuestos son muy competitivos, acorde al mercado actual.",
     "about_us.a_little_about_us": "Un poco\nsobre\nnosotras",
+    
     "our_team.heading": "Nuestro\nEquipo\nDirectivo",
     "our_team.amanda_job": "Interiorista",
-    "our_team.melissa_job": "Arquitecta Técnica"
+    "our_team.melissa_job": "Arquitecta Técnica",
+
+    "our_way.commitment_description": "\bM2.Studio\b desarrolla sus actividades dentro de \bestándares de excelencia\b, en lo que al \bcuidado del medio ambiente\b se refiere. Por consiguiente, cada persona que se encuentre dentro de la propiedad del cliente, o fuera de esta, pero en su representación, sin excepción, deberán cumplir con sus responsabilidades dentro del marco del \bcompromiso ecológico\b de acuerdo con la normativa legal vigente, previniendo la contaminación ambiental en todos los proyectos en donde ejecute sus actividades.",
+    "our_way.commitment_list_intro": "Para lo cual asume los siguientes compromisos:",
+    "our_way.commitment_point_1": "Continuar activamente con una política de prevención de la contaminación, para minimizar el impacto de nuestras operaciones.",
+    "our_way.commitment_point_2": "Cumplir con las políticas y procedimientos del cliente, así como con todas las leyes y regulaciones aplicables.",
+    "our_way.commitment_point_3": "Realizar esfuerzos estratégicos, para maximizar nuestra eficiencia energética y el uso de recursos naturales, mediante la gestión de nuestro uso de energía, consumo de agua y generación de residuos.",
+    "our_way.commitment_point_4": "Gestionar responsablemente los sitios de nuestras operaciones, para proteger los ecosistemas y la biodiversidad, así como para maximizar nuestra contribución a la conservación de la naturaleza.",
+    "our_way.commitment_point_5": "Mantener canales de comunicación abiertos y efectivos con nuestros empleados, clientes, comunidad y todos aquellos que trabajen con nosotros.",
+    "our_way.commitment_point_6": "Proveer los recursos necesarios para la instrucción, capacitación y supervisión, con el fin de gestionar apropiadamente los aspectos ambientales de nuestras operaciones.",
+    "our_way.commitment_point_7": "Planear, revisar y evaluar nuestro desempeño ambiental frente a objetivos medibles, para impulsar la mejora continua.",
+    "our_way.commitment_conclusion": "\bM2.Studio\b establecerá y mantendrá un programa y/o plan de manejo ambiental que contemple objetivos y procedimientos para realizar las operaciones en todos sus proyectos e instalaciones promoviendo la conciencia ambiental.",
+    "our_way.static_text_description": "M2 ha nacido como resultado de la pasión que sentimos por todo aquello que sea novedoso, \bsostenible\b y bello."
 }
