@@ -32,13 +32,13 @@ const AboutUs = () => {
                     />
                 </div>
 
-                <div className="w-full xl:w-1/3 p-10 pb-40 order-3 xl:order-2 border-[#C8CACC]/20 border-t xl:border-t-0">
+                <div className="w-full xl:w-1/3 p-10 pb-40 order-3 xl:order-2 border-[#C8CACC]/20 border-t xl:border-r xl:border-t-0">
                     <p className="text-right font-light">
                         {t._('about_us.description')}
                     </p>
                 </div>
 
-                <div className="w-full xl:w-1/3 p-10 relative border-[#C8CACC]/20 xl:border-l order-2 xl:order-3">
+                <div className="w-full xl:w-1/3 p-10 relative order-2 xl:order-3">
                     <div className="flex w-full justify-between flex-col-reverse xl:flex-row items-end xl:items-start gap-10 xl:gap-0">
                         <h3 className="text-left text-4xl xl:text-5xl font-extralight">
                             {t._('about_us.a_little_about_us').split("\n").map((line, index) => (

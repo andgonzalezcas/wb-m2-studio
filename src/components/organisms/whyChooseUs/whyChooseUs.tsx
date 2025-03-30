@@ -38,7 +38,7 @@ const WhyChooseUs = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col-reverse xl:flex-row border-">
+            <div className="flex flex-col-reverse xl:flex-row xl:border-r">
                 <section className="text-left xl:text-right w-full xl:w-1/2 p-10 xl:p-16 xl:text-lg font-light flex flex-col gap-3 xl:border-r">
                     <p>{t._('why_choose_us.design_and_renovate')}</p>
                     <p>{t._('why_choose_us.professionals')}</p>
@@ -48,7 +48,7 @@ const WhyChooseUs = () => {
                     <p>{t._('why_choose_us.post_work_warranty')}</p>
                 </section>
 
-                <div className="object-cover w-full xl:w-1/2 xl:border-l  h-screen max-h-[554px]">
+                <div className="object-cover w-full xl:w-1/2  h-screen max-h-[554px]">
                     <MovingImage imgSrc={refactor} />
                 </div>
             </div>
