@@ -91,6 +91,14 @@
     "our_services.design_description": "Otro punto muy importante a tener en cuenta es el diseño. Cuanto más claro tienes tus necesidades, más podremos ayudarte a conseguir el espacio deseado.",
     "our_services.deadlines_description": "Es importante saber cuando te viene bien que realicemos tu obra para así intentar encajarlo y que no se convierta en un problema. En m2.Studio, te indicaremos el tiempo necesario para preparar y ejecutar tu obra. Para nosotros es importante cumplir con los plazos establecidos por lo que el cliente debe ser consciente que los cambios improvistos por su parte retrasan una obra y una vez establecidos todos los detalles, intentamos ceñirnos a lo acordado.",
     "our_services.professionals_description": "Contar con un equipo de profesionales cualificados y certificados con experiencia para realizar la reforma, es de suma importancia. Nuestro equipo de m2.Studio te ofrece la garantía de entrega de unos acabados óptimos. Siempre velando para minimizar complicaciones y errores desde el principio.",
-    "our_services.security_description": "Para nosotros la seguridad de nuestro equipo es importantísimo, por lo que nos aseguramos que todo nuestro equipo cuenta con lo necesario para abordar cada reforma sin percances y con la mayor seguridad posible. Durante la reforma es importante tener en cuenta la seguridad. Nos aseguramos de que nuestros profesionales tienen la formación necesaria para realizar nuestras obras."
+    "our_services.security_description": "Para nosotros la seguridad de nuestro equipo es importantísimo, por lo que nos aseguramos que todo nuestro equipo cuenta con lo necesario para abordar cada reforma sin percances y con la mayor seguridad posible. Durante la reforma es importante tener en cuenta la seguridad. Nos aseguramos de que nuestros profesionales tienen la formación necesaria para realizar nuestras obras.",
 
+    "recent_projects.title": "Proyectos Recientes",
+    "recent_projects.project_1.label": "Proyecto 01",
+    "recent_projects.project_1.description": "Antes de comenzar una reforma, es crucial tener en cuenta algunas cosas para facilitarnos nuestra labor y ayudarnos a conectar con las verdaderas necesidades de nuestros clientes.",
+    "recent_projects.project_2.label": "Proyecto 02",
+    "recent_projects.project_2.description": "El Presupuesto: Antes de empezar cualquier reforma, debes plantear el presupuesto. Es importante tener claro qué quieres o puedes invertir en tu reforma. Debe ser una cantidad realista, acorde con tu realidad.",
+    "recent_projects.project_3.label": "Proyecto 03",
+    "recent_projects.project_3.description": "Otro punto muy importante a tener en cuenta es el diseño. Cuanto más claro tienes tus necesidades, más podremos ayudarte a conseguir el espacio deseado.",
+    "recent_projects.view_all": "Ver todos"
 }

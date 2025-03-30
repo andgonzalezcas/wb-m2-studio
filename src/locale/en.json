@@ -55,5 +55,14 @@
     "our_services.design_description": "Another crucial factor is design. The clearer you are about your needs, the better we can help you achieve your desired space.",
     "our_services.deadlines_description": "It is essential to determine the best time for us to carry out your renovation. At M2.Studio, we will indicate the necessary time for preparation and execution. Meeting deadlines is a priority, so clients should be aware that unexpected changes on their part may delay the project. Once all details are set, we strive to adhere to the agreed schedule.",
     "our_services.professionals_description": "Having a team of qualified and certified professionals with experience is of utmost importance. Our M2.Studio team guarantees optimal finishing quality while minimizing complications and errors from the start.",
-    "our_services.security_description": "For us, the safety of our team is crucial. We ensure that our professionals have everything necessary to undertake each renovation safely and efficiently. During the renovation process, safety remains a priority. We guarantee that our professionals receive the proper training to execute our projects safely."
+    "our_services.security_description": "For us, the safety of our team is crucial. We ensure that our professionals have everything necessary to undertake each renovation safely and efficiently. During the renovation process, safety remains a priority. We guarantee that our professionals receive the proper training to execute our projects safely.",
+
+    "recent_projects.title": "Recent Projects",
+    "recent_projects.project_1.label": "Project 01",
+    "recent_projects.project_1.description": "Before starting a renovation, it is crucial to consider some key aspects to make our work easier and help us connect with our clients' real needs.",
+    "recent_projects.project_2.label": "Project 02",
+    "recent_projects.project_2.description": "The Budget: Before starting any renovation, you must plan the budget. It is important to be clear about how much you want or can invest in your renovation. It should be a realistic amount in line with your financial situation.",
+    "recent_projects.project_3.label": "Project 03",
+    "recent_projects.project_3.description": "Another very important point to consider is the design. The clearer you are about your needs, the better we can help you achieve the desired space.",
+    "recent_projects.view_all": "View All"
 }
