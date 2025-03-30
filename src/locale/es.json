@@ -100,5 +100,10 @@
     "recent_projects.project_2.description": "El Presupuesto: Antes de empezar cualquier reforma, debes plantear el presupuesto. Es importante tener claro qué quieres o puedes invertir en tu reforma. Debe ser una cantidad realista, acorde con tu realidad.",
     "recent_projects.project_3.label": "Proyecto 03",
     "recent_projects.project_3.description": "Otro punto muy importante a tener en cuenta es el diseño. Cuanto más claro tienes tus necesidades, más podremos ayudarte a conseguir el espacio deseado.",
-    "recent_projects.view_all": "Ver todos"
+    "recent_projects.view_all": "Ver todos",
+
+    "design_experiences.title": "Creando Alianzas, Diseñando Experiencias",
+    "design_experiences.team_image_alt": "equipo de trabajo",
+    "design_experiences.collaboration_text": "Colaboramos con varias inmobiliarias en Alicante y les proporcionamos nuestros servicios",
+    "design_experiences.contact_text": "Contacta con nosotros y te informaremos"
 }

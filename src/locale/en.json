@@ -64,5 +64,10 @@
     "recent_projects.project_2.description": "The Budget: Before starting any renovation, you must plan the budget. It is important to be clear about how much you want or can invest in your renovation. It should be a realistic amount in line with your financial situation.",
     "recent_projects.project_3.label": "Project 03",
     "recent_projects.project_3.description": "Another very important point to consider is the design. The clearer you are about your needs, the better we can help you achieve the desired space.",
-    "recent_projects.view_all": "View All"
+    "recent_projects.view_all": "View All",
+
+    "design_experiences.title": "Creating Alliances, Designing Experiences",
+    "design_experiences.team_image_alt": "work team",
+    "design_experiences.collaboration_text": "We collaborate with several real estate agencies in Alicante and provide them with our services",
+    "design_experiences.contact_text": "Contact us and we will inform you"
 }
