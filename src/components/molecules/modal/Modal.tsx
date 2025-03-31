@@ -40,7 +40,6 @@ export const Carousel = ({ images, initialIndex = 0, onClose }: CarouselProps) =
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
 
   const handleContainerClick = (e: React.MouseEvent) => {
-    // Solo cerrar si el click fue directamente en el contenedor o en la imagen
     if (e.target === e.currentTarget || (e.target as HTMLElement).tagName === 'IMG') {
       onClose();
     }
@@ -60,7 +59,7 @@ export const Carousel = ({ images, initialIndex = 0, onClose }: CarouselProps) =
 
   return (
     <div className="relative w-full max-w-[90%] mx-auto flex flex-col h-screen justify-center" onClick={handleContainerClick}>
-      <div className="relative overflow-hidden w-full h-[60vh] my-12">
+      <div className="relative overflow-hidden w-full h-[80vh] my-12">
         {images.map((image, index) => (
           <div
             key={index}

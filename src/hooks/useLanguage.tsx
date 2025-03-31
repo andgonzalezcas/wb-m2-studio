@@ -24,15 +24,12 @@ const translations: Record<Language, TranslationDictionary> = { en, es };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-const getUserLocale = (): Language => 
-    (navigator.language.startsWith('es') ? 'es' : 'en');
-
 const getNestedValue = (obj: any, path: string): string => {
     return path.split('.').reduce((acc, part) => acc?.[part], obj) as string || path;
 };
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-    const [language, setLanguageState] = useState<Language>(getUserLocale());
+    const [language, setLanguageState] = useState<Language>("es");
 
     const setLanguage = useCallback((newLanguage: Language) => {
         document.documentElement.lang = newLanguage;

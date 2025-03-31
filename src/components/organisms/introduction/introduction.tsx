@@ -1,6 +1,6 @@
 import ImageGetter from "@/assets/ImageGetter";
 import { Sections } from "@/enums/global";
-import background_image from "@/assets/background/bg_left.png";
+import background_image from "@/assets/background/bg_right.png";
 import { handleNavigation } from "@/utils/common";
 import SplitScreen from "@/components/atoms/splitScreen";
 import { useLanguage } from "@/hooks/useLanguage";
@@ -16,6 +16,14 @@ const Introduction = () => {
         { label: t('sections.recentProjects'), link: Sections.RECENT_PROJECTS },
         { label: t('sections.contact'), link: Sections.CONTACT },
     ];
+
+    const handleWhatsAppClick = () => {
+        const phoneNumber = "34696941775";
+        const message = encodeURIComponent("¡Hola! Quisiera más información.");
+        const url = `https://wa.me/${phoneNumber}?text=${message}`;
+
+        window.open(url, "_blank");
+    };
 
     return (
         <div className="relative w-full min-h-screen bg-black text-white" id={Sections.INTRODUCTION}>
@@ -82,7 +90,10 @@ const Introduction = () => {
                 <ImageGetter folder="icons" image="downArrow" width={27} height={27} color="#fff" onClick={() => handleNavigation(Sections.ABOUT_US)} />
             </div>
 
-            <button className="absolute bottom-8 xl:bottom-14 right-1/2 translate-x-1/2 xl:translate-x-0 xl:right-28 p-2 bg-white text-black rounded-full flex gap-2 items-center">
+            <button
+                onClick={handleWhatsAppClick}
+                className="absolute bottom-8 xl:bottom-14 right-1/2 translate-x-1/2 xl:translate-x-0 xl:right-28 p-2 bg-white text-black rounded-full flex gap-2 items-center z-50"
+            >
                 <span className="px-3">
                     whatsapp
                 </span>

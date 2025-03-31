@@ -90,11 +90,11 @@ const ModalMenu = ({ onClose }: { onClose: () => void }) => {
                     />
                     <LinkButton
                         label="Linkedin"
-                        link=""
+                        link="https://www.linkedin.com/company/m-2studio/"
                         color="white"
                     />
                     <LinkButton
-                        label="Twitter"
+                        label="Threads"
                         link="https://www.threads.net/@m2studio.es?xmt=AQGzj_tLNNbXH8f_wM_hnUh44SPj_4v60ZKzNA-sNcFJlyw"
                         color="white"
                     />
