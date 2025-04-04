@@ -38,7 +38,7 @@ const WhyChooseUs = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col-reverse xl:flex-row xl:border-r">
+            <div className="flex flex-col-reverse xl:flex-row">
                 <section className="text-left xl:text-right w-full xl:w-1/2 p-10 xl:p-16 xl:text-lg font-light flex flex-col gap-3 xl:border-r">
                     <p>{t('whyChooseUs.designAndRenovate')}</p>
                     <p>{t('whyChooseUs.professionals')}</p>

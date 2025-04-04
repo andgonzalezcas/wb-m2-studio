@@ -55,7 +55,7 @@ const OurWay = () => {
         <div
             ref={sectionRef}
             id={Sections.OUR_WAY}
-            className="w-full min-h-screen bg-white xl:px-[93px] flex flex-col xl:flex-row"
+            className="w-full min-h-screen bg-white xl:px-[92px] flex flex-col xl:flex-row"
         >
             <div
                 ref={divRef}
