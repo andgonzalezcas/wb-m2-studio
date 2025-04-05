@@ -15,7 +15,6 @@ export default defineConfig({
     tsconfigPaths(), 
     svgr()
   ],
-  base: '/dist/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
