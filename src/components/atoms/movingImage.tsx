@@ -50,7 +50,7 @@ export default function MovingImage({ imgSrc }: { imgSrc: string }) {
                     width: "100%",
                     height: "100%",
                     objectFit: "cover",
-                    transition: "transform 0.1s ease-out"
+                    transition: "transform 0.3s ease-out"
                 }}
             />
         </div>
