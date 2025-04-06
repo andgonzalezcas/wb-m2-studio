@@ -167,8 +167,19 @@
     "messagePlaceholder": "Message",
     "termsLabel": "I have read and accept the terms and conditions of use",
     "sendButton": "Send",
-    "renovationFormLabel": "Form if you want to do a renovation",
-    "professionalFormLabel": "Form for professional collaborators"
+    "contact": {
+      "button": "Contact form",
+      "title": "Contact"
+    },
+    "renovation": {
+      "button": "Form if you want to make a reform",
+      "title": "Form if you want to make a reform",
+      "label": "If you want to do a renovation soon, fill out our form so we can provide you with a budget for your project"
+    },
+    "professional": {
+      "button": "Form for collaborating professionals",
+      "title": "Form for collaborating professionals"
+    }
   },
   "footer": {
     "privacyPolicy": "Privacy Policy",

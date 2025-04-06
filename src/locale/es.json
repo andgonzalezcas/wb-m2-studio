@@ -167,8 +167,19 @@
     "messagePlaceholder": "Mensaje",
     "termsLabel": "He leído y acepto los términos y condiciones de uso",
     "sendButton": "Enviar",
-    "renovationFormLabel": "Formulario si quieres hacer una reforma",
-    "professionalFormLabel": "Formulario para profesionales colaboradores"
+    "renovation": {
+      "button": "Formulario si quieres hacer una reforma",
+      "title": "Formulario si quieres hacer una reforma",
+      "label": "Si deseas realizar una reforma en breve, rellena nuestro formulario para que podamos Proporcionarte un presupuesto de tu proyecto"
+    },
+    "professional": {
+      "button": "Formulario para profesionales colaboradores",
+      "title": "Formulario para profesionales colaboradores"
+    },
+    "contact": {
+      "button": "Formulario de contacto",
+      "title": "Contacto"
+    }
   },
   "footer": {
     "privacyPolicy": "Política de Privacidad",

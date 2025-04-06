@@ -1,0 +1,23 @@
+import { HTMLInputTypeAttribute } from "react";
+
+const FormInput = (props: {
+    type: HTMLInputTypeAttribute,
+    placeholder: string,
+    required: boolean,
+    name: string,
+    onChange: (value: string) => void,
+    value: string
+}) => {
+    const { type, placeholder, required, name, onChange } = props;
+
+    return < input
+        type={type}
+        name={name}
+        placeholder={placeholder}
+        required={required}
+        onChange={(e) => onChange(e.target.value)}
+        className="border-[#DCDDDF] border text-2xl font-light px-2 py-1 w-full xl:w-[80%]"
+    />
+}
+
+export default FormInput;
