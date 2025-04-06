@@ -5,7 +5,8 @@
       "interiorism": "Interior Design",
       "reform": "Reforms",
       "followUs": "Follow Us"
-    }
+    },
+    "others": "Other"
   },
   "sections": {
     "introduction": "Introduction",
@@ -159,26 +160,59 @@
     "collaborationText": "We collaborate with various real estate agencies in Alicante and provide them with our services",
     "contactText": "Contact us and we will inform you"
   },
-  "contact": {
-    "title": "Contact",
-    "namePlaceholder": "Name",
-    "emailPlaceholder": "Email",
-    "phonePlaceholder": "Phone",
-    "messagePlaceholder": "Message",
-    "termsLabel": "I have read and accept the terms and conditions of use",
-    "sendButton": "Send",
-    "contact": {
-      "button": "Contact form",
-      "title": "Contact"
-    },
+  "forms": {
     "renovation": {
-      "button": "Form if you want to make a reform",
-      "title": "Form if you want to make a reform",
-      "label": "If you want to do a renovation soon, fill out our form so we can provide you with a budget for your project"
+      "title": "Form if you want to make a renovation",
+      "button": "Form if you want to make a renovation",
+      "label": "If you want to do a renovation soon, fill out our form so we can provide you with a budget for your project",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "postalCode": "Postal code",
+        "reformType": "Reform type",
+        "bathrooms": "Number of bathrooms",
+        "bedrooms": "Number of bedrooms",
+        "floorType": "Floor type",
+        "windowChange": "Window change",
+        "climatization": "Climatization",
+        "heating": "Heating type",
+        "surface": "Surface m2",
+        "finishQuality": "Finish quality",
+        "startDate": "Start date of work",
+        "comments": "Comments",
+        "terms": "I accept that my information is sent to m2 Studio",
+        "send": "Send"
+      }
     },
     "professional": {
       "button": "Form for collaborating professionals",
-      "title": "Form for collaborating professionals"
+      "title": "Form for collaborating professionals",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "profile": "Profile",
+        "company": "Company",
+        "collaborators": "Colaborators",
+        "city": "City",
+        "postalCode": "Postal code",
+        "comments": "Comments",
+        "terms": "I accept that my information is sent to m2 Studio",
+        "send": "Send"
+      }
+    },
+    "contact": {
+      "button": "Contact form",
+      "title": "Contact",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message",
+        "terms": "I accept that my information is sent to m2 Studio",
+        "send": "Send"
+      }
     }
   },
   "footer": {

@@ -15,26 +15,26 @@ const FormSection = () => {
     const [activeForm, setActiveForm] = useState<forms>("contact");
 
     const titleSection: Record<forms, { title: string, label?: string }> = {
-        contact: { title: t("contact.contact.title") },
-        reform: { title: t("contact.renovation.title"), label: t("contact.renovation.label") },
-        professional: { title: t("contact.professional.title") }
+        contact: { title: t("forms.contact.title") },
+        reform: { title: t("forms.renovation.title"), label: t("forms.renovation.label") },
+        professional: { title: t("forms.professional.title") }
     };
 
     return (
         <div className="w-full bg-white xl:px-[93px] relative xl:border-t flex flex-col xl:flex-wrap mb-40 pt-20" id={Sections.CONTACT}>
             <div className="w-full p-10 flex flex-col gap-16 xl:hidden py-32">
                 {activeForm !== "contact" && <TabFormButton
-                    label={t("contact.contact.button")}
+                    label={t("forms.contact.button")}
                     onClick={() => setActiveForm("contact")}
                     border
                 />}
                 {activeForm !== "reform" && <TabFormButton
-                    label={t("contact.renovation.button")}
+                    label={t("forms.renovation.button")}
                     onClick={() => setActiveForm("reform")}
                     border
                 />}
                 {activeForm !== "professional" && <TabFormButton
-                    label={t("contact.professional.button")}
+                    label={t("forms.professional.button")}
                     onClick={() => setActiveForm("professional")}
                     border
                 />}
@@ -55,17 +55,17 @@ const FormSection = () => {
                 {activeForm === "professional" && <ProfessionalForm />}
                 <div className="w-1/2 p-10 flex-col gap-16 hidden xl:flex">
                     {activeForm !== "contact" && <TabFormButton
-                        label={t("contact.contact.button")}
+                        label={t("forms.contact.button")}
                         onClick={() => setActiveForm("contact")}
                         border
                     />}
                     {activeForm !== "reform" && <TabFormButton
-                        label={t("contact.renovation.button")}
+                        label={t("forms.renovation.button")}
                         onClick={() => setActiveForm("reform")}
                         border
                     />}
                     {activeForm !== "professional" && <TabFormButton
-                        label={t("contact.professional.button")}
+                        label={t("forms.professional.button")}
                         onClick={() => setActiveForm("professional")}
                         border
                     />}

@@ -68,7 +68,7 @@ const ReformForm = () => {
             <FormInput
                 type="text"
                 name="name"
-                placeholder="Nombre"
+                placeholder={t("forms.renovation.form.name")}
                 required
                 value={formData.name}
                 onChange={(val) => handleChange("name", val)}
@@ -76,7 +76,7 @@ const ReformForm = () => {
             <FormInput
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder={t("forms.renovation.form.email")}
                 required
                 value={formData.email}
                 onChange={(val) => handleChange("email", val)}
@@ -84,7 +84,7 @@ const ReformForm = () => {
             <FormInput
                 type="tel"
                 name="phone"
-                placeholder="Telefono"
+                placeholder={t("forms.renovation.form.phone")}
                 required
                 value={formData.phone}
                 onChange={(val) => handleChange("phone", val)}
@@ -92,14 +92,14 @@ const ReformForm = () => {
             <FormInput
                 type="text"
                 name="postalCode"
-                placeholder="Código postal"
+                placeholder={t("forms.renovation.form.postalCode")}
                 value={formData.postalCode}
                 onChange={(val) => handleChange("postalCode", val)}
                 required
             />
 
             <FieldSetInput
-                legend="Tipo de Reforma"
+                legend={t("forms.renovation.form.reformType")}
                 options={["Integral", "Semi Integral", "Solo baños", "Solo cocina", "Solo baños y cocina", "Cambio de uso", "Vivienda turística", "Otro"]}
                 optionsChecked={formData.reformType}
                 onChange={(val) => toggleArrayValue("reformType", val)}
@@ -108,23 +108,21 @@ const ReformForm = () => {
             <FormInput
                 type="number"
                 name="bathrooms"
-                placeholder="Nº Baños"
+                placeholder={t("forms.renovation.form.bathrooms")}
                 value={formData.bathrooms}
                 onChange={(val) => handleChange("bathrooms", val)}
-                required
             />
             <FormInput
                 type="number"
                 name="bedrooms"
-                placeholder="Nº Dormitorios"
+                placeholder={t("forms.renovation.form.bedrooms")}
                 value={formData.bedrooms}
                 onChange={(val) => handleChange("bedrooms", val)}
-                required
             />
 
             <FieldSetInput
                 type="radio"
-                legend="Tipo de suelo"
+                legend={t("forms.renovation.form.floorType")}
                 options={["Laminado", "Gres porcelánico", "Otro"]}
                 optionsChecked={formData.floorType}
                 onChange={(val) => handleChange("floorType", val)}
@@ -132,7 +130,7 @@ const ReformForm = () => {
 
             <FieldSetInput
                 type="radio"
-                legend="Cambio de ventanas"
+                legend={t("forms.renovation.form.windowChange")}
                 options={["Sí", "No"]}
                 optionsChecked={formData.windowChange}
                 onChange={(val) => handleChange("windowChange", val)}
@@ -140,7 +138,7 @@ const ReformForm = () => {
 
             <FieldSetInput
                 type="radio"
-                legend="Climatización"
+                legend={t("forms.renovation.form.climatization")}
                 options={["Conductos", "Split", "No"]}
                 optionsChecked={formData.climatization}
                 onChange={(val) => handleChange("climatization", val)}
@@ -148,7 +146,7 @@ const ReformForm = () => {
 
             <FieldSetInput
                 type="radio"
-                legend="Tipo de calefacción"
+                legend={t("forms.renovation.form.heating")}
                 options={["Radiadores", "Suelo radiante", "No"]}
                 optionsChecked={formData.heating}
                 onChange={(val) => handleChange("heating", val)}
@@ -157,7 +155,7 @@ const ReformForm = () => {
             <FormInput
                 type="number"
                 name="surface"
-                placeholder="Superficie m2"
+                placeholder={t("forms.renovation.form.surface")}
                 value={formData.surface}
                 onChange={(val) => handleChange("surface", val)}
                 required
@@ -165,7 +163,7 @@ const ReformForm = () => {
 
             <FieldSetInput
                 type="radio"
-                legend="Calidad acabados"
+                legend={t("forms.renovation.form.finishQuality")}
                 options={["Medio", "Medio alto", "Alto"]}
                 optionsChecked={formData.finishQuality}
                 onChange={(val) => handleChange("finishQuality", val)}
@@ -174,7 +172,7 @@ const ReformForm = () => {
             <FormInput
                 type="date"
                 name="startDate"
-                placeholder="Fecha comienzo de obra"
+                placeholder={t("forms.renovation.form.startDate")}
                 value={formData.startDate}
                 onChange={(val) => handleChange("startDate", val)}
                 required
@@ -182,7 +180,7 @@ const ReformForm = () => {
 
             <textarea
                 name="comment"
-                placeholder={t("contact.messagePlaceholder")}
+                placeholder={t("forms.renovation.form.comments")}
                 className="border-[#DCDDDF] border text-2xl font-light px-2 py-1 w-full xl:w-[80%] h-60"
                 onChange={(e) => setFormData((prev) => ({ ...prev, comments: e.target.value }))}
                 value={formData.comments}
@@ -195,11 +193,11 @@ const ReformForm = () => {
                     checked={formData.terms}
                     onChange={(e) => handleChange("terms", e.target.checked)}
                 />
-                He leído y acepto los términos y condiciones de uso
+                {t("forms.renovation.form.terms")}
             </label>
 
             <button type="submit" className="py-1 px-4 border rounded-full self-start">
-                Enviar
+                {t("forms.renovation.form.send")}
             </button>
         </form>
     );

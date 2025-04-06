@@ -66,7 +66,7 @@ const ProfessionalForm = () => {
             <FormInput
                 type="text"
                 name="name"
-                placeholder="Nombre"
+                placeholder={t("forms.professional.form.name")}
                 value={formData.name}
                 onChange={(val) => handleChange("name", val)}
                 required
@@ -74,7 +74,7 @@ const ProfessionalForm = () => {
             <FormInput
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder={t("forms.professional.form.email")}
                 value={formData.email}
                 onChange={(val) => handleChange("email", val)}
                 required
@@ -82,7 +82,7 @@ const ProfessionalForm = () => {
             <FormInput
                 type="tel"
                 name="phone"
-                placeholder="Teléfono"
+                placeholder={t("forms.professional.form.phone")}
                 value={formData.phone}
                 onChange={(val) => handleChange("phone", val)}
                 required
@@ -90,7 +90,7 @@ const ProfessionalForm = () => {
             <FormInput
                 type="text"
                 name="profile"
-                placeholder="Perfil"
+                placeholder={t("forms.professional.form.profile")}
                 value={formData.profile}
                 onChange={(val) => handleChange("profile", val)}
                 required
@@ -98,7 +98,7 @@ const ProfessionalForm = () => {
             <FormInput
                 type="text"
                 name="company"
-                placeholder="Empresa"
+                placeholder={t("forms.professional.form.company")}
                 value={formData.company}
                 onChange={(val) => handleChange("company", val)}
                 required
@@ -106,7 +106,7 @@ const ProfessionalForm = () => {
 
             {/* Colaboradores */}
             <FieldSetInput
-                legend="Colaboradores"
+                legend={t("forms.professional.form.collaborators")}
                 options={collaboratorOptions}
                 optionsChecked={formData.collaborators}
                 onChange={toggleArrayValue}
@@ -114,7 +114,7 @@ const ProfessionalForm = () => {
             <FormInput
                 type="text"
                 name="city"
-                placeholder="Ciudad"
+                placeholder={t("forms.professional.form.city")}
                 value={formData.city}
                 onChange={(val) => handleChange("city", val)}
                 required
@@ -122,7 +122,7 @@ const ProfessionalForm = () => {
             <FormInput
                 type="text"
                 name="postalCode"
-                placeholder="Código postal"
+                placeholder={t("forms.professional.form.postalCode")}
                 value={formData.postalCode}
                 onChange={(val) => handleChange("postalCode", val)}
                 required
@@ -130,7 +130,7 @@ const ProfessionalForm = () => {
 
             <textarea
                 name="comments"
-                placeholder="Comentarios"
+                placeholder={t("forms.professional.form.comments")}
                 className="border-[#DCDDDF] border text-2xl font-light px-2 py-1 w-full xl:w-[80%] h-60"
                 onChange={(e) => handleChange("comments", e.target.value)}
                 value={formData.comments}
@@ -143,11 +143,11 @@ const ProfessionalForm = () => {
                     checked={formData.terms}
                     onChange={(e) => handleChange("terms", e.target.checked)}
                 />
-                He leído y acepto los términos y condiciones de uso
+                {t("forms.professional.form.terms")}
             </label>
 
             <button type="submit" className="py-1 px-4 border rounded-full self-start">
-                Enviar
+                {t("forms.professional.form.send")}
             </button>
         </form>
     );

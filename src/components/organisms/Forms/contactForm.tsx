@@ -60,7 +60,7 @@ const ContactForm = () => {
             <FormInput
                 type="text"
                 name="name"
-                placeholder={t("contact.namePlaceholder")}
+                placeholder={t("forms.contact.form.name")}
                 required
                 onChange={(value) => setFormData((prev) => ({ ...prev, name: value }))}
                 value={formData.name}
@@ -68,7 +68,7 @@ const ContactForm = () => {
             <FormInput
                 type="email"
                 name="email"
-                placeholder={t("contact.emailPlaceholder")}
+                placeholder={t("forms.contact.form.email")}
                 required
                 onChange={(value) => setFormData((prev) => ({ ...prev, email: value }))}
                 value={formData.email}
@@ -76,14 +76,14 @@ const ContactForm = () => {
             <FormInput
                 type="tel"
                 name="phone"
-                placeholder={t("contact.phonePlaceholder")}
+                placeholder={t("forms.contact.form.phone")}
                 required
                 onChange={(value) => setFormData((prev) => ({ ...prev, phone: value }))}
                 value={formData.phone}
             />
             <textarea
                 name="message"
-                placeholder={t("contact.messagePlaceholder")}
+                placeholder={t("forms.contact.form.message")}
                 className="border-[#DCDDDF] border text-2xl font-light px-2 py-1 w-full xl:w-[80%] h-60"
                 onChange={(e) => setFormData((prev) => ({ ...prev, message: e.target.value }))}
                 value={formData.message}
@@ -95,11 +95,11 @@ const ContactForm = () => {
                     checked={formData.terms}
                     onChange={(e) => setFormData((prev) => ({ ...prev, terms: e.target.checked }))}
                 />
-                <label className="font-extralight">{t("contact.termsLabel")}</label>
+                <label className="font-extralight">{t("forms.contact.form.terms")}</label>
             </div>
             <div className="w-full xl:w-[80%] flex justify-center">
                 <button className="mt-4 py-1 px-4 border-[#232C3340] border rounded-full w-fit">
-                    {t("contact.sendButton")}
+                    {t("forms.contact.form.send")}
                 </button>
             </div>
         </form>

@@ -3,10 +3,10 @@ import { HTMLInputTypeAttribute } from "react";
 const FormInput = (props: {
     type: HTMLInputTypeAttribute,
     placeholder: string,
-    required: boolean,
     name: string,
     onChange: (value: string) => void,
     value: string
+    required?: boolean,
 }) => {
     const { type, placeholder, required, name, onChange } = props;
 
