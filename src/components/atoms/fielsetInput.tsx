@@ -18,7 +18,7 @@ const FieldSetInput = ({
     const { t } = useLanguage();
 
     return (
-        <fieldset className="border p-2 w-[80%] text-left relative">
+        <fieldset className="border p-2 w-full xl:w-[80%] text-left relative">
             <legend className="absolute top-2 text-2xl font-light bg-white text-[#9CA3AF]">
                 {legend}
             </legend>

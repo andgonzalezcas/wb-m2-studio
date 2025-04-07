@@ -57,10 +57,59 @@ const ReformForm = () => {
         setFormData((prev) => ({ ...prev, [key]: value }));
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        console.log(formData);
-        alert("Formulario enviado (simulado).");
+        // Reemplaza esta URL con la de tu Google Form
+        const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfCXATu3EEBYThlH5NL2Oa1q-eFoBRVQ7fZKFiD1hq5bCPklA/formResponse';
+
+        const form = new FormData();
+        form.append('entry.1337831936', formData.name);
+        form.append('entry.1337831937', formData.email);
+        form.append('entry.1337831938', formData.phone);
+        form.append('entry.1337831939', formData.postalCode);
+        form.append('entry.1337831940', formData.reformType.join(', '));
+        form.append('entry.1337831941', formData.bathrooms);
+        form.append('entry.1337831942', formData.bedrooms);
+        form.append('entry.1337831943', formData.floorType);
+        form.append('entry.1337831944', formData.windowChange);
+        form.append('entry.1337831945', formData.climatization);
+        form.append('entry.1337831946', formData.heating);
+        form.append('entry.1337831947', formData.surface);
+        form.append('entry.1337831948', formData.finishQuality);
+        form.append('entry.1337831949', formData.startDate);
+        form.append('entry.1337831950', formData.comments);
+        form.append('entry.1337831951', formData.terms ? 'Sí' : 'No');
+
+        try {
+            await fetch(googleFormUrl, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: form
+            });
+
+            setFormData({
+                name: '',
+                email: '',
+                phone: '',
+                postalCode: '',
+                reformType: [],
+                bathrooms: '',
+                bedrooms: '',
+                floorType: '',
+                windowChange: '',
+                climatization: '',
+                heating: '',
+                surface: '',
+                finishQuality: '',
+                startDate: '',
+                comments: '',
+                terms: false,
+            });
+
+            alert('Mensaje enviado con éxito');
+        } catch (error) {
+            alert('Error al enviar el mensaje. Por favor, intente nuevamente.');
+        }
     };
 
     return (
@@ -95,7 +144,6 @@ const ReformForm = () => {
                 placeholder={t("forms.renovation.form.postalCode")}
                 value={formData.postalCode}
                 onChange={(val) => handleChange("postalCode", val)}
-                required
             />
 
             <FieldSetInput
@@ -158,7 +206,6 @@ const ReformForm = () => {
                 placeholder={t("forms.renovation.form.surface")}
                 value={formData.surface}
                 onChange={(val) => handleChange("surface", val)}
-                required
             />
 
             <FieldSetInput
@@ -175,7 +222,6 @@ const ReformForm = () => {
                 placeholder={t("forms.renovation.form.startDate")}
                 value={formData.startDate}
                 onChange={(val) => handleChange("startDate", val)}
-                required
             />
 
             <textarea
