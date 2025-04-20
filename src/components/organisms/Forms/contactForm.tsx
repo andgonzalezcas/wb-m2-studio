@@ -1,6 +1,8 @@
 import FormInput from "@/components/atoms/formInput";
 import { useLanguage } from "@/hooks/useLanguage";
+import { handleWhatsAppClick } from "@/utils/whatsapp";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 interface FormData {
     name: string;
@@ -24,15 +26,14 @@ const ContactForm = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        // Reemplaza esta URL con la de tu Google Form
-        const googleFormUrl = 'TU_URL_DE_GOOGLE_FORM';
+        const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSddE4xStIA4d6jfJO_uVXfLKLTdTbHjTp1zf2UvIWKryIamwg/formResponse';
 
-        // Reemplaza estos IDs con los de tu Google Form
         const form = new FormData();
-        form.append('entry.XXXXX', formData.name);        // ID para nombre
-        form.append('entry.XXXXX', formData.email);       // ID para email
-        form.append('entry.XXXXX', formData.phone);       // ID para teléfono
-        form.append('entry.XXXXX', formData.message);     // ID para mensaje
+        form.append('entry.219187195', formData.name);
+        form.append('entry.563990993', formData.email);
+        form.append('entry.338140211', formData.phone);
+        form.append('entry.1677481724', formData.message);
+        form.append('entry.2007751866', `${formData.terms && "He leído y acepto la Política de Privacidad: https://policies.google.com/privacy"}`);
 
         try {
             await fetch(googleFormUrl, {
@@ -49,9 +50,23 @@ const ContactForm = () => {
                 terms: false
             });
 
-            alert('Mensaje enviado con éxito');
+            toast.success(
+                <div>
+                    <p>Formulario enviado con éxito.</p>
+                    <p>
+                        Si deseas agilizar el proceso, puedes contactarnos directamente vía{" "}
+                        <button
+                            onClick={handleWhatsAppClick}
+                            className="underline text-blue-400"
+                        >
+                            WhatsApp
+                        </button>
+                        .
+                    </p>
+                </div>
+            );
         } catch (error) {
-            alert('Error al enviar el mensaje. Por favor, intente nuevamente.');
+            toast.error('Error al enviar el mensaje. Por favor, intente nuevamente o comuníquese con nosotros por whatsapp.');
         }
     };
 
