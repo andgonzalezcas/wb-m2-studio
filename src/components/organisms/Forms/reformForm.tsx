@@ -3,6 +3,7 @@ import FormInput from "@/components/atoms/formInput";
 import { useLanguage } from "@/hooks/useLanguage";
 import FieldSetInput from "@/components/atoms/fielsetInput";
 import { toast } from "react-toastify";
+import { handleWhatsAppClick } from "@/utils/whatsapp";
 
 interface ReformFormData {
     name: string;
@@ -107,14 +108,12 @@ const ReformForm = () => {
                     <p>Formulario enviado con éxito.</p>
                     <p>
                         Si deseas agilizar el proceso, puedes contactarnos directamente vía{" "}
-                        <a
-                            href="https://wa.me/573001234567"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <button
+                            onClick={handleWhatsAppClick}
                             className="underline text-blue-400"
                         >
                             WhatsApp
-                        </a>
+                        </button>
                         .
                     </p>
                 </div>

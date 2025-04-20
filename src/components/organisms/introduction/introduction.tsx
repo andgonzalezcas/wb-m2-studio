@@ -4,6 +4,7 @@ import background_image from "@/assets/background/bg_right.png";
 import { handleNavigation } from "@/utils/common";
 import SplitScreen from "@/components/atoms/splitScreen";
 import { useLanguage } from "@/hooks/useLanguage";
+import { handleWhatsAppClick } from "@/utils/whatsapp";
 
 const Introduction = () => {
     const { t } = useLanguage();
@@ -16,14 +17,6 @@ const Introduction = () => {
         { label: t('sections.recentProjects'), link: Sections.RECENT_PROJECTS },
         { label: t('sections.contact'), link: Sections.CONTACT },
     ];
-
-    const handleWhatsAppClick = () => {
-        const phoneNumber = "34696941775";
-        const message = encodeURIComponent("¡Hola! Quisiera más información.");
-        const url = `https://wa.me/${phoneNumber}?text=${message}`;
-
-        window.open(url, "_blank");
-    };
 
     return (
         <div className="relative w-full min-h-screen bg-black text-white" id={Sections.INTRODUCTION}>
