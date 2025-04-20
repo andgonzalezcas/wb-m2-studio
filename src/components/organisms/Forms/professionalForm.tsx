@@ -63,19 +63,19 @@ const ProfessionalForm = () => {
                 body: form
             });
 
-            // setFormData({
-            //     name: "",
-            //     email: "",
-            //     phone: "",
-            //     profile: "",
-            //     company: "",
-            //     collaborators: "",
-            //     otherCollaborator: "",
-            //     city: "",
-            //     postalCode: "",
-            //     comments: "",
-            //     terms: false,
-            // });
+            setFormData({
+                name: "",
+                email: "",
+                phone: "",
+                profile: "",
+                company: "",
+                collaborators: "",
+                otherCollaborator: "",
+                city: "",
+                postalCode: "",
+                comments: "",
+                terms: false,
+            });
 
             toast.success(
                 <div>
