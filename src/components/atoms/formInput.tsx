@@ -8,11 +8,12 @@ const FormInput = (props: {
     value: string
     required?: boolean,
 }) => {
-    const { type, placeholder, required, name, onChange } = props;
+    const { type, placeholder, required, name, onChange, value } = props;
 
     return < input
         type={type}
         name={name}
+        value={value}
         placeholder={placeholder}
         required={required}
         onChange={(e) => onChange(e.target.value)}

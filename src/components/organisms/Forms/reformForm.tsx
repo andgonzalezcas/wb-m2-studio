@@ -2,13 +2,14 @@ import { useState } from "react";
 import FormInput from "@/components/atoms/formInput";
 import { useLanguage } from "@/hooks/useLanguage";
 import FieldSetInput from "@/components/atoms/fielsetInput";
+import { toast } from "react-toastify";
 
 interface ReformFormData {
     name: string;
     email: string;
     phone: string;
     postalCode: string;
-    reformType: string[];
+    reformType: string;
     bathrooms: string;
     bedrooms: string;
     floorType: string;
@@ -29,7 +30,7 @@ const ReformForm = () => {
         email: '',
         phone: '',
         postalCode: '',
-        reformType: [],
+        reformType: '',
         bathrooms: '',
         bedrooms: '',
         floorType: '',
@@ -43,42 +44,36 @@ const ReformForm = () => {
         terms: false,
     });
 
-    const toggleArrayValue = (key: keyof ReformFormData, value: string) => {
-        setFormData((prev) => {
-            const array = prev[key] as string[];
-            const updatedArray = array.includes(value)
-                ? array.filter((v) => v !== value)
-                : [...array, value];
-            return { ...prev, [key]: updatedArray };
-        });
-    };
-
     const handleChange = (key: keyof ReformFormData, value: string | boolean) => {
         setFormData((prev) => ({ ...prev, [key]: value }));
     };
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Reemplaza esta URL con la de tu Google Form
-        const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfCXATu3EEBYThlH5NL2Oa1q-eFoBRVQ7fZKFiD1hq5bCPklA/formResponse';
+        const googleFormUrl = "http://docs.google.com/forms/d/e/1FAIpQLSfLcXSx5AaZmnadgiXqSa7khF8MPY_twQFxvrFRSINb2Gcm4Q/formResponse";
 
         const form = new FormData();
-        form.append('entry.1337831936', formData.name);
-        form.append('entry.1337831937', formData.email);
-        form.append('entry.1337831938', formData.phone);
-        form.append('entry.1337831939', formData.postalCode);
-        form.append('entry.1337831940', formData.reformType.join(', '));
-        form.append('entry.1337831941', formData.bathrooms);
-        form.append('entry.1337831942', formData.bedrooms);
-        form.append('entry.1337831943', formData.floorType);
-        form.append('entry.1337831944', formData.windowChange);
-        form.append('entry.1337831945', formData.climatization);
-        form.append('entry.1337831946', formData.heating);
-        form.append('entry.1337831947', formData.surface);
-        form.append('entry.1337831948', formData.finishQuality);
-        form.append('entry.1337831949', formData.startDate);
-        form.append('entry.1337831950', formData.comments);
-        form.append('entry.1337831951', formData.terms ? 'Sí' : 'No');
+        form.append('entry.1874729328', formData.bathrooms);
+        form.append('entry.3435720', formData.bedrooms);
+        form.append('entry.754647621', formData.surface);
+        form.append('entry.2005620554', formData.name);
+        form.append('entry.1045781291', formData.email);
+        form.append('entry.1166974658', formData.phone);
+        form.append('entry.1065046570', formData.postalCode);
+        form.append('entry.839337160', formData.comments);
+        form.append('entry.1859130229', formData.reformType);
+        form.append('entry.430495335', formData.floorType);
+        form.append('entry.117118569', formData.windowChange);
+        form.append('entry.366453450', formData.climatization);
+        form.append('entry.796152634', formData.heating);
+        form.append('entry.259138605', formData.finishQuality);
+        form.append('entry.1481457655', `${formData.terms && "He leído y acepto la Política de Privacidad: https://policies.google.com/privacy"}`);
+        form.append('emailAddress', formData.email);
+
+        const [year, month, day] = formData.startDate.split("-")
+        form.append('entry.733172617_year', year);
+        form.append('entry.733172617_month', month);
+        form.append('entry.733172617_day', day);
 
         try {
             await fetch(googleFormUrl, {
@@ -87,12 +82,13 @@ const ReformForm = () => {
                 body: form
             });
 
+            // Reset form
             setFormData({
                 name: '',
                 email: '',
                 phone: '',
                 postalCode: '',
-                reformType: [],
+                reformType: '',
                 bathrooms: '',
                 bedrooms: '',
                 floorType: '',
@@ -106,9 +102,25 @@ const ReformForm = () => {
                 terms: false,
             });
 
-            alert('Mensaje enviado con éxito');
+            toast.success(
+                <div>
+                    <p>Formulario enviado con éxito.</p>
+                    <p>
+                        Si deseas agilizar el proceso, puedes contactarnos directamente vía{" "}
+                        <a
+                            href="https://wa.me/573001234567"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline text-blue-400"
+                        >
+                            WhatsApp
+                        </a>
+                        .
+                    </p>
+                </div>
+            );
         } catch (error) {
-            alert('Error al enviar el mensaje. Por favor, intente nuevamente.');
+            toast.error('Error al enviar el mensaje. Por favor, intente nuevamente o comuníquese con nosotros por whatsapp.');
         }
     };
 
@@ -142,18 +154,22 @@ const ReformForm = () => {
                 type="text"
                 name="postalCode"
                 placeholder={t("forms.renovation.form.postalCode")}
+                required
                 value={formData.postalCode}
                 onChange={(val) => handleChange("postalCode", val)}
             />
 
             <FieldSetInput
+                required
+                type="radio"
                 legend={t("forms.renovation.form.reformType")}
-                options={["Integral", "Semi Integral", "Solo baños", "Solo cocina", "Solo baños y cocina", "Cambio de uso", "Vivienda turística", "Otro"]}
+                options={["Integral", "Semi integral", "Solo baños", "Solo cocina", "Solo baños y cocina", "Cambio de uso", "Vivienda turistica", "Otro"]}
                 optionsChecked={formData.reformType}
-                onChange={(val) => toggleArrayValue("reformType", val)}
+                onChange={(val) => handleChange("reformType", val)}
             />
 
             <FormInput
+                required
                 type="number"
                 name="bathrooms"
                 placeholder={t("forms.renovation.form.bathrooms")}
@@ -161,6 +177,7 @@ const ReformForm = () => {
                 onChange={(val) => handleChange("bathrooms", val)}
             />
             <FormInput
+                required
                 type="number"
                 name="bedrooms"
                 placeholder={t("forms.renovation.form.bedrooms")}
@@ -169,6 +186,7 @@ const ReformForm = () => {
             />
 
             <FieldSetInput
+                required
                 type="radio"
                 legend={t("forms.renovation.form.floorType")}
                 options={["Laminado", "Gres porcelánico", "Otro"]}
@@ -177,6 +195,7 @@ const ReformForm = () => {
             />
 
             <FieldSetInput
+                required
                 type="radio"
                 legend={t("forms.renovation.form.windowChange")}
                 options={["Sí", "No"]}
@@ -185,6 +204,7 @@ const ReformForm = () => {
             />
 
             <FieldSetInput
+                required
                 type="radio"
                 legend={t("forms.renovation.form.climatization")}
                 options={["Conductos", "Split", "No"]}
@@ -193,6 +213,7 @@ const ReformForm = () => {
             />
 
             <FieldSetInput
+                required
                 type="radio"
                 legend={t("forms.renovation.form.heating")}
                 options={["Radiadores", "Suelo radiante", "No"]}
@@ -201,6 +222,7 @@ const ReformForm = () => {
             />
 
             <FormInput
+                required
                 type="number"
                 name="surface"
                 placeholder={t("forms.renovation.form.surface")}
@@ -209,6 +231,7 @@ const ReformForm = () => {
             />
 
             <FieldSetInput
+                required
                 type="radio"
                 legend={t("forms.renovation.form.finishQuality")}
                 options={["Medio", "Medio alto", "Alto"]}
@@ -217,6 +240,7 @@ const ReformForm = () => {
             />
 
             <FormInput
+                required
                 type="date"
                 name="startDate"
                 placeholder={t("forms.renovation.form.startDate")}

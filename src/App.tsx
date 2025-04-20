@@ -1,4 +1,5 @@
 import './App.css';
+import { ToastContainer } from 'react-toastify';
 import AboutUs from './components/organisms/aboutUs/aboutUs';
 import DesignExperiences from './components/organisms/designExperiences/designExperiences';
 import Footer from './components/organisms/footer/footer';
@@ -16,6 +17,7 @@ function App() {
     <main className='h-screen w-screen text-black relative'>
       <Navigator>
         <>
+          <ToastContainer />
           <Introduction />
           <AboutUs />
           <OurWay />

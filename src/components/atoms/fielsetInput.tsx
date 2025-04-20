@@ -5,7 +5,8 @@ interface props {
     options: string[],
     optionsChecked: string[] | string,
     onChange: (value: string) => void,
-    type?: "checkbox" | "radio"
+    type?: "checkbox" | "radio",
+    required?: boolean
 }
 
 const FieldSetInput = ({
@@ -13,7 +14,8 @@ const FieldSetInput = ({
     options,
     optionsChecked,
     onChange,
-    type = "checkbox"
+    type = "checkbox",
+    required
 }: props) => {
     const { t } = useLanguage();
 
@@ -30,6 +32,8 @@ const FieldSetInput = ({
                             checked={typeof optionsChecked === "string" ? optionsChecked === option : optionsChecked.includes(option)}
                             onChange={() => onChange(option)}
                             className="mr-2"
+                            name={legend}
+                            required={required}
                         />
                         {" "}{option}
                         {option.toLocaleLowerCase() === t("general.others").toLocaleLowerCase() && (
