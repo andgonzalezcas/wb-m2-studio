@@ -41,8 +41,7 @@ const ProfessionalForm = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-
-        const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSddE4xStIA4d6jfJO_uVXfLKLTdTbHjTp1zf2UvIWKryIamwg/formResponse';
+        const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc9YSzgaY-ZI7l4NMwmUQEM7D4yhbQAG_B3uQfRP-3DNXzhlA/formResponse';
 
         const form = new FormData();
         form.append('entry.2005620554', formData.name);
@@ -53,7 +52,7 @@ const ProfessionalForm = () => {
         form.append('entry.1166974658', formData.phone);
         form.append('entry.1065046570', formData.postalCode);
         form.append('entry.839337160', formData.comments);
-        form.append('entry.1917880232', formData.collaborators);
+        form.append('entry.1917880232', formData.collaborators); 
         form.append('entry.1481457655', formData.terms ? "He leído y acepto la Política de Privacidad: https://policies.google.com/privacy" : "");
         form.append('emailAddress', formData.email);
 
@@ -64,19 +63,19 @@ const ProfessionalForm = () => {
                 body: form
             });
 
-            setFormData({
-                name: "",
-                email: "",
-                phone: "",
-                profile: "",
-                company: "",
-                collaborators: "",
-                otherCollaborator: "",
-                city: "",
-                postalCode: "",
-                comments: "",
-                terms: false,
-            });
+            // setFormData({
+            //     name: "",
+            //     email: "",
+            //     phone: "",
+            //     profile: "",
+            //     company: "",
+            //     collaborators: "",
+            //     otherCollaborator: "",
+            //     city: "",
+            //     postalCode: "",
+            //     comments: "",
+            //     terms: false,
+            // });
 
             toast.success(
                 <div>

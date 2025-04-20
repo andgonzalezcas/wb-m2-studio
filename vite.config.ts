@@ -15,6 +15,7 @@ export default defineConfig({
     tsconfigPaths(), 
     svgr()
   ],
+  // base: '/wb-m2-studio/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
