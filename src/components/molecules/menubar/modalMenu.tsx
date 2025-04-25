@@ -44,7 +44,7 @@ const ModalMenu = ({ onClose }: { onClose: () => void }) => {
     ];
 
     return (
-        <div className="w-full h-screen fixed top-0 left-0 bg-[#232C33] p-5 flex flex-col justify-between">
+        <div className="w-full h-screen fixed top-0 left-0 bg-[#232C33] p-5 flex flex-col justify-between z-50">
             <div className="flex justify-between w-full">
                 {/* Logo */}
                 <img
@@ -82,7 +82,7 @@ const ModalMenu = ({ onClose }: { onClose: () => void }) => {
             {/* Footer */}
             <div className="w-full border-t text-white">
                 <p className="text-left font-light py-3 text-sm">{t("general.serviceList.followUs")}</p>
-                <div className="flex justify-between pt-3">
+                <div className="flex flex-wrap justify-between pt-3">
                     <LinkButton
                         label="Instagram"
                         link="https://www.instagram.com/m2studio.es/?igsh=MWhsb2xsMXp4MzQ4aw%3D%3D"
@@ -96,6 +96,16 @@ const ModalMenu = ({ onClose }: { onClose: () => void }) => {
                     <LinkButton
                         label="Threads"
                         link="https://www.threads.net/@m2studio.es?xmt=AQGzj_tLNNbXH8f_wM_hnUh44SPj_4v60ZKzNA-sNcFJlyw"
+                        color="white"
+                    />
+                    <LinkButton
+                        label="Pinterest"
+                        link="https://es.pinterest.com/m2sstudio/"
+                        color="white"
+                    />
+                    <LinkButton
+                        label="Facebook"
+                        link="https://www.facebook.com/people/M2studio/61566699791667/"
                         color="white"
                     />
                 </div>
