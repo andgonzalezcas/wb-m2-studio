@@ -23,6 +23,14 @@ const Footer = () => {
                             label="Threads"
                             link="https://www.threads.net/@m2studio.es?xmt=AQGzj_tLNNbXH8f_wM_hnUh44SPj_4v60ZKzNA-sNcFJlyw"
                         />
+                        <LinkButton
+                            label="Pinterest"
+                            link="https://es.pinterest.com/m2sstudio/"
+                        />
+                        <LinkButton
+                            label="Facebook"
+                            link="https://www.facebook.com/people/M2studio/61566699791667/"
+                        />
                     </div>
                 </div>
                 <ImageGetter
