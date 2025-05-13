@@ -140,16 +140,16 @@
     "title": "Proyectos Recientes",
     "projects": {
       "1": {
-        "label": "Proyecto 01",
-        "description": "Antes de comenzar una reforma, es crucial tener en cuenta algunas cosas para facilitarnos nuestra labor y ayudarnos a conectar con las verdaderas necesidades de nuestros clientes."
+        "label": "Local Atemporal",
+        "description": "El espacio comercial cede su rigidez para volverse hogar. La intervención es precisa: se respeta la geometría original, se suavizan los límites y emerge una neutralidad cálida, lista para ser vivida."
       },
       "2": {
-        "label": "Proyecto 02",
-        "description": "El Presupuesto: Antes de empezar cualquier reforma, debes plantear el presupuesto. Es importante tener claro qué quieres o puedes invertir en tu reforma. Debe ser una cantidad realista, acorde con tu realidad."
+        "label": "Estudio Base",
+        "description": "Luz natural, estructura expuesta y materiales honestos. Un lugar de trabajo donde el diseño no estorba, sino que potencia la creatividad. El equilibrio entre lo crudo y lo pensado hace de este estudio un espacio versátil, funcional y lleno de carácter."
       },
       "3": {
-        "label": "Proyecto 03",
-        "description": "Otro punto muy importante a tener en cuenta es el diseño. Cuanto más claro tienes tus necesidades, más podremos ayudarte a conseguir el espacio deseado."
+        "label": "Ático Brisa",
+        "description": "La claridad de lo que se busca es la clave para lograrlo. En este ático, la altura y la luz se combinan con una propuesta serena, sin excesos. Un refugio en la cima que invita a respirar distinto."
       }
     },
     "viewAll": "Ver todos"

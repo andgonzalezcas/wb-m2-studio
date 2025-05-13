@@ -140,19 +140,19 @@
     "title": "Recent Projects",
     "projects": {
       "1": {
-        "label": "Project 01",
-        "description": "Before starting a renovation, it is crucial to take into account some things to facilitate our work and help us connect with our clients' true needs."
+        "label": "Timeless Locale",
+        "description": "The commercial space yields its rigidity to become a home. The intervention is precise: the original geometry is respected, the boundaries are softened, and a warm neutrality emerges, ready to be lived in."
       },
       "2": {
-        "label": "Project 02",
-        "description": "The Budget: Before starting any renovation, you must consider the budget. It is important to be clear about what you want or can invest in your renovation. It must be a realistic amount, in line with your reality."
+        "label": "Base Studio",
+        "description": "Natural light, exposed structure, and honest materials. A workspace where design does not hinder but enhances creativity. The balance between the raw and the thoughtful makes this studio a versatile, functional space full of character."
       },
       "3": {
-        "label": "Project 03",
-        "description": "Another very important point to consider is design. The clearer you are about your needs, the more we can help you achieve the desired space."
+        "label": "Brisa Penthouse",
+        "description": "The clarity of what is sought is key to achieving it. In this penthouse, height and light combine with a serene, unpretentious proposal. A refuge at the top that invites you to breathe differently."
       }
     },
-    "viewAll": "View All"
+    "viewAll": "View all"
   },
   "designExperiences": {
     "title": "Creating Alliances, Designing Experiences",
