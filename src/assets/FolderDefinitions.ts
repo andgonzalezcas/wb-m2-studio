@@ -6,10 +6,10 @@ export type ImageFolder = {
 };
 
 export type ImageBackground = 
+   | "WEB02"
    | "bg_left"
    | "bg_right"
-   | "bg_right"
-   | "WEB02";
+   | "bg_right";
 
 export type ImageIcons = 
    | "border"

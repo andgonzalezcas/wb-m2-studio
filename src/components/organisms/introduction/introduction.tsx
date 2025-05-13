@@ -85,7 +85,22 @@ const Introduction = () => {
 
             <button
                 onClick={handleWhatsAppClick}
-                className="absolute bottom-8 xl:bottom-14 right-1/2 translate-x-1/2 xl:translate-x-0 xl:right-28 p-2 bg-white text-black rounded-full flex gap-2 items-center z-10"
+                className="hidden xl:flex absolute bottom-8 xl:bottom-14 right-1/2 translate-x-1/2 xl:translate-x-0 xl:right-28 p-2 bg-white text-black rounded-full gap-2 items-center z-50"
+            >
+                <span className="px-3">
+                    whatsapp
+                </span>
+                <ImageGetter
+                    folder="icons"
+                    image="whatsapp"
+                    width={31}
+                    height={31}
+                />
+            </button>
+
+            <button
+                onClick={handleWhatsAppClick}
+                className="flex xl:hidden absolute bottom-8 xl:bottom-14 right-1/2 translate-x-1/2 xl:translate-x-0 xl:right-28 p-2 bg-white text-black rounded-full gap-2 items-center"
             >
                 <span className="px-3">
                     whatsapp
